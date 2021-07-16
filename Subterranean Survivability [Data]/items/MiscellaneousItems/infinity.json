@@ -1,0 +1,22 @@
+//やなぎ#2957
+{
+    "format_version": "1.16.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "yana:debug_tool",
+            "category": "nature"
+        },
+        "components": {
+            "minecraft:allow_off_hand": true,
+            "minecraft:creative_category": {
+                "parent": "itemGroup.name.flower"
+            },
+            "minecraft:max_stack_size": 1,
+            "minecraft:use_duration": 10,
+            "minecraft:icon": {
+                "texture": "niter"
+            }
+        },
+        "events": {}
+    }
+}

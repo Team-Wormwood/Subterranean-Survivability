@@ -1,0 +1,33 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "yana:revolver",
+			"materials": {
+				"default": "armor",
+				"enchanted": "armor_enchanted"
+			},
+			"textures": {
+				"default": "textures/models/misc/hunting_rifle",
+				"enchanted": "textures/misc/enchanted_item_glint"
+			},
+			"geometry": {
+				"default": "geometry.revolver"
+			},
+			"animations": {
+				"shoot": "animation.hunting_rifle.shoot"
+			},
+			"scripts": {
+				"parent_setup": "variable.chest_layer_visible = 0.0;",
+				"animate": [
+					{
+						"shoot": "query.is_using_item > 0.0f"
+					}
+				]
+			},
+			"render_controllers": [
+				"controller.render.armor"
+			]
+		}
+	}
+}

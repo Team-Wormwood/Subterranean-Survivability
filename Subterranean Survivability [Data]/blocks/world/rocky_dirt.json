@@ -1,0 +1,21 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "yana:rocky_dirt"
+		},
+		"components": {
+			"tag:dirt": {},
+			"tag:stone": {},
+			"minecraft:destroy_time": 1,
+			"minecraft:loot": "loot_tables/blocks/rocky_dirt.json",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "rocky_dirt",
+					"render_method": "opaque"
+				}
+			}
+		},
+		"events": {}
+	}
+}

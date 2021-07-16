@@ -1,0 +1,74 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "yana:niter_ore"
+        },
+        "components": {
+            "minecraft:map_color": "#dfdfbc",
+            "minecraft:block_light_absorption": 0,
+            "minecraft:block_light_emission": 0,
+            "minecraft:breathability": "air",
+            "minecraft:breakonpush": true,
+            "minecraft:destroy_time": 0,
+            "minecraft:entity_collision": false,
+            "minecraft:geometry": "geometry.plant",
+            "minecraft:unwalkable": true,
+            "minecraft:loot": "loot_tables/blocks/ores/niter.json",
+            "minecraft:placement_filter": {
+                "conditions": [
+                    {
+                        "allowed_faces": [
+                            "up"
+                        ],
+                        "block_filter": [
+                            "minecraft:dirt",
+                            "yana:rocky_dirt",
+                            "minecraft:stone",
+                            "yana:blaststone"
+                        ]
+                    }
+                ]
+            },
+            "minecraft:material_instances": {
+                "*": {
+                    "ambient_occlusion": true,
+                    "face_dimming": false,
+                    "render_method": "alpha_test",
+                    "texture": "niter_ore"
+                }
+            },
+            "minecraft:pick_collision": {
+                "origin": [
+                    -8,
+                    0,
+                    -8
+                ],
+                "size": [
+                    16,
+                    3,
+                    16
+                ]
+            },
+            "minecraft:ticking": {
+                "range": [
+                    1,
+                    3
+                ],
+                "looping": true,
+                "on_tick": {
+                    "event": "eventEffect"
+                }
+            }
+        },
+        "events": {
+            "eventEffect": {
+                "run_command": {
+                    "command": [
+                        "particle minecraft:falling_dust_sand_particle ~ ~0.5 ~"
+                    ]
+                }
+            }
+        }
+    }
+}

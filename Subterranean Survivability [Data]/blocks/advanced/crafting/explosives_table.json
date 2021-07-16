@@ -1,0 +1,21 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "yana:explosives_table"
+        },
+        "components": {
+            "minecraft:explosion_resistance": 4,
+            "minecraft:destroy_time": 3,
+            "minecraft:crafting_table": {
+                "custom_description": "Explosives Table",
+                "grid_size": 3,
+                "crafting_tags": [
+                    "explosives_table"
+                ]
+            },
+            "tag:wood": {}
+        },
+        "events": {}
+    }
+}

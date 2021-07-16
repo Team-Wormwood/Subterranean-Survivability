@@ -1,0 +1,46 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.blast_miner.throw": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "throwing": "q.mark_variant == 1"
+                        },
+                        {
+                            "threw": "q.mark_variant == 2"
+                        }
+                    ]
+                },
+                "threw": {
+                    "animations": [
+                        "threw"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!q.mark_variant == 1 || !q.mark_variant == 2"
+                        },
+                        {
+                            "throwing": "q.mark_variant == 1"
+                        }
+                    ]
+                },
+                "throwing": {
+                    "animations": [
+                        "throwing"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!q.mark_variant == 1 || !q.mark_variant == 2"
+                        },
+                        {
+                            "threw": "q.mark_variant == 2"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

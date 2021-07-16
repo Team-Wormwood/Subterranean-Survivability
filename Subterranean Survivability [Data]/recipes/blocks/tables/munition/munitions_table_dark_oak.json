@@ -1,0 +1,28 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "minecraft:munitions_table_dark_oak_wood"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "SS",
+            "##",
+            "##"
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:planks",
+                "data": 5
+            },
+            "S": {
+                "item": "yana:aluminium_ingot"
+            }
+        },
+        "result": {
+            "item": "yana:munitions_table"
+        }
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "minecraft:light_grey_firecracker_explosives_table"
+        },
+        "priority": 0,
+        "tags": [
+            "explosives_table"
+        ],
+        "ingredients": [
+            {
+                "item": "yana:firecracker"
+            },
+            {
+                "item": "minecraft:light_gray_dye"
+            }
+        ],
+        "result": {
+            "item": "yana:firecracker"
+        }
+    }
+}

@@ -1,0 +1,217 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.custom_player.throw2": {
+			"override_previous_animation": true,
+			"loop": true,
+			"animation_length": 3.04,
+			"bones": {
+				"body": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.08": {
+							"post": [0, 4, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"1.76": {
+							"post": [0, 16, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"1.84": {
+							"post": [0, -20, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"2.52": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"head": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.08": {
+							"post": [-15, 4, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"1.76": {
+							"post": [-12.5, 16, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"2.0": {
+							"post": [10, 7.5, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"2.52": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"rightArm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.08": {
+							"post": [0, 0, 7.5],
+							"lerp_mode": "catmullrom"
+						},
+						"1.76": {
+							"post": [-17.5, 16, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"1.84": {
+							"post": [15, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"2.52": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"leftArm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.4": [-182.5, 0, 0],
+						"0.6": {
+							"post": [-212.5, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"1.2": {
+							"post": [-210, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"1.68": {
+							"post": [-240, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"1.96": {
+							"post": [17.5, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"2.64": {
+							"post": [-12.5, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"3.0": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"dynamite": {
+					"rotation": {
+						"0.0": [17.5, 0, 0],
+						"0.36": [15, 0, 0],
+						"0.8": {
+							"post": [-52.5, 0, -10],
+							"lerp_mode": "catmullrom"
+						},
+						"1.44": {
+							"post": [-40, 0, -10],
+							"lerp_mode": "catmullrom"
+						},
+						"1.64": {
+							"post": [-32.5, 0, -10],
+							"lerp_mode": "catmullrom"
+						},
+						"1.76": {
+							"post": [-2.5, 0, -10],
+							"lerp_mode": "catmullrom"
+						}
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"1.76": [0, 0, 0],
+						"1.8": [0, -70, -1]
+					},
+					"scale": {
+						"0.0": [1, 1, 1],
+						"1.72": [1, 1, 1],
+						"1.76": [0, 0, 0]
+					}
+				}
+			},
+			"particle_effects": {}
+		},
+		"animation.blast_miner.threw": {
+			"loop": true,
+			"override_previous_animation": true,
+			"animation_length": 0.5,
+			"bones": {
+				"dynamite": {
+					"scale": {
+						"0.0": [0, 0, 0]
+					}
+				}
+			},
+			"particle_effects": {}
+		},
+		"animation.blast_miner.throw": {
+			"loop": true,
+			"animation_length": 3.04,
+			"override_previous_animation": true,
+			"bones": {
+				"body": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.08": [0, 4, 0],
+						"1.76": [0, 16, 0],
+						"1.84": [0, -20, 0],
+						"2.52": [0, 0, 0]
+					}
+				},
+				"head": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.08": [-15, 4, 0],
+						"1.76": [-12.5, 16, 0],
+						"2.0": [10, 7.5, 0],
+						"2.52": [0, 0, 0]
+					}
+				},
+				"rightArm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.08": [0, 0, 7.5],
+						"1.76": [-17.5, 16, 0],
+						"1.84": [15, 0, 0],
+						"2.52": [0, 0, 0]
+					}
+				},
+				"leftArm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.4": [-182.5, 0, 0],
+						"0.6": [-212.5, 0, 0],
+						"1.2": [-210, 0, 0],
+						"1.68": [-240, 0, 0],
+						"1.96": [17.5, 0, 0],
+						"2.64": [-12.5, 0, 0],
+						"3.0": [0, 0, 0]
+					}
+				},
+				"dynamite": {
+					"rotation": {
+						"0.0": [17.5, 0, 0],
+						"0.36": [15, 0, 0],
+						"0.8": [-52.5, 0, -10],
+						"1.44": [-40, 0, -10],
+						"1.64": [-32.5, 0, -10],
+						"1.76": [-2.5, 0, -10]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"1.76": [0, 0, 0],
+						"1.8": [0, -70, -1]
+					},
+					"scale": {
+						"0.0": [1, 1, 1],
+						"1.72": [1, 1, 1],
+						"1.76": [0, 0, 0]
+					}
+				}
+			}
+		}
+	}
+}

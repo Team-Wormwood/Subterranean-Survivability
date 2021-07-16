@@ -1,0 +1,142 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "yana:blast_vent",
+			"properties": {
+				"yana:rotation": [
+					1,
+					2,
+					3,
+					4
+				]
+			}
+		},
+		"components": {
+			"minecraft:block_light_emission": 0.47,
+			"minecraft:block_light_absorption": 0,
+			"minecraft:geometry": "geometry.blast_vent",
+			"minecraft:breakonpush": true,
+			"minecraft:unwalkable": true,
+			"minecraft:destroy_time": 3,
+			"minecraft:map_color": "#641502",
+			"minecraft:loot": "loot_tables/empty.json",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "blast_vent",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:random_ticking": {
+				"on_tick": {
+					"event": "flame_event"
+				}
+			},
+			"minecraft:on_interact": {
+				"event": "flame_event_forced",
+				"condition": "q.get_equipped_item_name(0) == 'sulfur'"
+			},
+			"minecraft:on_player_destroyed": {
+				"event": "destroyed",
+				"target": "self",
+				"condition": "q.equipped_item_any_tag('slot.weapon.mainhand','minecraft:iron_tier','minecraft:golden_tier','minecraft:diamond_tier','minecraft:netherite_tier')"
+			},
+			"minecraft:on_placed": {
+				"event": "random_rotation"
+			}
+		},
+		"permutations": [
+			{
+				"condition": "q.block_property('yana:rotation') == 1 ",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						180,
+						0
+					]
+				}
+			},
+			{
+				"condition": "q.block_property('yana:rotation') == 2 ",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						90,
+						0
+					]
+				}
+			},
+			{
+				"condition": "q.block_property('yana:rotation') == 3 ",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						0,
+						0
+					]
+				}
+			},
+			{
+				"condition": "q.block_property('yana:rotation') == 34 ",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						270,
+						0
+					]
+				}
+			}
+		],
+		"events": {
+			"random_rotation": {
+				"randomize": [
+					{
+						"weight": 1,
+						"set_block_property": {
+							"yana:rotation": 1
+						}
+					},
+					{
+						"weight": 1,
+						"set_block_property": {
+							"yana:rotation": 2
+						}
+					},
+					{
+						"weight": 1,
+						"set_block_property": {
+							"yana:rotation": 3
+						}
+					},
+					{
+						"weight": 1,
+						"set_block_property": {
+							"yana:rotation": 4
+						}
+					}
+				]
+			},
+			"destroyed": {
+				"spawn_loot": {
+					"table": "loot_tables/blocks/blast_vent.json"
+				}
+			},
+			"flame_event": {
+				"run_command": {
+					"command": [
+						"function blastventEvent"
+					]
+				}
+			},
+			"flame_event_forced": {
+				"decrement_stack": {},
+				"run_command": {
+					"command": [
+						"function blastventEvent",
+						"summon yana:blast_vent_explosion ~ ~1 ~"
+					]
+				}
+			}
+		}
+	}
+}

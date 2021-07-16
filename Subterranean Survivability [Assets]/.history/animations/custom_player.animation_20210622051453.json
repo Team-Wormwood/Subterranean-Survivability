@@ -1,0 +1,177 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.custom_player.item.rifle.hold": {
+			"override_previous_animation": true,
+			"loop": true,
+			"animation_length": 3.04,
+			"bones": {
+				"leftItem": {
+					"scale": 0.0
+				},
+				"rightItem": {
+					"scale": "v.is_first_person ? 2.0 : 0.45",
+					"position": [
+						"v.is_first_person ? 8.0 : 0.0",
+						"v.is_first_person ? 0.0 : 8.0",
+						"v.is_first_person ? -2.0 : 3.0"
+					],
+					"rotation": [
+						90.0,
+						"v.is_first_person ? 63.0 : 0.0",
+						"v.is_first_person ? -45.0 : 0.0"
+					]
+				},
+				"leftArm": {
+					"scale": "v.is_first_person ? 0.0 : 1.0",
+					"rotation": [
+						"v.is_first_person ? 85.0 : 0.0",
+						"v.is_first_person ? -27.0 : 0.0",
+						"v.is_first_person ? 18.0 : 0.0"
+					],
+					"position": [
+						"v.is_first_person ? -6.5 : 0.0",
+						"v.is_first_person ? 11.0 : 0.0",
+						"v.is_first_person ? -5.0 : 0.0"
+					]
+				}
+			}
+		},
+		"animation.custom_player.item.rifle.hold_first_person": {
+			"override_previous_animation": true,
+			"loop": true,
+			"animation_length": 3.04,
+			"bones": {
+				"leftItem": {
+					"scale": 0.0
+				},
+				"rightItem": {
+					"scale": 2,
+					"position": [
+						8,
+						0,
+						-2
+					],
+					"rotation": [
+						0,
+						63,
+						-45
+					]
+				},
+				"leftArm": {
+					"scale": 0,
+					"rotation": [
+						85,
+						-27,
+						18
+					],
+					"position": [
+						"v.is_first_person ? -6.5 : 0.0",
+						"v.is_first_person ? 11 : 0.0",
+						"v.is_first_person ? -5.0 : 0.0"
+					]
+				}
+			}
+		},
+		"animation.custom_player.item.cannon.hold_first_person": {
+			"override_previous_animation": true,
+			"loop": true,
+			"animation_length": 3.04,
+			"bones": {
+				"leftItem": {
+					"scale": 0.0
+				},
+				"rightItem": {
+					"scale": 2,
+					"position": [
+						8,
+						2,
+						-2
+					],
+					"rotation": [
+						0,
+						63,
+						-45
+					]
+				},
+				"leftArm": {
+					"scale": 0,
+					"rotation": [
+						85,
+						-27,
+						18
+					],
+					"position": [
+						"v.is_first_person ? -6.5 : 0.0",
+						"v.is_first_person ? 11 : 0.0",
+						"v.is_first_person ? -5.0 : 0.0"
+					]
+				}
+			}
+		},
+		"animation.custom_player.rifle_shot": {
+			"animation_length": 0.76,
+			"override_previous_animation": false,
+			"bones": {
+				"leftArm": {
+					"rotation": {
+						"0.0": [
+							0.0,
+							0.0,
+							0.0
+						],
+						"0.2": [
+							"v.is_first_person ? 0.0 : -20.0",
+							0.0,
+							0.0
+						],
+						"0.4": [
+							"v.is_first_person ? 0.0 : -10.0",
+							0.0,
+							0.0
+						],
+						"0.48": [
+							"v.is_first_person ? 0.0 : 3.0",
+							0.0,
+							0.0
+						],
+						"0.75": [
+							0.0,
+							0.0,
+							0.0
+						]
+					},
+					"position": [
+						"v.is_first_person ? -13.5 : 0.0",
+						"v.is_first_person ? 10 : 0.0",
+						"v.is_first_person ? -12.0 : 0.0"
+					]
+				},
+				"rightArm": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.1": [
+							"v.is_first_person ? 0.0 : -30.0",
+							"v.is_first_person ? -30.0 : 0.0",
+							"v.is_first_person ? 1.0 : 0.0"
+						],
+						"0.4": [
+							"v.is_first_person ? 0.0 : 3.0",
+							"v.is_first_person ? 3.0 : 0.0",
+							"v.is_first_person ? -2.0 : 0.0"
+						],
+						"0.76": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			}
+		}
+	}
+}

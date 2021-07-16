@@ -1,0 +1,21 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "yana:ash_block"
+		},
+		"components": {
+			"tag:dirt": {},
+			"tag:sand": {},
+			"minecraft:destroy_time": 0,
+			"minecraft:loot": "loot_tables/blocks/ash.json",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "ash",
+					"render_method": "opaque"
+				}
+			}
+		},
+		"events": {}
+	}
+}

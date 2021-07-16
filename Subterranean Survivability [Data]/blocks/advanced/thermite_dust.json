@@ -1,0 +1,85 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "yana:thermite_dust"
+		},
+		"components": {
+			"minecraft:destroy_time": 0,
+			"minecraft:friction": 0.6,
+			"minecraft:block_light_emission": 0.0,
+			"minecraft:geometry": "geometry.thermite_dust",
+			"minecraft:block_light_absorption": 0,
+			"minecraft:entity_collision": false,
+			"minecraft:breakonpush": true,
+			"minecraft:explosion_resistance": 1,
+			"minecraft:unwalkable": true,
+			"minecraft:map_color": "#5c311d",
+			"minecraft:loot": "loot_tables/blocks/thermite_dust.json",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "thermite_dust",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:pick_collision": {
+				"origin": [
+					-6,
+					0,
+					-6
+				],
+				"size": [
+					12,
+					2.4,
+					12
+				]
+			},
+			"minecraft:on_interact": {
+				"event": "interact_event"
+			}
+		},
+		"events": {
+			"interact_event": {
+				"sequence": [
+					{
+						"condition": "q.get_equipped_item_name(0) == 'flint_and_steel'",
+						"run_command": {
+							"command": [
+								"summon yana:thermite_entity ~ ~-2 ~",
+								"summon yana:thermite_entity ~ ~-1 ~",
+								"summon yana:thermite_entity ~ ~-4 ~",
+								"playsound fire.ignite @a[r=10] ~ ~ ~ 10 0.9 1",
+								"playsound random.fuse @a[r=10] ~ ~ ~ 10 0.6 1",
+								"playsound random.fuse @a[r=10] ~ ~ ~ 10 2 1",
+								"particle yana:thermite_fuse ~ ~ ~",
+								"particle minecraft:campfire_smoke_particle ~ ~ ~",
+								"setblock ~ ~ ~ air"
+							]
+						},
+						"damage": {
+							"amount": 1,
+							"target": "item",
+							"type": "durability"
+						}
+					},
+					{
+						"condition": "q.get_equipped_item_name(0) == 'match' || q.get_equipped_item_name(0) == 'fire_charge'",
+						"run_command": {
+							"command": [
+								"summon yana:thermite_entity ~ ~-3 ~",
+								"summon yana:thermite_entity ~ ~-1 ~",
+								"playsound fire.ignite @a[r=10] ~ ~ ~ 10 0.9 1",
+								"playsound random.fuse @a[r=10] ~ ~ ~ 10 0.6 1",
+								"playsound random.fuse @a[r=10] ~ ~ ~ 10 2 1",
+								"particle yana:thermite_fuse ~ ~ ~",
+								"particle minecraft:campfire_smoke_particle ~ ~ ~",
+								"setblock ~ ~ ~ air"
+							]
+						},
+						"decrement_stack": {}
+					}
+				]
+			}
+		}
+	}
+}

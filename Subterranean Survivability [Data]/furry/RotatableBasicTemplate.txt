@@ -1,0 +1,128 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "yana:CUSTOM_BLOCK",
+			"properties": {
+				"yana:rotation": [
+					0,
+					1,
+					2,
+					3
+				]
+			}
+		},
+		"components": {
+			"minecraft:geometry": "geometry.CUSTOM",
+			"minecraft:block_light_absorption": 0,
+
+
+			"tag:stone": {},
+			"tag:stone_pick_diggable": {},
+
+
+			"minecraft:loot": "loot_tables/empty.json",
+
+
+			"minecraft:destroy_time": 1.2,
+
+
+			"minecraft:map_color": "#d43200",
+
+
+			"minecraft:on_player_destroyed": {
+				"event": "destroyed",
+				"condition": "q.equipped_item_any_tag('slot.weapon.mainhand','minecraft:wooden_tier','minecraft:stone_tier','minecraft:iron_tier','minecraft:golden_tier','minecraft:diamond_tier','minecraft:netherite_tier')"
+			},
+
+			
+			"minecraft:on_player_placing": {
+				"event": "rotate_event"
+			},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "CUSTOM_BLOCK",
+					"render_method": "opaque"
+				}
+			},
+			"minecraft:entity_collision": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					8,
+					8
+				]
+			},
+			"minecraft:pick_collision": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					16,
+					16
+				]
+			}
+		},
+		"permutations": [
+			{
+				"condition": "q.block_property('yana:rotation') == 0",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						180,
+						0
+					]
+				}
+			},
+			{
+				"condition": "q.block_property('yana:rotation') == 1",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						0,
+						0
+					]
+				}
+			},
+			{
+				"condition": "q.block_property('yana:rotation') == 2",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						-90,
+						0
+					]
+				}
+			},
+			{
+				"condition": "q.block_property('yana:rotation') == 3",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						90,
+						0
+					]
+				}
+			}
+		],
+		"events": {
+			"destroyed": {
+				"spawn_loot": {
+					"table": "loot_tables/blocks/CUSTOM_BLOCK.json"
+				}
+			},
+			"rotate_event": {
+				"set_block_property": {
+					"yana:rotation": "q.cardinal_facing_2d - 2.0"
+				}
+			}
+		}
+	}
+}

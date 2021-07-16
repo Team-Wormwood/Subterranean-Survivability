@@ -1,0 +1,36 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "yana:hunting_rifle",
+			"materials": {
+				"default": "entity_alphatest",
+				"enchanted": "entity_alphatest_glint"
+			},
+			"textures": {
+				"default": "textures/models/misc/hunting_rifle",
+				"enchanted": "textures/misc/enchanted_item_glint"
+			},
+			"geometry": {
+				"default": "geometry.hunting_rifle"
+			},
+			"scripts": {
+				"animate": [
+					"thirdperson_main_hand",
+					"firstperson_main_hand",
+					{
+						"wield_first_person_pull": "query.main_hand_item_use_duration > 0.0f && c.is_first_person"
+					}
+				]
+			},
+			"animations": {
+				"thirdperson_main_hand": "animation.custom_player.rifle_hold",
+				"firstperson_main_hand": "animation.custom_player.rifle_hold_first_person",
+				"shoot": "query.main_hand_item_use_duration > 0.0f"
+			},
+			"render_controllers": [
+				"controller.render.item_default"
+			]
+		}
+	}
+}

@@ -1,0 +1,1500 @@
+//やなぎ#2957
+{
+    "format_version": "1.16.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "yana:cannon",
+            "category": "equipment"
+        },
+        "components": {
+            "tag:cannon": {},
+            "minecraft:max_stack_size": 1,
+            "minecraft:use_duration": 10,
+            "minecraft:creative_category": {
+                "parent": "itemGroup.equipment.name"
+            },
+            "minecraft:icon": {
+                "texture": "cannon"
+            },
+            //Redundant
+            // "minecraft:cooldown": {
+            //     "category": "chorus_fruit",
+            //     "duration": 1
+            // },
+            "minecraft:on_use": {
+                "on_use": {
+                    "event": "prefire"
+                }
+            }
+        },
+        "events": {
+            "prefire": {
+                "sequence": [
+                    {
+                        "condition": "q.get_equipped_item_name(1) != 'debug_tool'",
+                        "trigger": {
+                            "event": "fireSurvival"
+                        }
+                    },
+                    {
+                        "condition": "q.get_equipped_item_name(1) == 'debug_tool'",
+                        "trigger": {
+                            "event": "fireCreative"
+                        }
+                    }
+                ]
+            },
+            "fireSurvival": {
+                "sequence": [
+                    {
+                        "trigger": {
+                            "event": "shootFirst"
+                        }
+                    },
+                    {
+                        "trigger": {
+                            "event": "shootSecond"
+                        }
+                    },
+                    {
+                        "trigger": {
+                            "event": "shootThird"
+                        }
+                    },
+                    {
+                        "trigger": {
+                            "event": "shootFourth"
+                        }
+                    },
+                    {
+                        "trigger": {
+                            "event": "shootFinal"
+                        }
+                    }
+                ]
+            },
+            "fireCreative": {
+                "sequence": [
+                    {
+                        "trigger": {
+                            "event": "shootFirst"
+                        }
+                    },
+                    {
+                        "trigger": {
+                            "event": "shootSecond"
+                        }
+                    },
+                    {
+                        "trigger": {
+                            "event": "shootThird"
+                        }
+                    },
+                    {
+                        "trigger": {
+                            "event": "shootFourth"
+                        }
+                    },
+                    {
+                        "trigger": {
+                            "event": "shootFinalCreative"
+                        }
+                    }
+                ]
+            },
+            "shootFirst": {
+                "randomize": [
+                    {
+                        "weight": 1,
+                        "trigger": {
+                            "event": "fireRed"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "trigger": {
+                            "event": "fireOrange"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "trigger": {
+                            "event": "fireYellow"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "trigger": {
+                            "event": "fireLime"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "trigger": {
+                            "event": "fireGreen"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "trigger": {
+                            "event": "fireCyan"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "trigger": {
+                            "event": "fireLightBlue"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "trigger": {
+                            "event": "fireBlue"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "trigger": {
+                            "event": "firePurple"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "trigger": {
+                            "event": "fireMagenta"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "trigger": {
+                            "event": "firePink"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "trigger": {
+                            "event": "fireBrown"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "trigger": {
+                            "event": "fireLightGrey"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "trigger": {
+                            "event": "fireGrey"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "trigger": {
+                            "event": "fireWhite"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "trigger": {
+                            "event": "fireBlack"
+                        }
+                    }
+                ]
+            },
+            "shootSecond": {
+                "randomize": [
+                    {
+                        "weight": 1,
+                        "trigger": {
+                            "event": "fireRed2"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "trigger": {
+                            "event": "fireOrange2"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "trigger": {
+                            "event": "fireYellow2"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "trigger": {
+                            "event": "fireLime2"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "trigger": {
+                            "event": "fireGreen2"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "trigger": {
+                            "event": "fireCyan2"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "trigger": {
+                            "event": "fireLightBlue2"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "trigger": {
+                            "event": "fireBlue2"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "trigger": {
+                            "event": "firePurple2"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "trigger": {
+                            "event": "fireMagenta2"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "trigger": {
+                            "event": "firePink2"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "trigger": {
+                            "event": "fireBrown2"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "trigger": {
+                            "event": "fireLightGrey2"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "trigger": {
+                            "event": "fireGrey2"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "trigger": {
+                            "event": "fireWhite2"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "trigger": {
+                            "event": "fireBlack2"
+                        }
+                    }
+                ]
+            },
+            "shootThird": {
+                "randomize": [
+                    {
+                        "weight": 1,
+                        "trigger": {
+                            "event": "fireRed3"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "trigger": {
+                            "event": "fireOrange3"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "trigger": {
+                            "event": "fireYellow3"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "trigger": {
+                            "event": "fireLime3"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "trigger": {
+                            "event": "fireGreen3"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "trigger": {
+                            "event": "fireCyan3"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "trigger": {
+                            "event": "fireLightBlue3"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "trigger": {
+                            "event": "fireBlue3"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "trigger": {
+                            "event": "firePurple3"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "trigger": {
+                            "event": "fireMagenta3"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "trigger": {
+                            "event": "firePink3"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "trigger": {
+                            "event": "fireBrown3"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "trigger": {
+                            "event": "fireLightGrey3"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "trigger": {
+                            "event": "fireGrey3"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "trigger": {
+                            "event": "fireWhite3"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "trigger": {
+                            "event": "fireBlack3"
+                        }
+                    }
+                ]
+            },
+            "shootFourth": {
+                "randomize": [
+                    {
+                        "weight": 1,
+                        "trigger": {
+                            "event": "fireRed4"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "trigger": {
+                            "event": "fireOrange4"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "trigger": {
+                            "event": "fireYellow4"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "trigger": {
+                            "event": "fireLime4"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "trigger": {
+                            "event": "fireGreen4"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "trigger": {
+                            "event": "fireCyan4"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "trigger": {
+                            "event": "fireLightBlue4"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "trigger": {
+                            "event": "fireBlue4"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "trigger": {
+                            "event": "firePurple4"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "trigger": {
+                            "event": "fireMagenta4"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "trigger": {
+                            "event": "firePink4"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "trigger": {
+                            "event": "fireBrown4"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "trigger": {
+                            "event": "fireLightGrey4"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "trigger": {
+                            "event": "fireGrey4"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "trigger": {
+                            "event": "fireWhite4"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "trigger": {
+                            "event": "fireBlack4"
+                        }
+                    }
+                ]
+            },
+            "shootFinal": {
+                "shoot": {
+                    "projectile": "yana:dynamite_entity",
+                    "launch_power": 2,
+                    "angle_offset": 1
+                },
+                "run_command": {
+                    "command": [
+                        "playsound fire.ignite",
+                        "playanimation @s animation.custom_player.cannon_shot",
+                        "replaceitem entity @s slot.weapon.mainhand 0 yana:cannon_empty",
+                        "playsound random.explode @a ~ ~ ~ 10 0.7 10",
+                        "playsound firework.launch @a ~ ~ ~ 10 1.1 10",
+                        "playsound mob.witch.throw @a ~ ~ ~ 10 0.6 10"
+                    ]
+                }
+            },
+            "shootFinalCreative": {
+                "shoot": {
+                    "projectile": "yana:dynamite_entity",
+                    "launch_power": 2,
+                    "angle_offset": 1
+                },
+                "run_command": {
+                    "command": [
+                        "playsound fire.ignite",
+                        "playanimation @s animation.custom_player.cannon_shot",
+                        "playsound random.explode @a ~ ~ ~ 10 0.7 10",
+                        "playsound firework.launch @a ~ ~ ~ 10 1.1 10",
+                        "playsound mob.witch.throw @a ~ ~ ~ 10 0.6 10"
+                    ]
+                }
+            },
+            "fireRed": {
+                "shoot": {
+                    "projectile": "yana:firecracker_entity_red",
+                    "launch_power": 2,
+                    "angle_offset": 1
+                },
+                "run_command": {
+                    "command": [
+                        "playsound fire.ignite",
+                        "playsound random.explode @a ~ ~ ~ 10 0.7 10",
+                        "playsound firework.launch @a ~ ~ ~ 10 1.1 10",
+                        "playsound mob.witch.throw @a ~ ~ ~ 10 0.6 10"
+                    ]
+                }
+            },
+            "fireOrange": {
+                "shoot": {
+                    "projectile": "yana:firecracker_entity_orange",
+                    "launch_power": 2,
+                    "angle_offset": 1
+                },
+                "run_command": {
+                    "command": [
+                        "playsound fire.ignite",
+                        "playsound random.explode @a ~ ~ ~ 10 0.7 10",
+                        "playsound firework.launch @a ~ ~ ~ 10 1.1 10",
+                        "playsound mob.witch.throw @a ~ ~ ~ 10 0.6 10"
+                    ]
+                }
+            },
+            "fireYellow": {
+                "shoot": {
+                    "projectile": "yana:firecracker_entity_yellow",
+                    "launch_power": 2,
+                    "angle_offset": 1
+                },
+                "run_command": {
+                    "command": [
+                        "playsound fire.ignite",
+                        "playsound random.explode @a ~ ~ ~ 10 0.7 10",
+                        "playsound firework.launch @a ~ ~ ~ 10 1.1 10",
+                        "playsound mob.witch.throw @a ~ ~ ~ 10 0.6 10"
+                    ]
+                }
+            },
+            "fireLime": {
+                "shoot": {
+                    "projectile": "yana:firecracker_entity_lime",
+                    "launch_power": 2,
+                    "angle_offset": 1
+                },
+                "run_command": {
+                    "command": [
+                        "playsound fire.ignite",
+                        "playsound random.explode @a ~ ~ ~ 10 0.7 10",
+                        "playsound firework.launch @a ~ ~ ~ 10 1.1 10",
+                        "playsound mob.witch.throw @a ~ ~ ~ 10 0.6 10"
+                    ]
+                }
+            },
+            "fireGreen": {
+                "shoot": {
+                    "projectile": "yana:firecracker_entity_green",
+                    "launch_power": 2,
+                    "angle_offset": 1
+                },
+                "run_command": {
+                    "command": [
+                        "playsound fire.ignite",
+                        "playsound random.explode @a ~ ~ ~ 10 0.7 10",
+                        "playsound firework.launch @a ~ ~ ~ 10 1.1 10",
+                        "playsound mob.witch.throw @a ~ ~ ~ 10 0.6 10"
+                    ]
+                }
+            },
+            "fireCyan": {
+                "shoot": {
+                    "projectile": "yana:firecracker_entity_cyan",
+                    "launch_power": 2,
+                    "angle_offset": 1
+                },
+                "run_command": {
+                    "command": [
+                        "playsound fire.ignite",
+                        "playsound random.explode @a ~ ~ ~ 10 0.7 10",
+                        "playsound firework.launch @a ~ ~ ~ 10 1.1 10",
+                        "playsound mob.witch.throw @a ~ ~ ~ 10 0.6 10"
+                    ]
+                }
+            },
+            "fireLightBlue": {
+                "shoot": {
+                    "projectile": "yana:firecracker_entity_light_blue",
+                    "launch_power": 2,
+                    "angle_offset": 1
+                },
+                "run_command": {
+                    "command": [
+                        "playsound fire.ignite",
+                        "playsound random.explode @a ~ ~ ~ 10 0.7 10",
+                        "playsound firework.launch @a ~ ~ ~ 10 1.1 10",
+                        "playsound mob.witch.throw @a ~ ~ ~ 10 0.6 10"
+                    ]
+                }
+            },
+            "fireBlue": {
+                "shoot": {
+                    "projectile": "yana:firecracker_entity_blue",
+                    "launch_power": 2,
+                    "angle_offset": 1
+                },
+                "run_command": {
+                    "command": [
+                        "playsound fire.ignite",
+                        "playsound random.explode @a ~ ~ ~ 10 0.7 10",
+                        "playsound firework.launch @a ~ ~ ~ 10 1.1 10",
+                        "playsound mob.witch.throw @a ~ ~ ~ 10 0.6 10"
+                    ]
+                }
+            },
+            "firePurple": {
+                "shoot": {
+                    "projectile": "yana:firecracker_entity_purple",
+                    "launch_power": 2,
+                    "angle_offset": 1
+                },
+                "run_command": {
+                    "command": [
+                        "playsound fire.ignite",
+                        "playsound random.explode @a ~ ~ ~ 10 0.7 10",
+                        "playsound firework.launch @a ~ ~ ~ 10 1.1 10",
+                        "playsound mob.witch.throw @a ~ ~ ~ 10 0.6 10"
+                    ]
+                }
+            },
+            "fireMagenta": {
+                "shoot": {
+                    "projectile": "yana:firecracker_entity_magenta",
+                    "launch_power": 2,
+                    "angle_offset": 1
+                },
+                "run_command": {
+                    "command": [
+                        "playsound fire.ignite",
+                        "playsound random.explode @a ~ ~ ~ 10 0.7 10",
+                        "playsound firework.launch @a ~ ~ ~ 10 1.1 10",
+                        "playsound mob.witch.throw @a ~ ~ ~ 10 0.6 10"
+                    ]
+                }
+            },
+            "firePink": {
+                "shoot": {
+                    "projectile": "yana:firecracker_entity_pink",
+                    "launch_power": 2,
+                    "angle_offset": 1
+                },
+                "run_command": {
+                    "command": [
+                        "playsound fire.ignite",
+                        "playsound random.explode @a ~ ~ ~ 10 0.7 10",
+                        "playsound firework.launch @a ~ ~ ~ 10 1.1 10",
+                        "playsound mob.witch.throw @a ~ ~ ~ 10 0.6 10"
+                    ]
+                }
+            },
+            "fireBrown": {
+                "shoot": {
+                    "projectile": "yana:firecracker_entity_brown",
+                    "launch_power": 2,
+                    "angle_offset": 1
+                },
+                "run_command": {
+                    "command": [
+                        "playsound fire.ignite",
+                        "playsound random.explode @a ~ ~ ~ 10 0.7 10",
+                        "playsound firework.launch @a ~ ~ ~ 10 1.1 10",
+                        "playsound mob.witch.throw @a ~ ~ ~ 10 0.6 10"
+                    ]
+                }
+            },
+            "fireLightGrey": {
+                "shoot": {
+                    "projectile": "yana:firecracker_entity_light_grey",
+                    "launch_power": 2,
+                    "angle_offset": 1
+                },
+                "run_command": {
+                    "command": [
+                        "playsound fire.ignite",
+                        "playsound random.explode @a ~ ~ ~ 10 0.7 10",
+                        "playsound firework.launch @a ~ ~ ~ 10 1.1 10",
+                        "playsound mob.witch.throw @a ~ ~ ~ 10 0.6 10"
+                    ]
+                }
+            },
+            "fireGrey": {
+                "shoot": {
+                    "projectile": "yana:firecracker_entity_grey",
+                    "launch_power": 2,
+                    "angle_offset": 1
+                },
+                "run_command": {
+                    "command": [
+                        "playsound fire.ignite",
+                        "playsound random.explode @a ~ ~ ~ 10 0.7 10",
+                        "playsound firework.launch @a ~ ~ ~ 10 1.1 10",
+                        "playsound mob.witch.throw @a ~ ~ ~ 10 0.6 10"
+                    ]
+                }
+            },
+            "fireBlack": {
+                "shoot": {
+                    "projectile": "yana:firecracker_entity_black",
+                    "launch_power": 2,
+                    "angle_offset": 1
+                },
+                "run_command": {
+                    "command": [
+                        "playsound fire.ignite",
+                        "playsound random.explode @a ~ ~ ~ 10 0.7 10",
+                        "playsound firework.launch @a ~ ~ ~ 10 1.1 10",
+                        "playsound mob.witch.throw @a ~ ~ ~ 10 0.6 10"
+                    ]
+                }
+            },
+            "fireWhite": {
+                "shoot": {
+                    "projectile": "yana:firecracker_entity_white",
+                    "launch_power": 2,
+                    "angle_offset": 1
+                },
+                "run_command": {
+                    "command": [
+                        "playsound fire.ignite",
+                        "playsound random.explode @a ~ ~ ~ 10 0.7 10",
+                        "playsound firework.launch @a ~ ~ ~ 10 1.1 10",
+                        "playsound mob.witch.throw @a ~ ~ ~ 10 0.6 10"
+                    ]
+                }
+            },
+            "fireRed2": {
+                "shoot": {
+                    "projectile": "yana:firecracker_entity_red",
+                    "launch_power": 2,
+                    "angle_offset": 1
+                },
+                "run_command": {
+                    "command": [
+                        "playsound fire.ignite",
+                        "playsound random.explode @a ~ ~ ~ 10 0.7 10",
+                        "playsound firework.launch @a ~ ~ ~ 10 1.1 10",
+                        "playsound mob.witch.throw @a ~ ~ ~ 10 0.6 10"
+                    ]
+                }
+            },
+            "fireOrange2": {
+                "shoot": {
+                    "projectile": "yana:firecracker_entity_orange",
+                    "launch_power": 2,
+                    "angle_offset": 1
+                },
+                "run_command": {
+                    "command": [
+                        "playsound fire.ignite",
+                        "playsound random.explode @a ~ ~ ~ 10 0.7 10",
+                        "playsound firework.launch @a ~ ~ ~ 10 1.1 10",
+                        "playsound mob.witch.throw @a ~ ~ ~ 10 0.6 10"
+                    ]
+                }
+            },
+            "fireYellow2": {
+                "shoot": {
+                    "projectile": "yana:firecracker_entity_yellow",
+                    "launch_power": 2,
+                    "angle_offset": 1
+                },
+                "run_command": {
+                    "command": [
+                        "playsound fire.ignite",
+                        "playsound random.explode @a ~ ~ ~ 10 0.7 10",
+                        "playsound firework.launch @a ~ ~ ~ 10 1.1 10",
+                        "playsound mob.witch.throw @a ~ ~ ~ 10 0.6 10"
+                    ]
+                }
+            },
+            "fireLime2": {
+                "shoot": {
+                    "projectile": "yana:firecracker_entity_lime",
+                    "launch_power": 2,
+                    "angle_offset": 1
+                },
+                "run_command": {
+                    "command": [
+                        "playsound fire.ignite",
+                        "playsound random.explode @a ~ ~ ~ 10 0.7 10",
+                        "playsound firework.launch @a ~ ~ ~ 10 1.1 10",
+                        "playsound mob.witch.throw @a ~ ~ ~ 10 0.6 10"
+                    ]
+                }
+            },
+            "fireGreen2": {
+                "shoot": {
+                    "projectile": "yana:firecracker_entity_green",
+                    "launch_power": 2,
+                    "angle_offset": 1
+                },
+                "run_command": {
+                    "command": [
+                        "playsound fire.ignite",
+                        "playsound random.explode @a ~ ~ ~ 10 0.7 10",
+                        "playsound firework.launch @a ~ ~ ~ 10 1.1 10",
+                        "playsound mob.witch.throw @a ~ ~ ~ 10 0.6 10"
+                    ]
+                }
+            },
+            "fireCyan2": {
+                "shoot": {
+                    "projectile": "yana:firecracker_entity_cyan",
+                    "launch_power": 2,
+                    "angle_offset": 1
+                },
+                "run_command": {
+                    "command": [
+                        "playsound fire.ignite",
+                        "playsound random.explode @a ~ ~ ~ 10 0.7 10",
+                        "playsound firework.launch @a ~ ~ ~ 10 1.1 10",
+                        "playsound mob.witch.throw @a ~ ~ ~ 10 0.6 10"
+                    ]
+                }
+            },
+            "fireLightBlue2": {
+                "shoot": {
+                    "projectile": "yana:firecracker_entity_light_blue",
+                    "launch_power": 2,
+                    "angle_offset": 1
+                },
+                "run_command": {
+                    "command": [
+                        "playsound fire.ignite",
+                        "playsound random.explode @a ~ ~ ~ 10 0.7 10",
+                        "playsound firework.launch @a ~ ~ ~ 10 1.1 10",
+                        "playsound mob.witch.throw @a ~ ~ ~ 10 0.6 10"
+                    ]
+                }
+            },
+            "fireBlue2": {
+                "shoot": {
+                    "projectile": "yana:firecracker_entity_blue",
+                    "launch_power": 2,
+                    "angle_offset": 1
+                },
+                "run_command": {
+                    "command": [
+                        "playsound fire.ignite",
+                        "playsound random.explode @a ~ ~ ~ 10 0.7 10",
+                        "playsound firework.launch @a ~ ~ ~ 10 1.1 10",
+                        "playsound mob.witch.throw @a ~ ~ ~ 10 0.6 10"
+                    ]
+                }
+            },
+            "firePurple2": {
+                "shoot": {
+                    "projectile": "yana:firecracker_entity_purple",
+                    "launch_power": 2,
+                    "angle_offset": 1
+                },
+                "run_command": {
+                    "command": [
+                        "playsound fire.ignite",
+                        "playsound random.explode @a ~ ~ ~ 10 0.7 10",
+                        "playsound firework.launch @a ~ ~ ~ 10 1.1 10",
+                        "playsound mob.witch.throw @a ~ ~ ~ 10 0.6 10"
+                    ]
+                }
+            },
+            "fireMagenta2": {
+                "shoot": {
+                    "projectile": "yana:firecracker_entity_magenta",
+                    "launch_power": 2,
+                    "angle_offset": 1
+                },
+                "run_command": {
+                    "command": [
+                        "playsound fire.ignite",
+                        "playsound random.explode @a ~ ~ ~ 10 0.7 10",
+                        "playsound firework.launch @a ~ ~ ~ 10 1.1 10",
+                        "playsound mob.witch.throw @a ~ ~ ~ 10 0.6 10"
+                    ]
+                }
+            },
+            "firePink2": {
+                "shoot": {
+                    "projectile": "yana:firecracker_entity_pink",
+                    "launch_power": 2,
+                    "angle_offset": 1
+                },
+                "run_command": {
+                    "command": [
+                        "playsound fire.ignite",
+                        "playsound random.explode @a ~ ~ ~ 10 0.7 10",
+                        "playsound firework.launch @a ~ ~ ~ 10 1.1 10",
+                        "playsound mob.witch.throw @a ~ ~ ~ 10 0.6 10"
+                    ]
+                }
+            },
+            "fireBrown2": {
+                "shoot": {
+                    "projectile": "yana:firecracker_entity_brown",
+                    "launch_power": 2,
+                    "angle_offset": 1
+                },
+                "run_command": {
+                    "command": [
+                        "playsound fire.ignite",
+                        "playsound random.explode @a ~ ~ ~ 10 0.7 10",
+                        "playsound firework.launch @a ~ ~ ~ 10 1.1 10",
+                        "playsound mob.witch.throw @a ~ ~ ~ 10 0.6 10"
+                    ]
+                }
+            },
+            "fireLightGrey2": {
+                "shoot": {
+                    "projectile": "yana:firecracker_entity_light_grey",
+                    "launch_power": 2,
+                    "angle_offset": 1
+                },
+                "run_command": {
+                    "command": [
+                        "playsound fire.ignite",
+                        "playsound random.explode @a ~ ~ ~ 10 0.7 10",
+                        "playsound firework.launch @a ~ ~ ~ 10 1.1 10",
+                        "playsound mob.witch.throw @a ~ ~ ~ 10 0.6 10"
+                    ]
+                }
+            },
+            "fireGrey2": {
+                "shoot": {
+                    "projectile": "yana:firecracker_entity_grey",
+                    "launch_power": 2,
+                    "angle_offset": 1
+                },
+                "run_command": {
+                    "command": [
+                        "playsound fire.ignite",
+                        "playsound random.explode @a ~ ~ ~ 10 0.7 10",
+                        "playsound firework.launch @a ~ ~ ~ 10 1.1 10",
+                        "playsound mob.witch.throw @a ~ ~ ~ 10 0.6 10"
+                    ]
+                }
+            },
+            "fireBlack2": {
+                "shoot": {
+                    "projectile": "yana:firecracker_entity_black",
+                    "launch_power": 2,
+                    "angle_offset": 1
+                },
+                "run_command": {
+                    "command": [
+                        "playsound fire.ignite",
+                        "playsound random.explode @a ~ ~ ~ 10 0.7 10",
+                        "playsound firework.launch @a ~ ~ ~ 10 1.1 10",
+                        "playsound mob.witch.throw @a ~ ~ ~ 10 0.6 10"
+                    ]
+                }
+            },
+            "fireWhite2": {
+                "shoot": {
+                    "projectile": "yana:firecracker_entity_white",
+                    "launch_power": 2,
+                    "angle_offset": 1
+                },
+                "run_command": {
+                    "command": [
+                        "playsound fire.ignite",
+                        "playsound random.explode @a ~ ~ ~ 10 0.7 10",
+                        "playsound firework.launch @a ~ ~ ~ 10 1.1 10",
+                        "playsound mob.witch.throw @a ~ ~ ~ 10 0.6 10"
+                    ]
+                }
+            },
+            "fireRed3": {
+                "shoot": {
+                    "projectile": "yana:firecracker_entity_red",
+                    "launch_power": 2,
+                    "angle_offset": 1
+                },
+                "run_command": {
+                    "command": [
+                        "playsound fire.ignite",
+                        "playsound random.explode @a ~ ~ ~ 10 0.7 10",
+                        "playsound firework.launch @a ~ ~ ~ 10 1.1 10",
+                        "playsound mob.witch.throw @a ~ ~ ~ 10 0.6 10"
+                    ]
+                }
+            },
+            "fireOrange3": {
+                "shoot": {
+                    "projectile": "yana:firecracker_entity_orange",
+                    "launch_power": 2,
+                    "angle_offset": 1
+                },
+                "run_command": {
+                    "command": [
+                        "playsound fire.ignite",
+                        "playsound random.explode @a ~ ~ ~ 10 0.7 10",
+                        "playsound firework.launch @a ~ ~ ~ 10 1.1 10",
+                        "playsound mob.witch.throw @a ~ ~ ~ 10 0.6 10"
+                    ]
+                }
+            },
+            "fireYellow3": {
+                "shoot": {
+                    "projectile": "yana:firecracker_entity_yellow",
+                    "launch_power": 2,
+                    "angle_offset": 1
+                },
+                "run_command": {
+                    "command": [
+                        "playsound fire.ignite",
+                        "playsound random.explode @a ~ ~ ~ 10 0.7 10",
+                        "playsound firework.launch @a ~ ~ ~ 10 1.1 10",
+                        "playsound mob.witch.throw @a ~ ~ ~ 10 0.6 10"
+                    ]
+                }
+            },
+            "fireLime3": {
+                "shoot": {
+                    "projectile": "yana:firecracker_entity_lime",
+                    "launch_power": 2,
+                    "angle_offset": 1
+                },
+                "run_command": {
+                    "command": [
+                        "playsound fire.ignite",
+                        "playsound random.explode @a ~ ~ ~ 10 0.7 10",
+                        "playsound firework.launch @a ~ ~ ~ 10 1.1 10",
+                        "playsound mob.witch.throw @a ~ ~ ~ 10 0.6 10"
+                    ]
+                }
+            },
+            "fireGreen3": {
+                "shoot": {
+                    "projectile": "yana:firecracker_entity_green",
+                    "launch_power": 2,
+                    "angle_offset": 1
+                },
+                "run_command": {
+                    "command": [
+                        "playsound fire.ignite",
+                        "playsound random.explode @a ~ ~ ~ 10 0.7 10",
+                        "playsound firework.launch @a ~ ~ ~ 10 1.1 10",
+                        "playsound mob.witch.throw @a ~ ~ ~ 10 0.6 10"
+                    ]
+                }
+            },
+            "fireCyan3": {
+                "shoot": {
+                    "projectile": "yana:firecracker_entity_cyan",
+                    "launch_power": 2,
+                    "angle_offset": 1
+                },
+                "run_command": {
+                    "command": [
+                        "playsound fire.ignite",
+                        "playsound random.explode @a ~ ~ ~ 10 0.7 10",
+                        "playsound firework.launch @a ~ ~ ~ 10 1.1 10",
+                        "playsound mob.witch.throw @a ~ ~ ~ 10 0.6 10"
+                    ]
+                }
+            },
+            "fireLightBlue3": {
+                "shoot": {
+                    "projectile": "yana:firecracker_entity_light_blue",
+                    "launch_power": 2,
+                    "angle_offset": 1
+                },
+                "run_command": {
+                    "command": [
+                        "playsound fire.ignite",
+                        "playsound random.explode @a ~ ~ ~ 10 0.7 10",
+                        "playsound firework.launch @a ~ ~ ~ 10 1.1 10",
+                        "playsound mob.witch.throw @a ~ ~ ~ 10 0.6 10"
+                    ]
+                }
+            },
+            "fireBlue3": {
+                "shoot": {
+                    "projectile": "yana:firecracker_entity_blue",
+                    "launch_power": 2,
+                    "angle_offset": 1
+                },
+                "run_command": {
+                    "command": [
+                        "playsound fire.ignite",
+                        "playsound random.explode @a ~ ~ ~ 10 0.7 10",
+                        "playsound firework.launch @a ~ ~ ~ 10 1.1 10",
+                        "playsound mob.witch.throw @a ~ ~ ~ 10 0.6 10"
+                    ]
+                }
+            },
+            "firePurple3": {
+                "shoot": {
+                    "projectile": "yana:firecracker_entity_purple",
+                    "launch_power": 2,
+                    "angle_offset": 1
+                },
+                "run_command": {
+                    "command": [
+                        "playsound fire.ignite",
+                        "playsound random.explode @a ~ ~ ~ 10 0.7 10",
+                        "playsound firework.launch @a ~ ~ ~ 10 1.1 10",
+                        "playsound mob.witch.throw @a ~ ~ ~ 10 0.6 10"
+                    ]
+                }
+            },
+            "fireMagenta3": {
+                "shoot": {
+                    "projectile": "yana:firecracker_entity_magenta",
+                    "launch_power": 2,
+                    "angle_offset": 1
+                },
+                "run_command": {
+                    "command": [
+                        "playsound fire.ignite",
+                        "playsound random.explode @a ~ ~ ~ 10 0.7 10",
+                        "playsound firework.launch @a ~ ~ ~ 10 1.1 10",
+                        "playsound mob.witch.throw @a ~ ~ ~ 10 0.6 10"
+                    ]
+                }
+            },
+            "firePink3": {
+                "shoot": {
+                    "projectile": "yana:firecracker_entity_pink",
+                    "launch_power": 2,
+                    "angle_offset": 1
+                },
+                "run_command": {
+                    "command": [
+                        "playsound fire.ignite",
+                        "playsound random.explode @a ~ ~ ~ 10 0.7 10",
+                        "playsound firework.launch @a ~ ~ ~ 10 1.1 10",
+                        "playsound mob.witch.throw @a ~ ~ ~ 10 0.6 10"
+                    ]
+                }
+            },
+            "fireBrown3": {
+                "shoot": {
+                    "projectile": "yana:firecracker_entity_brown",
+                    "launch_power": 2,
+                    "angle_offset": 1
+                },
+                "run_command": {
+                    "command": [
+                        "playsound fire.ignite",
+                        "playsound random.explode @a ~ ~ ~ 10 0.7 10",
+                        "playsound firework.launch @a ~ ~ ~ 10 1.1 10",
+                        "playsound mob.witch.throw @a ~ ~ ~ 10 0.6 10"
+                    ]
+                }
+            },
+            "fireLightGrey3": {
+                "shoot": {
+                    "projectile": "yana:firecracker_entity_light_grey",
+                    "launch_power": 2,
+                    "angle_offset": 1
+                },
+                "run_command": {
+                    "command": [
+                        "playsound fire.ignite",
+                        "playsound random.explode @a ~ ~ ~ 10 0.7 10",
+                        "playsound firework.launch @a ~ ~ ~ 10 1.1 10",
+                        "playsound mob.witch.throw @a ~ ~ ~ 10 0.6 10"
+                    ]
+                }
+            },
+            "fireGrey3": {
+                "shoot": {
+                    "projectile": "yana:firecracker_entity_grey",
+                    "launch_power": 2,
+                    "angle_offset": 1
+                },
+                "run_command": {
+                    "command": [
+                        "playsound fire.ignite",
+                        "playsound random.explode @a ~ ~ ~ 10 0.7 10",
+                        "playsound firework.launch @a ~ ~ ~ 10 1.1 10",
+                        "playsound mob.witch.throw @a ~ ~ ~ 10 0.6 10"
+                    ]
+                }
+            },
+            "fireBlack3": {
+                "shoot": {
+                    "projectile": "yana:firecracker_entity_black",
+                    "launch_power": 2,
+                    "angle_offset": 1
+                },
+                "run_command": {
+                    "command": [
+                        "playsound fire.ignite",
+                        "playsound random.explode @a ~ ~ ~ 10 0.7 10",
+                        "playsound firework.launch @a ~ ~ ~ 10 1.1 10",
+                        "playsound mob.witch.throw @a ~ ~ ~ 10 0.6 10"
+                    ]
+                }
+            },
+            "fireWhite3": {
+                "shoot": {
+                    "projectile": "yana:firecracker_entity_white",
+                    "launch_power": 2,
+                    "angle_offset": 1
+                },
+                "run_command": {
+                    "command": [
+                        "playsound fire.ignite",
+                        "playsound random.explode @a ~ ~ ~ 10 0.7 10",
+                        "playsound firework.launch @a ~ ~ ~ 10 1.1 10",
+                        "playsound mob.witch.throw @a ~ ~ ~ 10 0.6 10"
+                    ]
+                }
+            },
+            "fireRed4": {
+                "shoot": {
+                    "projectile": "yana:firecracker_entity_red",
+                    "launch_power": 2,
+                    "angle_offset": 1
+                },
+                "run_command": {
+                    "command": [
+                        "playsound fire.ignite",
+                        "playsound random.explode @a ~ ~ ~ 10 0.7 10",
+                        "playsound firework.launch @a ~ ~ ~ 10 1.1 10",
+                        "playsound mob.witch.throw @a ~ ~ ~ 10 0.6 10"
+                    ]
+                }
+            },
+            "fireOrange4": {
+                "shoot": {
+                    "projectile": "yana:firecracker_entity_orange",
+                    "launch_power": 2,
+                    "angle_offset": 1
+                },
+                "run_command": {
+                    "command": [
+                        "playsound fire.ignite",
+                        "playsound random.explode @a ~ ~ ~ 10 0.7 10",
+                        "playsound firework.launch @a ~ ~ ~ 10 1.1 10",
+                        "playsound mob.witch.throw @a ~ ~ ~ 10 0.6 10"
+                    ]
+                }
+            },
+            "fireYellow4": {
+                "shoot": {
+                    "projectile": "yana:firecracker_entity_yellow",
+                    "launch_power": 2,
+                    "angle_offset": 1
+                },
+                "run_command": {
+                    "command": [
+                        "playsound fire.ignite",
+                        "playsound random.explode @a ~ ~ ~ 10 0.7 10",
+                        "playsound firework.launch @a ~ ~ ~ 10 1.1 10",
+                        "playsound mob.witch.throw @a ~ ~ ~ 10 0.6 10"
+                    ]
+                }
+            },
+            "fireLime4": {
+                "shoot": {
+                    "projectile": "yana:firecracker_entity_lime",
+                    "launch_power": 2,
+                    "angle_offset": 1
+                },
+                "run_command": {
+                    "command": [
+                        "playsound fire.ignite",
+                        "playsound random.explode @a ~ ~ ~ 10 0.7 10",
+                        "playsound firework.launch @a ~ ~ ~ 10 1.1 10",
+                        "playsound mob.witch.throw @a ~ ~ ~ 10 0.6 10"
+                    ]
+                }
+            },
+            "fireGreen4": {
+                "shoot": {
+                    "projectile": "yana:firecracker_entity_green",
+                    "launch_power": 2,
+                    "angle_offset": 1
+                },
+                "run_command": {
+                    "command": [
+                        "playsound fire.ignite",
+                        "playsound random.explode @a ~ ~ ~ 10 0.7 10",
+                        "playsound firework.launch @a ~ ~ ~ 10 1.1 10",
+                        "playsound mob.witch.throw @a ~ ~ ~ 10 0.6 10"
+                    ]
+                }
+            },
+            "fireCyan4": {
+                "shoot": {
+                    "projectile": "yana:firecracker_entity_cyan",
+                    "launch_power": 2,
+                    "angle_offset": 1
+                },
+                "run_command": {
+                    "command": [
+                        "playsound fire.ignite",
+                        "playsound random.explode @a ~ ~ ~ 10 0.7 10",
+                        "playsound firework.launch @a ~ ~ ~ 10 1.1 10",
+                        "playsound mob.witch.throw @a ~ ~ ~ 10 0.6 10"
+                    ]
+                }
+            },
+            "fireLightBlue4": {
+                "shoot": {
+                    "projectile": "yana:firecracker_entity_light_blue",
+                    "launch_power": 2,
+                    "angle_offset": 1
+                },
+                "run_command": {
+                    "command": [
+                        "playsound fire.ignite",
+                        "playsound random.explode @a ~ ~ ~ 10 0.7 10",
+                        "playsound firework.launch @a ~ ~ ~ 10 1.1 10",
+                        "playsound mob.witch.throw @a ~ ~ ~ 10 0.6 10"
+                    ]
+                }
+            },
+            "fireBlue4": {
+                "shoot": {
+                    "projectile": "yana:firecracker_entity_blue",
+                    "launch_power": 2,
+                    "angle_offset": 1
+                },
+                "run_command": {
+                    "command": [
+                        "playsound fire.ignite",
+                        "playsound random.explode @a ~ ~ ~ 10 0.7 10",
+                        "playsound firework.launch @a ~ ~ ~ 10 1.1 10",
+                        "playsound mob.witch.throw @a ~ ~ ~ 10 0.6 10"
+                    ]
+                }
+            },
+            "firePurple4": {
+                "shoot": {
+                    "projectile": "yana:firecracker_entity_purple",
+                    "launch_power": 2,
+                    "angle_offset": 1
+                },
+                "run_command": {
+                    "command": [
+                        "playsound fire.ignite",
+                        "playsound random.explode @a ~ ~ ~ 10 0.7 10",
+                        "playsound firework.launch @a ~ ~ ~ 10 1.1 10",
+                        "playsound mob.witch.throw @a ~ ~ ~ 10 0.6 10"
+                    ]
+                }
+            },
+            "fireMagenta4": {
+                "shoot": {
+                    "projectile": "yana:firecracker_entity_magenta",
+                    "launch_power": 2,
+                    "angle_offset": 1
+                },
+                "run_command": {
+                    "command": [
+                        "playsound fire.ignite",
+                        "playsound random.explode @a ~ ~ ~ 10 0.7 10",
+                        "playsound firework.launch @a ~ ~ ~ 10 1.1 10",
+                        "playsound mob.witch.throw @a ~ ~ ~ 10 0.6 10"
+                    ]
+                }
+            },
+            "firePink4": {
+                "shoot": {
+                    "projectile": "yana:firecracker_entity_pink",
+                    "launch_power": 2,
+                    "angle_offset": 1
+                },
+                "run_command": {
+                    "command": [
+                        "playsound fire.ignite",
+                        "playsound random.explode @a ~ ~ ~ 10 0.7 10",
+                        "playsound firework.launch @a ~ ~ ~ 10 1.1 10",
+                        "playsound mob.witch.throw @a ~ ~ ~ 10 0.6 10"
+                    ]
+                }
+            },
+            "fireBrown4": {
+                "shoot": {
+                    "projectile": "yana:firecracker_entity_brown",
+                    "launch_power": 2,
+                    "angle_offset": 1
+                },
+                "run_command": {
+                    "command": [
+                        "playsound fire.ignite",
+                        "playsound random.explode @a ~ ~ ~ 10 0.7 10",
+                        "playsound firework.launch @a ~ ~ ~ 10 1.1 10",
+                        "playsound mob.witch.throw @a ~ ~ ~ 10 0.6 10"
+                    ]
+                }
+            },
+            "fireLightGrey4": {
+                "shoot": {
+                    "projectile": "yana:firecracker_entity_light_grey",
+                    "launch_power": 2,
+                    "angle_offset": 1
+                },
+                "run_command": {
+                    "command": [
+                        "playsound fire.ignite",
+                        "playsound random.explode @a ~ ~ ~ 10 0.7 10",
+                        "playsound firework.launch @a ~ ~ ~ 10 1.1 10",
+                        "playsound mob.witch.throw @a ~ ~ ~ 10 0.6 10"
+                    ]
+                }
+            },
+            "fireGrey4": {
+                "shoot": {
+                    "projectile": "yana:firecracker_entity_grey",
+                    "launch_power": 2,
+                    "angle_offset": 1
+                },
+                "run_command": {
+                    "command": [
+                        "playsound fire.ignite",
+                        "playsound random.explode @a ~ ~ ~ 10 0.7 10",
+                        "playsound firework.launch @a ~ ~ ~ 10 1.1 10",
+                        "playsound mob.witch.throw @a ~ ~ ~ 10 0.6 10"
+                    ]
+                }
+            },
+            "fireBlack4": {
+                "shoot": {
+                    "projectile": "yana:firecracker_entity_black",
+                    "launch_power": 2,
+                    "angle_offset": 1
+                },
+                "run_command": {
+                    "command": [
+                        "playsound fire.ignite",
+                        "playsound random.explode @a ~ ~ ~ 10 0.7 10",
+                        "playsound firework.launch @a ~ ~ ~ 10 1.1 10",
+                        "playsound mob.witch.throw @a ~ ~ ~ 10 0.6 10"
+                    ]
+                }
+            },
+            "fireWhite4": {
+                "shoot": {
+                    "projectile": "yana:firecracker_entity_white",
+                    "launch_power": 2,
+                    "angle_offset": 1
+                },
+                "run_command": {
+                    "command": [
+                        "playsound fire.ignite",
+                        "playsound random.explode @a ~ ~ ~ 10 0.7 10",
+                        "playsound firework.launch @a ~ ~ ~ 10 1.1 10",
+                        "playsound mob.witch.throw @a ~ ~ ~ 10 0.6 10"
+                    ]
+                }
+            }
+        }
+    }
+}

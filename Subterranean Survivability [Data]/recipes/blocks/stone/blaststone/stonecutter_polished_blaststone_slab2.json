@@ -1,0 +1,22 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "minecraft:stonecutter_polished_blaststone_slab2"
+    },
+
+    
+    "tags": [ "stonecutter" ],
+    "priority": 0,
+    "ingredients": [
+      {
+        "item": "yana:blaststone"
+      }
+    ],
+    "result": {
+      "item": "yana:blaststone_slab_smooth",
+      "count": 2
+    }
+  }
+  
+}

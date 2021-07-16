@@ -1,0 +1,93 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.item.rifle": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "hold": "q.equipped_item_any_tag('slot.weapon.mainhand', 'rifle') && !v.is_first_person"
+                        }
+                    ]
+                },
+                "hold": {
+                    "animations": [
+                        "rifle_arms"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!q.equipped_item_any_tag('slot.weapon.mainhand', 'rifle') && !v.is_first_person"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.item.rifle_first_person": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "hold": "q.equipped_item_any_tag('slot.weapon.mainhand', 'rifle') && v.is_first_person"
+                        }
+                    ]
+                },
+                "hold": {
+                    "animations": [
+                        "rifle_hold_first_person"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!q.equipped_item_any_tag('slot.weapon.mainhand', 'rifle') && v.is_first_person"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.item.cannon": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "hold": "q.equipped_item_any_tag('slot.weapon.mainhand', 'cannon')"
+                        }
+                    ]
+                },
+                "hold": {
+                    "animations": [
+                        "cannon_arms"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!q.equipped_item_any_tag('slot.weapon.mainhand', 'cannon')"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.item.cannon": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "hold": "q.equipped_item_any_tag('slot.weapon.mainhand', 'cannon')"
+                        }
+                    ]
+                },
+                "hold": {
+                    "animations": [
+                        "cannon_arms"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!q.equipped_item_any_tag('slot.weapon.mainhand', 'cannon')"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

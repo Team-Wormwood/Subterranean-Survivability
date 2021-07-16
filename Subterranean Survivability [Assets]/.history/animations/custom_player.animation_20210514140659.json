@@ -1,0 +1,173 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.custom_player.rifle_hold": {
+			"override_previous_animation": true,
+			"loop": true,
+			"animation_length": 3.04,
+			"bones": {
+				"rightItem": {
+					"scale": 0.45,
+					"position": [
+						0,
+						0,
+						-3
+					],
+					"rotation": [
+						90,
+						0,
+						0
+					]
+				}
+			}
+		},
+		"animation.custom_player.rifle_hold_first_person": {
+			"override_previous_animation": true,
+			"loop": true,
+			"animation_length": 3.04,
+			"bones": {
+				"rightItem": {
+					"scale": 2,
+					"position": [
+						8,
+						0,
+						-2
+					],
+					"rotation": [
+						90,
+						63,
+						-45
+					]
+				}
+			}
+		},
+		"animation.custom_player.hunting_rifle_shot": {
+			"animation_length": 0.76,
+			"override_previous_animation": false,
+			"bones": {
+				"leftArm": {
+					"rotation": {
+						"0.0": [
+							0.0,
+							0.0,
+							0.0
+						],
+						"0.2": [
+							"v.is_first_person ? 0.0 : -20.0",
+							0.0,
+							0.0
+						],
+						"0.4": [
+							"v.is_first_person ? 0.0 : -10.0",
+							0.0,
+							0.0
+						],
+						"0.48": [
+							"v.is_first_person ? 0.0 : 3.0",
+							0.0,
+							0.0
+						],
+						"0.75": [
+							0.0,
+							0.0,
+							0.0
+						]
+					},
+					"position": [
+						0,
+						0,
+						0
+					]
+				},
+				"rightArm": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.1": [
+							"v.is_first_person ? 0.0 : -30.0",
+							0,
+							0
+						],
+						"0.4": [
+							"v.is_first_person ? 0.0 : 3.0",
+							0,
+							0
+						],
+						"0.76": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			}
+		},
+		"animation.player.hunting_rifle.shot.first_person": {
+			"animation_length": 0.76,
+			"override_previous_animation": false,
+			"bones": {
+				"leftArm": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.2": [
+							0,
+							-20,
+							0
+						],
+						"0.4": [
+							0,
+							-10,
+							0
+						],
+						"0.48": [
+							0,
+							3,
+							0
+						],
+						"0.75": [
+							0,
+							0,
+							0
+						]
+					},
+					"position": [
+						0,
+						0,
+						0
+					]
+				},
+				"rightArm": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.1": [
+							0,
+							-30,
+							0
+						],
+						"0.4": [
+							0,
+							3,
+							0
+						],
+						"0.76": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			}
+		}
+	}
+}

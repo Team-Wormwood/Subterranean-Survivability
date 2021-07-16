@@ -1,0 +1,77 @@
+//やなぎ#2957
+{
+    "format_version": "1.17.0", // This basically tells the game which version of items to use, for Mojang adding old/new changes that could break things
+    "minecraft:item": { //This tells the game that this is an item 
+        "description": {
+            "identifier": "yanasakana:willow_wakizashi", //This is what the item is reffered to as elsewhere in the pack and in commands
+            "category": "Equipment" //This is the creative category, and what will show up under your item's name
+        },
+        "components": { //Components are basically what your item does, and tells events to fire, or happen
+            "tag:really_cool": {}, //This is a tag, it is used for other, more advanced referencing
+            "tag:minecraft:is_sword": {}, //This is another tag
+            "minecraft:damage": 3, //This controls how much damage the item does
+            "minecraft:max_stack_size": 1, //This is the max stack size, like how snowballs only go to 16
+            "minecraft:hand_equipped": true, //This makes the item positioned like a sword or a stick, rather than like an apple
+            "minecraft:can_destroy_in_creative": false, //Self Explanatory, this is used in vanilla swords
+            "minecraft:weapon": { //This tells the game to treat this item as a weapon, so it display the damage amount under the name, and some other things
+                "on_hurt_entity": { //Triggers what we call an event on hurting an entity
+                    "event": "updateDurability" //This is the specific event to fire
+                }
+            },
+            "minecraft:icon": { //This is the icon texture for your item
+                "texture": "willow_wakizashi" //This is the name that we define in the resource pack file called item_texture.json
+            },
+            "minecraft:creative_category": { //This is the creative category the item will actually appear in
+                "parent": "itemGroup.name.sword" //A full list of these can be found on the wiki, https://wiki.bedrock.dev/documentation/item-groups
+            },
+            "minecraft:durability": { 
+                "max_durability": 768 
+            },
+            "minecraft:enchantable": { //This allows you to enchant the item
+                "value": 25, //This is the enchantibility, like how gold is higher than stone
+                "slot": "sword" //The type of enchantments
+            },
+            "minecraft:repairable": { //Allows you to repair the item in an anvil
+                "repair_items": [
+                    {
+                        "items": [
+                            "minecraft:amethyst_shard" //Item to be used
+                        ],
+                        "repair_amount": 100
+                    }
+                ]
+            },
+            "minecraft:digger": { //This controls what the item can harvest, and the speeds of such
+                "use_efficiency": true, //Broken
+                "destroy_speeds": [ //Speeds for each. Each item listed will be also dropped when broken
+                    {
+                        "block": "minecraft:web",
+                        "speed": 15,
+                        "on_dig": {
+                            "event": "updateDurability"
+                        }
+                    },
+                    {
+                        "block": "minecraft:bamboo",
+                        "speed": 10,
+                        "on_dig": {
+                            "event": "updateDurability"
+                        }
+                    }
+                ],
+                "on_dig": { //Event to run on dug
+                    "event": "updateDurability", //String name of event
+                    "target": "self" //Where to run the event
+                }
+            }
+        },
+        "events": {
+            "updateDurability": { //Event name
+                "damage": {  //Event functions, there are a few of these
+                    "type": "durability", //Type of damage, there are many of these, only some apply
+                    "amount": 1 //Amount
+                }
+            }
+        }
+    }
+}

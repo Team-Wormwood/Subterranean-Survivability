@@ -1,0 +1,34 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "yana:copper_bullet_entity",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/bullet"
+			},
+			"geometry": {
+				"default": "geometry.dynamite"
+			},
+			"particle_effects": {
+				"smoke_particle": "yana:dynamite_fuse_smoke",
+				"flame_particle": "yana:dynamite_fuse_flame"
+			},
+			"scripts": {},
+			"animations": {
+				"thrown": "animation.dynamite.thrown"
+			},
+			"animation_controllers": [
+				{
+					"thrown": "controller.animation.dynamite_thrown"
+				}
+			],
+			"render_controllers": [
+				"controller.render.salmon"
+			]
+		}
+	}
+}

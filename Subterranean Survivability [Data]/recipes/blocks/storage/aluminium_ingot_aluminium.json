@@ -1,0 +1,23 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "minecraft:aluminium_ingot_aluminium"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "#"
+        ],
+        "key": {
+            "#": {
+                "item": "yana:aluminium_ingot"
+            }
+        },
+        "result": {
+            "item": "yana:aluminium_nugget",
+            "count": 9
+        }
+    }
+}

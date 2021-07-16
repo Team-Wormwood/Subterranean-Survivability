@@ -1,0 +1,37 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "yana:blaststone"
+		},
+		"components": {
+			"tag:stone": {},
+			"tag:stone_pick_diggable": {},
+			"minecraft:loot": "loot_tables/empty.json",
+			"minecraft:destroy_time": 1.0,
+			"minecraft:map_color": "#d43200",
+			"minecraft:on_player_destroyed": {
+				"event": "destroyed",
+				"condition": "q.equipped_item_any_tag('slot.weapon.mainhand','minecraft:wooden_tier','minecraft:stone_tier','minecraft:iron_tier','minecraft:golden_tier','minecraft:diamond_tier','minecraft:netherite_tier')"
+			},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "blaststone",
+					"render_method": "opaque"
+				}
+			},
+			//Setting this causes INSANE FPS loss
+			"minecraft:flammable": {
+				"flame_odds": 0,
+				"burn_odds": 0
+			}
+		},
+		"events": {
+			"destroyed": {
+				"spawn_loot": {
+					"table": "loot_tables/blocks/blaststone.json"
+				}
+			}
+		}
+	}
+}

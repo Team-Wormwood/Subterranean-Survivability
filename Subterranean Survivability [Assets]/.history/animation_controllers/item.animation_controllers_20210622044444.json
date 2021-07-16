@@ -1,0 +1,200 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.item.rifle": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "hold": "q.equipped_item_any_tag('slot.weapon.mainhand', 'rifle') && !v.is_first_person"
+                        }
+                    ]
+                },
+                "hold": {
+                    "animations": [
+                        "rifle_hold"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!q.equipped_item_any_tag('slot.weapon.mainhand', 'rifle') && !v.is_first_person"
+                        },
+                        {
+                            "shot": "q.equipped_item_any_tag('slot.weapon.mainhand', 'rifle') && !v.is_first_person && q.item_remaining_use_duration > 0.0"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.item.rifle_first_person": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "hold": "q.equipped_item_any_tag('slot.weapon.mainhand', 'huntingrifle') && v.is_first_person"
+                        }
+                    ]
+                },
+                "hold": {
+                    "animations": [
+                        "hunting_rifle_hold_first_person"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!q.equipped_item_any_tag('slot.weapon.mainhand', 'huntingrifle') && v.is_first_person"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.item.cannon": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "hold": "q.equipped_item_any_tag('slot.weapon.mainhand', 'cannon')"
+                        }
+                    ]
+                },
+                "hold": {
+                    "animations": [
+                        "cannon_hold"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!q.equipped_item_any_tag('slot.weapon.mainhand', 'cannon')"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.item.hunting_rifle": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "hold": "q.equipped_item_any_tag('slot.weapon.mainhand', 'huntingrifle') && !v.is_first_person"
+                        }
+                    ]
+                },
+                "hold": {
+                    "animations": [
+                        "hunting_rifle_hold",
+                        "hunting_rifle_hold_setup"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!q.equipped_item_any_tag('slot.weapon.mainhand', 'huntingrifle') && !v.is_first_person"
+                        },
+                        {
+                            "shot": "q.equipped_item_any_tag('slot.weapon.mainhand', 'huntingrifle') && !v.is_first_person && q.item_remaining_use_duration > 0.0"
+                        }
+                    ]
+                },
+                "shot": {
+                    "animations": [
+                        "hunting_rifle_shot",
+                        "hunting_rifle_hold",
+                        "hunting_rifle_hold_setup"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!q.equipped_item_any_tag('slot.weapon.mainhand', 'huntingrifle') && !v.is_first_person"
+                        },
+                        {
+                            "hold": "q.equipped_item_any_tag('slot.weapon.mainhand', 'huntingrifle') && !v.is_first_person && !q.item_remaining_use_duration > 0.0"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.item.hunting_rifle_first_person": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "hold": "q.equipped_item_any_tag('slot.weapon.mainhand', 'huntingrifle') && v.is_first_person"
+                        }
+                    ]
+                },
+                "hold": {
+                    "animations": [
+                        "hunting_rifle_hold_first_person"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!q.equipped_item_any_tag('slot.weapon.mainhand', 'huntingrifle') && v.is_first_person"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.item.pistol": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "hold": "q.equipped_item_any_tag('slot.weapon.mainhand', 'pistol') && !v.is_first_person"
+                        }
+                    ]
+                },
+                "hold": {
+                    "animations": [
+                        "pistol_hold",
+                        "pistol_hold_setup"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!q.equipped_item_any_tag('slot.weapon.mainhand', 'pistol') && !v.is_first_person"
+                        },
+                        {
+                            "shot": "q.equipped_item_any_tag('slot.weapon.mainhand', 'pistol') && !v.is_first_person && q.item_remaining_use_duration > 0.0"
+                        }
+                    ]
+                },
+                "shot": {
+                    "animations": [
+                        "pistol_shot",
+                        "pistol_hold",
+                        "pistol_hold_setup"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!q.equipped_item_any_tag('slot.weapon.mainhand', 'pistol') && !v.is_first_person"
+                        },
+                        {
+                            "hold": "q.equipped_item_any_tag('slot.weapon.mainhand', 'pistol') && !v.is_first_person && !q.item_remaining_use_duration > 0.0"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.item.pistol_first_person": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "hold": "q.equipped_item_any_tag('slot.weapon.mainhand', 'pistol') && v.is_first_person"
+                        }
+                    ]
+                },
+                "hold": {
+                    "animations": [
+                        "pistol_hold_first_person"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!q.equipped_item_any_tag('slot.weapon.mainhand', 'pistol') && v.is_first_person"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+{
+  "default_toolSword_statistics": {
+    "durability": {
+      "Wood": 59,
+      "Stone": 131,
+      "Iron": 250,
+      "Golden": 32,
+      "Diamond": 1561,
+      "Netherite": 2031
+    },
+    "damage": {
+      "Wood": 4,
+      "Stone": 5,
+      "Iron": 6,
+      "Golden": 4,
+      "Diamond": 7,
+      "Netherite": 8
+    },
+    "enchantability": {
+      "Wood": 15,
+      "Stone": 5,
+      "Iron": 14,
+      "Golden": 22,
+      "Diamond": 10,
+      "Netherite": 15
+    },
+    "speeds": {
+      "Wood": 2,
+      "Stone": 4,
+      "Iron": 6,
+      "Golden": 12,
+      "Diamond": 8,
+      "Netherite": 9
+    }
+  }
+}
+
+
+
+{
+  "block": "minecraft:web",
+  "speed": 15
+},
+{
+  "block": "minecraft:bamboo",
+  "speed": 10
+}

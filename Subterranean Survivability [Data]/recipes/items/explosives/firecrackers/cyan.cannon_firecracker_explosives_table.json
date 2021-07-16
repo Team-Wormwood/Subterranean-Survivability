@@ -1,0 +1,24 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "minecraft:cyan_cannon_firecracker_explosives_table"
+        },
+        "priority": 0,
+        "tags": [
+            "explosives_table",
+            "crafting_table"
+        ],
+        "ingredients": [
+            {
+                "item": "yana:firecracker_cyan"
+            },
+            {
+                "item": "yana:cannon_empty"
+            }
+        ],
+        "result": {
+            "item": "yana:cannon"
+        }
+    }
+}

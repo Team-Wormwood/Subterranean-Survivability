@@ -1,0 +1,23 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "minecraft:lead_block_lead"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "#"
+        ],
+        "key": {
+            "#": {
+                "item": "yana:lead_block"
+            }
+        },
+        "result": {
+            "item": "yana:lead_ingot",
+            "count": 9
+        }
+    }
+}

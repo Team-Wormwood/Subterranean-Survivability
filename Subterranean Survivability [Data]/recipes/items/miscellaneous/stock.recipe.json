@@ -1,0 +1,21 @@
+{
+    "format_version": "1.12.0",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "minecraft:stock"
+        },
+        "priority": 0,
+        "tags": [
+            "crafting_table"
+        ],
+        "ingredients": [
+            {
+                "item": "minecraft:stick",
+                "count": 6
+            }
+        ],
+        "result": {
+            "item": "yana:stock"
+        }
+    }
+}

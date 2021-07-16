@@ -1,0 +1,95 @@
+{
+    "num_mip_levels": 4,
+    "padding": 8,
+    "resource_pack_name": "vanilla",
+    "texture_data": {
+        "aluminium_block": {
+            "textures": "textures/blocks/storage/aluminium_block"
+        },
+        "fire_0": {
+            "textures": "textures/blocks/fire_0"
+        },
+        "firebutblack": {
+            "textures": "textures/blocks/dark_fire_placeholder_0"
+        },
+        "aluminium_ore": {
+            "textures": "textures/blocks/ore/aluminium_ore"
+        },
+        "ash_block": {
+            "textures": "textures/blocks/ash_block"
+        },
+        "blast_vent": {
+            "textures": "textures/models/blocks/blast_vent"
+        },
+        "blaststone": {
+            "textures": "textures/blocks/stone/blaststone"
+        },
+        "blaststone_bricks": {
+            "textures": "textures/blocks/stone/blaststone_bricks"
+        },
+        "blaststone_cobbled": {
+            "textures": "textures/blocks/stone/blaststone_cobbled"
+        },
+        "blaststone_smooth": {
+            "textures": "textures/blocks/stone/blaststone_smooth"
+        },
+        "blaststone_top": {
+            "textures": "textures/blocks/stone/blaststone_top"
+        },
+        "copper_stone": {
+            "textures": "textures/blocks/ore/copper_stone"
+        },
+        "dragon_head": {
+            "textures": "textures/models/blocks/dragon_head"
+        },
+        "explosives_table": {
+            "textures": "textures/blocks/crafting/explosives_table"
+        },
+        "explosives_table_bottom": {
+            "textures": "textures/blocks/crafting/explosives_table_bottom"
+        },
+        "explosives_table_top": {
+            "textures": "textures/blocks/crafting/explosives_table_top"
+        },
+        "gunpowder_block": {
+            "textures": "textures/blocks/storage/gunpowder_block"
+        },
+        "lead_block": {
+            "textures": "textures/blocks/storage/lead_block"
+        },
+        "lead_ore": {
+            "textures": "textures/blocks/ore/lead_ore"
+        },
+        "limestone": {
+            "textures": "textures/blocks/stone/limestone"
+        },
+        "munitions_table": {
+            "textures": "textures/models/blocks/munitions_table"
+        },
+        "niter_ore": {
+            "textures": "textures/blocks/ore/niter_ore"
+        },
+        "oil_ore": {
+            "textures": "textures/blocks/ore/oil_ore"
+        },
+        "pyrite_ore": {
+            "textures": "textures/blocks/ore/pyrite_ore"
+        },
+        "rocky_dirt": {
+            "textures": "textures/blocks/rocky_dirt"
+        },
+        "sulfur_block": {
+            "textures": "textures/blocks/storage/sulfur_block"
+        },
+        "sulfur_ore_side": {
+            "textures": "textures/blocks/ore/sulfur_ore_side"
+        },
+        "sulfur_ore_top": {
+            "textures": "textures/blocks/ore/sulfur_ore_top"
+        },
+        "thermite_dust": {
+            "textures": "textures/models/blocks/thermite_dust"
+        }
+    },
+    "texture_name": "atlas.terrain"
+}

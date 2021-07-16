@@ -1,0 +1,83 @@
+{
+  "default_toolPickaxe_statistics": {
+    "durability": {
+      "Wood": 59,
+      "Stone": 131,
+      "Iron": 250,
+      "Golden": 32,
+      "Diamond": 1561,
+      "Netherite": 2031
+    },
+    "damage": {
+      "Wood": 2,
+      "Stone": 3,
+      "Iron": 4,
+      "Golden": 2,
+      "Diamond": 5,
+      "Netherite": 6
+    },
+    "enchantability": {
+      "Wood": 15,
+      "Stone": 5,
+      "Iron": 14,
+      "Golden": 22,
+      "Diamond": 10,
+      "Netherite": 15
+    },
+    "speeds": {
+      "Wood": 2,
+      "Stone": 4,
+      "Iron": 6,
+      "Golden": 12,
+      "Diamond": 8,
+      "Netherite": 9
+    }
+  }
+}
+
+
+
+{
+  "block": {
+    "tags": "q.any_tag('stone', 'metal', 'wood_pick_diggable')"
+  },
+  "speed": 2,
+  "on_dig": {
+    "event": "break"
+  }
+},
+{
+  "block": "minecraft:coal_ore",
+  "speed": 2,
+  "on_dig": {
+    "event": "break"
+  }
+},
+{
+  "block": "minecraft:furnace",
+  "speed": 2,
+  "on_dig": {
+    "event": "break"
+  }
+},
+{
+  "block": "minecraft:blast_furnace",
+  "speed": 2,
+  "on_dig": {
+    "event": "break"
+  }
+},
+{
+  "block": "minecraft:ice",
+  "speed": 2,
+  "on_dig": {
+    "event": "break"
+  }
+},
+{
+  "block": "minecraft:sandstone",
+  "speed": 2,
+  "on_dig": {
+    "event": "break"
+  }
+}

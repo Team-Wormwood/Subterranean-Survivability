@@ -1,0 +1,152 @@
+##Code all done by @yanagisenpaidev
+
+
+
+##Blocks
+##tile.yana:XXX.name=
+tile.yana:ash_block.name=Ash Block
+tile.yana:blaststone_cobbled.name=Cobbled Blaststone
+tile.yana:blaststone.name=Blaststone
+tile.yana:blaststone_smooth.name=Smooth Blaststone
+tile.yana:blaststone_stairs_smooth.name=Smooth Blaststone Stairs
+tile.yana:blaststone_slab_smooth.name=Smooth Blaststone Slab
+tile.yana:blaststone_slab.name=Blaststone Slab
+tile.yana:blaststone_stairs.name=Blaststone Stairs
+tile.yana:blaststone_bricks.name=Blaststone Bricks
+tile.yana:sulfur_ore.name=Sulfur Ore
+tile.yana:oil_ore.name=Oil Ore
+tile.yana:niter_ore.name=Niter Ore
+tile.yana:rocky_dirt.name=Rocky Dirt
+tile.yana:blast_vent.name=Blast Vents
+tile.yana:explosives_table.name=§6Explosives Table
+tile.yana:munitions_table.name=§6Munitions Table
+tile.yana:dragon_head.name=§6Dragon Head Statue
+tile.yana:gunpowder_block.name=Block of Gunpowder
+tile.yana:sulfur_block.name=Block of Sulfur
+tile.yana:pyrite_ore.name=Pyrite Ore
+tile.yana:aluminium_ore.name=Aluminium Ore
+tile.yana:aluminium_block.name=Aluminium Block
+tile.yana:lead_ore.name=Lead Ore
+tile.yana:lead_block.name=Lead Block
+tile.yana:copper_stone.name=Copper Stone
+
+
+
+
+##Pickaxe Items
+##item.yana:XXX=
+item.yana:pyrite_pickaxe=Pyrite Pickaxe
+item.yana:bismuth_pickaxe=Bismuth Pickaxe
+item.yana:chromium_pickaxe=Chromium Pickaxe
+item.yana:palladium_pickaxe=Palladium Pickaxe
+item.yana:titanium_pickaxe=Titanium Pickaxe
+
+
+
+##Sword Items
+##item.yana:XXX=
+item.yana:pyrite_sword=Pyrite Sword
+item.yana:bismuth_sword=Bismuth Sword
+item.yana:chromium_sword=Chromium Sword
+item.yana:palladium_sword=Palladium Sword
+item.yana:titanium_sword=Titanium Sword
+
+
+
+##Axe Items
+##item.yana:XXX=
+item.yana:pyrite_axe=Pyrite Axe
+item.yana:bismuth_axe=Bismuth Axe
+item.yana:chromium_axe=Chromium Axe
+item.yana:palladium_axe=Palladium Axe
+item.yana:titanium_axe=Titanium Axe
+
+
+
+##Shovel Items
+##item.yana:XXX=
+item.yana:pyrite_shovel=Pyrite Shovel
+item.yana:bismuth_shovel=Bismuth Shovel
+item.yana:chromium_shovel=Chromium Shovel
+item.yana:palladium_shovel=Palladium Shovel
+item.yana:titanium_shovel=Titanium Shovel
+
+
+
+##Hoe Items
+##item.yana:XXX=
+item.yana:pyrite_hoe=Pyrite Hoe
+item.yana:bismuth_hoe=Bismuth Hoe
+item.yana:chromium_hoe=Chromium Hoe
+item.yana:palladium_hoe=Palladium Hoe
+item.yana:titanium_hoe=Titanium Hoe
+
+
+
+##Ore Items
+##item.yana:XXX=
+item.yana:ash=Ash Dust
+item.yana:sulfur=Sulfur Dust
+item.yana:oil_ball=Ball of Oil
+item.yana:niter=Niter Dust
+item.yana:blackpowder=Blackpowder
+item.yana:hyphae_branch=Hyphae Branch
+item.yana:pyrite=Pyrite
+item.yana:aluminium_ingot=Aluminum Ingot
+item.yana:aluminium_nugget=Aluminum Nugget
+item.yana:aluminium=Raw Aluminium
+item.yana:lead_nugget=Lead Nugget
+item.yana:lead_ingot=Lead Ingot
+item.yana:copper_flake=Copper Flake
+
+
+
+
+##Block Items
+##item.yana:XXX=
+
+
+
+
+##Miscellaneous Items
+##item.yana:XXX=
+item.yana:dynamite=Stick of Dynamite
+item.yana:match=Match
+item.yana:thermite=Thermite Powder
+item.yana:cannon=Fireworks Cannon (1/1)
+item.yana:cannon_empty=Fireworks Cannon (0/1)
+item.yana:hunting_rifle=Hunting Rifle
+item.yana:revolver=Revolver
+item.yana:firecracker=Firecracker
+item.yana:firecracker_red=Firecracker (Red)
+item.yana:firecracker_orange=Firecracker (Orange)
+item.yana:firecracker_yellow=Firecracker (Yellow)
+item.yana:firecracker_lime=Firecracker (Lime)
+item.yana:firecracker_green=Firecracker (Green)
+item.yana:firecracker_cyan=Firecracker (Cyan)
+item.yana:firecracker_light_blue=Firecracker (Light Blue)
+item.yana:firecracker_blue=Firecracker (Blue)
+item.yana:firecracker_purple=Firecracker (Purple)
+item.yana:firecracker_magenta=Firecracker (Magenta)
+item.yana:firecracker_pink=Firecracker (Pink)
+item.yana:firecracker_brown=Firecracker (Brown)
+item.yana:firecracker_light_grey=Firecracker (Light Grey)
+item.yana:firecracker_grey=Firecracker (Grey)
+item.yana:firecracker_black=Firecracker (Black)
+item.yana:firecracker_white=Firecracker (White)
+item.yana:copper_bullet=Copper Bullet
+item.yana:lead_bullet=Lead Bullet
+
+
+##Entities
+##entity.yana:XXX.name=
+entity.yana:blast_miner.name=Blast Miner
+entity.yana:thermite_entity.name=A Thermite Blast
+item.spawn_egg.entity.yana:blast_miner.name=Spawn Blast Miner
+entity.yana:dynamite_entity.name=Dynamite
+entity.yana:firecracker_entity.name=Firecracker
+
+##Miscellaneous 
+
+##Dev
+item.yana:unending=ゆ

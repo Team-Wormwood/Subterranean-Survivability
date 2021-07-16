@@ -1,0 +1,68 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "yana:firecracker_effect_red",
+            "is_spawnable": false,
+            "is_summonable": true,
+            "is_experimental": false
+        },
+        "component_groups": {
+            "effectSpawn": {
+                "minecraft:timer": {
+                    "looping": false,
+                    "time": 0.1,
+                    "time_down_event": {
+                        "event": "effectRemove"
+                    }
+                }
+            },
+            "effectRemove": {
+                "minecraft:instant_despawn": {}
+            }
+        },
+        "components": {
+            "minecraft:damage_sensor": {
+				"triggers": {
+					"cause": "all",
+					"deals_damage": false
+				}
+			},
+            "minecraft:physics": {
+                "has_collision": true
+            }
+        },
+        "events": {
+            "minecraft:entity_spawned": {
+                "add": {
+                    "component_groups": [
+                        "effectSpawn"
+                    ]
+                }
+            },
+            "effectRemove": {
+                "sequence": [
+                    {
+                        "run_command": {
+                            "command": [
+                                "particle yana:firecracker_explode ~ ~1 ~",
+                                "particle yana:firecracker_explode ~ ~ ~",
+                                "particle yana:blast_vent_fire_particle ~ ~1 ~",
+                                "particle yana:firecracker_red ~ ~0.5 ~",
+                                "particle yana:firecracker_red ~ ~1 ~",
+                                "particle minecraft:explode ~ ~ ~"
+                            ]
+                        }
+                    },
+                    {
+                        "add": {
+                            "component_groups": [
+                                "effectRemove"
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

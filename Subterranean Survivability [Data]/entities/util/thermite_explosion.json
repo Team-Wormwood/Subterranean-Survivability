@@ -1,0 +1,59 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "yana:thermite_entity",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"spawned": {
+				"minecraft:behavior.knockback_roar": {
+					"attack_time": 0.99,
+					"knockback_range": 6,
+					"knockback_damage": 0,
+					"knockback_strength": 6,
+					"duration": 1,
+					"knockback_filters": {
+						"all_of": [
+							{
+								"subject": "other",
+								"test": "is_family",
+								"operator": "!=",
+								"value": "inanimate"
+							}
+						]
+					}
+				}
+			}
+		},
+		"components": {
+			"minecraft:damage_sensor": {
+				"triggers": {
+					"cause": "all",
+					"deals_damage": false
+				}
+			},
+			"minecraft:explode": {
+				"fuseLength": 1,
+				"fuseLit": true,
+				"power": 7,
+				"causesFire": true
+			},
+			"minecraft:despawn": {
+				"despawn_from_distance": {}
+			},
+			"minecraft:conditional_bandwidth_optimization": {}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"add": {
+					"component_groups": [
+						"spawned"
+					]
+				}
+			}
+		}
+	}
+}

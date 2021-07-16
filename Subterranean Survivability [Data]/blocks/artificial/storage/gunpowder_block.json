@@ -1,0 +1,21 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "yana:gunpowder_block"
+		},
+		"components": {
+			"tag:dirt": {},
+			"tag:sand": {},
+			"minecraft:map_color": "#c4fa00",
+			"minecraft:destroy_time": 2,
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "gunpowder_block",
+					"render_method": "opaque"
+				}
+			}
+		},
+		"events": {}
+	}
+}

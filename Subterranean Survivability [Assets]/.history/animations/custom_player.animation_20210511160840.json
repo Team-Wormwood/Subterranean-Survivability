@@ -1,0 +1,15 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.custom_player.rifle_hold": {
+			"override_previous_animation": true,
+			"loop": true,
+			"animation_length": 3.04,
+			"bones": {
+				"rightArm": {
+					"scale": 0.4
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,13 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:scatter_feature": {
+        "description": {
+            "identifier": "yana:blaststone_cave_basalt_dep_e"
+        },
+        "places_feature": "yana:blaststone_cave_basalt",
+        "iterations": "t.tier = 8; t.value = (q.noise(v.originx * t.noise_scale, v.originz * t.noise_scale) + 1) / 2; return t.value > t.tier / t.tier_count && t.value < (t.tier + 1) / t.tier_count;",
+        "x": 0,
+        "z": 0,
+        "y": 0
+    }
+}

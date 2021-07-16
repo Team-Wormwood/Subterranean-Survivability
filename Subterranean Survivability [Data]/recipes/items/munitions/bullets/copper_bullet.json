@@ -1,0 +1,26 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "minecraft:copper_bullet"
+        },
+        "priority": 0,
+        "tags": [
+            "crafting_table"
+        ],
+        "ingredients": [
+            {
+                "item": "minecraft:gunpowder",
+                "count": 1
+            },
+            {
+                "item": "yana:copper_flake",
+                "count": 3
+            }
+        ],
+        "result": {
+            "item": "yana:copper_bullet",
+            "count": 8
+        }
+    }
+}

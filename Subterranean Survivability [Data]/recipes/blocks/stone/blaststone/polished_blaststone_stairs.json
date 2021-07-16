@@ -1,0 +1,25 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "minecraft:polished_blaststone_stairs"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "#  ",
+      "## ",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "yana:blaststone"
+      }
+    },
+    "result": {
+      "item": "yana:blaststone_stairs_smooth",
+      "count": 4
+    }
+  }
+}

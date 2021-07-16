@@ -1,0 +1,130 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "yana:dragon_head",
+			"properties": {
+				"yana:rotation": [
+					0,
+					1,
+					2,
+					3
+				]
+			}
+		},
+		"components": {
+			"minecraft:block_light_emission": 0.0,
+			"minecraft:block_light_absorption": 0,
+			"minecraft:geometry": "geometry.red_dragon_head",
+			"minecraft:breakonpush": true,
+			"minecraft:unwalkable": true,
+			"minecraft:destroy_time": 2,
+			"minecraft:map_color": "#641502",
+			"minecraft:loot": "loot_tables/dragon_head.json",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "dragon_head",
+					"ambient_occlusion": false,
+					"face_dimming": false,
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:pick_collision": {
+				"origin": [
+					-4,
+					0,
+					-4
+				],
+				"size": [
+					8,
+					8,
+					8
+				]
+			},
+			"minecraft:entity_collision": {
+				"origin": [
+					-4,
+					0,
+					-4
+				],
+				"size": [
+					8,
+					8,
+					8
+				]
+			},
+			"minecraft:placement_filter": {
+				"conditions": [
+					{
+						"allowed_faces": [
+							"up",
+							"side"
+						]
+					}
+				]
+			},
+			"minecraft:on_player_placing": {
+				"event": "rotateSet"
+			},
+			"minecraft:on_interact": {
+				"event": "rotationUpdate",
+				"condition": "q.is_sneaking"
+			}
+		},
+		"permutations": [
+			{
+				"condition": "q.block_property('yana:rotation') == 0",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						180,
+						0
+					]
+				}
+			},
+			{
+				"condition": "q.block_property('yana:rotation') == 1",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						0,
+						0
+					]
+				}
+			},
+			{
+				"condition": "q.block_property('yana:rotation') == 2",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						-90,
+						0
+					]
+				}
+			},
+			{
+				"condition": "q.block_property('yana:rotation') == 3",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						90,
+						0
+					]
+				}
+			}
+		],
+		"events": {
+			"rotationUpdate": {
+				"swing": {},
+				"set_block_property": {
+					"yana:rotation": "q.cardinal_facing_2d - 2.0"
+				}
+			},
+			"rotateSet": {
+				"set_block_property": {
+					"yana:rotation": "q.cardinal_facing_2d - 2.0"
+				}
+			}
+		}
+	}
+}

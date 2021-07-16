@@ -1,0 +1,106 @@
+//やなぎ#2957
+{
+    "format_version": "1.16.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "yana:miner_rifle",
+            "category": "Equipment"
+        },
+        "components": {
+            "tag:rifle": {},
+            "minecraft:max_stack_size": 1,
+            "minecraft:use_duration": 2077,
+            "minecraft:damage": 3,
+            "minecraft:creative_category": {
+                "parent": "itemGroup.equipment.name"
+            },
+            "minecraft:weapon": {
+                "on_hurt_entity": {
+                    "event": "updateDurability"
+                }
+            },
+            "minecraft:food": {
+                "can_always_eat": true,
+                "nutrition": 0,
+                "on_consume": {}
+            },
+            "minecraft:durability": {
+                "max_durability": 355,
+                "damage_chance": {
+                    "max": 100,
+                    "min": 76
+                }
+            },
+            "minecraft:cooldown": {
+                "category": "minerRifle",
+                "duration": 2
+            },
+            "minecraft:icon": {
+                "texture": "miner_rifle"
+            },
+            "minecraft:on_use": {
+                "on_use": {
+                    "event": "prefire"
+                }
+            }
+        },
+        "events": {
+            "prefire": {
+                "sequence": [
+                    {
+                        "trigger": {
+                            "event": "fire"
+                        }
+                    }
+                ]
+            },
+            "updateDurability": {
+                "damage": {
+                    "target": "self",
+                    "type": "durability",
+                    "amount": 1
+                }
+            },
+            "fire": {
+                "sequence": [
+                    {
+                        "condition": "q.get_equipped_item_name(1) == 'copper_bullet'",
+                        "shoot": {
+                            "projectile": "yana:copper_bullet_entity",
+                            "launch_power": 3
+                        },
+                        "trigger": {
+                            "event": "updateDurability"
+                        },
+                        "run_command": {
+                            "command": [
+                                "playsound fire.hunting_rifle @a[r=50] ~ ~ ~ 15 1 1",
+                                "playsound fire.hunting_rifle @a[r=50] ~ ~ ~ 15 0.89 1",
+                                "clear @s yana:copper_bullet 0 1",
+                                "playanimation @s animation.custom_player.rifle_shot"
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "q.get_equipped_item_name(1) == 'lead_bullet'",
+                        "shoot": {
+                            "projectile": "yana:lead_bullet_entity",
+                            "launch_power": 3
+                        },
+                        "trigger": {
+                            "event": "updateDurability"
+                        },
+                        "run_command": {
+                            "command": [
+                                "playsound fire.hunting_rifle @a[r=50] ~ ~ ~ 15 1 1",
+                                "playsound fire.hunting_rifle @a[r=50] ~ ~ ~ 15 0.85 1",
+                                "clear @s yana:lead_bullet 0 1",
+                                "playanimation @s animation.custom_player.rifle_shot"
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

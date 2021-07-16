@@ -1,0 +1,25 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "minecraft:dynamite_explosives_table"
+        },
+        "priority": 0,
+        "tags": [
+            "explosives_table"
+        ],
+        "ingredients": [
+            {
+                "item": "yana:blackpowder"
+            },
+            {
+                "item": "minecraft:paper",
+                "count": 3
+            }
+        ],
+        "result": {
+            "item": "yana:dynamite",
+            "count": 8
+        }
+    }
+}

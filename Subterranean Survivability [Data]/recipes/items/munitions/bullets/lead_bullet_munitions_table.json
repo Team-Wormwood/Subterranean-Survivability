@@ -1,0 +1,26 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "minecraft:lead_bullet_munitions_table"
+        },
+        "priority": 0,
+        "tags": [
+            "munitions_table"
+        ],
+        "ingredients": [
+            {
+                "item": "minecraft:gunpowder",
+                "count": 1
+            },
+            {
+                "item": "yana:lead_nugget",
+                "count": 3
+            }
+        ],
+        "result": {
+            "item": "yana:lead_bullet",
+            "count": 16
+        }
+    }
+}

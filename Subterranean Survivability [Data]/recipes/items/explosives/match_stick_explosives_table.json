@@ -1,0 +1,24 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "minecraft:match_stick_explosives_table"
+        },
+        "priority": 0,
+        "tags": [
+            "explosives_table"
+        ],
+        "ingredients": [
+            {
+                "item": "yana:niter"
+            },
+            {
+                "item": "minecraft:stick"
+            }
+        ],
+        "result": {
+            "item": "yana:match",
+            "count": 6
+        }
+    }
+}

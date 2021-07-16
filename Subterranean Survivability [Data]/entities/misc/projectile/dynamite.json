@@ -1,0 +1,141 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "yana:dynamite_entity",
+            "is_spawnable": false,
+            "is_summonable": true,
+            "is_experimental": false,
+            "runtime_identifier": "snowball"
+        },
+        "component_groups": {
+            "animationTagRemoved": {
+                "minecraft:mark_variant": {
+                    "value": 2
+                },
+                "minecraft:spawn_entity": {
+                    "entities": {
+                        "single_use": true,
+                        "max_wait_time": 0,
+                        "min_wait_time": 0,
+                        "num_to_spawn": 1,
+                        "spawn_event": "minecraft:entity_spawned",
+                        "spawn_entity": "yana:knockback_effect"
+                    }
+                }
+            },
+            "fuseLit": {
+                "minecraft:mark_variant": {
+                    "value": 1
+                }
+            },
+            "fuseParticle": {
+                "minecraft:timer": {
+                    "looping": true,
+                    "time": 0.2,
+                    "time_down_event": {
+                        "event": "fuseParticle"
+                    }
+                }
+            },
+            "fuseParticle2": {
+                "minecraft:timer": {
+                    "looping": true,
+                    "time": 0.2,
+                    "time_down_event": {
+                        "event": "fuseParticle2"
+                    }
+                }
+            },
+            "exploding": {
+                "minecraft:explode": {
+                    "fuse_length": [
+                        2,
+                        2
+                    ],
+                    "fuse_lit": true,
+                    "destroy_affected_by_griefing": true,
+                    "power": 5,
+                    "causes_fire": false
+                }
+            }
+        },
+        "components": {
+            "minecraft:projectile": {
+                "on_hit": {
+                    "impact_damage": {
+                        "damage": 2,
+                        "knockback": false,
+                        "destroy_on_hit": false
+                    },
+                    "stick_in_ground": {},
+                    "definition_event": {
+                        "affect_projectile": true,
+                        "event_trigger": {
+                            "event": "animationTagRemove"
+                        }
+                    }
+                },
+                "reflect_on_hurt": true,
+                "should_bounce": true,
+                "gravity": 0.09,
+                "power": 1.5,
+                "catch_fire": false,
+                "shoot_target": true,
+                "is_dangerous": true,
+                "hit_sound": "hit.wood",
+                "knockback": true,
+                "destroy_on_hurt": false
+            },
+            "minecraft:physics": {
+                "has_collision": true
+            }
+        },
+        "events": {
+            "minecraft:entity_spawned": {
+                "add": {
+                    "component_groups": [
+                        "fuseLit",
+                        "exploding",
+                        "fuseParticle"
+                    ]
+                }
+            },
+            "animationTagRemove": {
+                "add": {
+                    "component_groups": [
+                        "animationTagRemoved"
+                    ]
+                }
+            },
+            "fuseParticle": {
+                "run_command": {
+                    "command": [
+                        "particle yana:dynamite_fuse_smoke ~ ~ ~",
+                        "particle yana:dynamite_fuse_flame ~ ~ ~"
+                    ]
+                }
+            },
+            "fuseParticle2": {
+                "run_command": {
+                    "command": [
+                        "particle yana:dynamite_fuse_smoke ~ ~ ~",
+                        "particle yana:dynamite_fuse_flame ~ ~ ~"
+                    ]
+                }
+            },
+            "explode": {
+                "add": {
+                    "component_groups": [
+                        "exploding"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "fuseLit"
+                    ]
+                }
+            }
+        }
+    }
+}

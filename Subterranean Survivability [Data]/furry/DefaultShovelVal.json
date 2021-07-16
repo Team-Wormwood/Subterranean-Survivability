@@ -1,0 +1,36 @@
+{
+  "default_toolPickaxe_statistics": {
+    "durability": {
+      "Wood": 59,
+      "Stone": 131,
+      "Iron": 250,
+      "Golden": 32,
+      "Diamond": 1561,
+      "Netherite": 2031
+    },
+    "damage": {
+      "Wood": 1,
+      "Stone": 2,
+      "Iron": 3,
+      "Golden": 1,
+      "Diamond": 4,
+      "Netherite": 5
+    },
+    "enchantability": {
+      "Wood": 15,
+      "Stone": 5,
+      "Iron": 14,
+      "Golden": 22,
+      "Diamond": 10,
+      "Netherite": 15
+    },
+    "speeds": {
+      "Wood": 2,
+      "Stone": 4,
+      "Iron": 6,
+      "Golden": 12,
+      "Diamond": 8,
+      "Netherite": 9
+    }
+  }
+}

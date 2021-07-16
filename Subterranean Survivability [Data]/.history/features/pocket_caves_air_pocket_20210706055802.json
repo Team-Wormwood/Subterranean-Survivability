@@ -1,0 +1,11 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:structure_template_feature": {
+		"description": {
+			"identifier": "yana:pocket_caves_air_pocket"
+		},
+		"structure_name": "mystructure:pocket_cave_0",
+		"facing_direction": "random",
+		"constraints": {}
+	}
+}

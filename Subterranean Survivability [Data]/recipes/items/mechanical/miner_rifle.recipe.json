@@ -1,0 +1,29 @@
+{
+    "format_version": "1.12.0",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "minecraft:miner_rifle"
+        },
+        "priority": 0,
+        "tags": [
+            "mechanical_crafting_table"
+        ],
+        "ingredients": [
+            {
+                "item": "yana:stock"
+            },
+            {
+                "item": "yana:copper_barrel"
+            },
+            {
+                "item": "yana:iron_gear"
+            },
+            {
+                "item": "minecraft:spyglass"
+            }
+        ],
+        "result": {
+            "item": "yana:miner_rifle"
+        }
+    }
+}

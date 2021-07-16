@@ -1,0 +1,17 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:ore_feature": {
+		"description": {
+			"identifier": "yana:aluminium_ore_feature"
+		},
+		"count": 9,
+		"replace_rules": [
+			{
+				"places_block": "yana:aluminium_ore",
+				"may_replace": [
+					"minecraft:stone"
+				]
+			}
+		]
+	}
+}

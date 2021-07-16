@@ -1,0 +1,37 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.match_thrown": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "thrown": "query.mark_variant == 1"
+                        }
+                    ]
+                },
+                "thrown": {
+                    "animations": [
+                        "thrown"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.mark_variant == 2"
+                        }
+                    ],
+                    "particle_effects": [
+                        {
+                            "effect": "smoke_particle",
+                            "locator": "fuse"
+                        },
+                        {
+                            "effect": "flame_particle",
+                            "locator": "fuse"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

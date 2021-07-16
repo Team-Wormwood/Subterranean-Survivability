@@ -1,0 +1,1 @@
+##replaceitem entity @e slot.weapon.mainhand 0 yana:item_blaststone 

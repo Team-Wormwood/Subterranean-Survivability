@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "minecraft:pyrite_shovel"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"#",
+			"S",
+			"S"
+		],
+		"key": {
+			"#": {
+				"item": "yana:pyrite"
+			},
+			"S": {
+				"item": "minecraft:stick"
+			}
+		},
+		"result": {
+			"item": "yana:pyrite_shovel"
+		}
+	}
+}

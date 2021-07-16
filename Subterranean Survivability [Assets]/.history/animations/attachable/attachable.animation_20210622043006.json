@@ -1,0 +1,17 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.attachable.miner_rifle.setup": {
+			"loop": true,
+			"bones": {
+				"rightArm": {
+					"rotation": [
+						"variable.shake_power - query.target_x_rotation",
+						"-query.target_y_rotation",
+						0.0
+					]
+				}
+			}
+		}
+	}
+}

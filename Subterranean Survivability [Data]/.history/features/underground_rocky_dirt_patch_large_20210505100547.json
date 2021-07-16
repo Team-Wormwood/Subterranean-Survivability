@@ -1,0 +1,57 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:ore_feature": {
+		"description": {
+			"identifier": "yana:underground_rocky_dirt_patch_large"
+		},
+		"count": 15,
+		"places_block": "yana:rocky_dirt",
+		"may_replace": [
+			{
+				"name": "minecraft:gravel"
+			},
+			{
+				"name": "minecraft:stone",
+				"states": {
+					"stone_type": "andesite"
+				}
+			},
+			{
+				"name": "minecraft:stone",
+				"states": {
+					"stone_type": "andesite_smooth"
+				}
+			},
+			{
+				"name": "minecraft:stone",
+				"states": {
+					"stone_type": "diorite"
+				}
+			},
+			{
+				"name": "minecraft:stone",
+				"states": {
+					"stone_type": "diorite_smooth"
+				}
+			},
+			{
+				"name": "minecraft:stone",
+				"states": {
+					"stone_type": "granite"
+				}
+			},
+			{
+				"name": "minecraft:stone",
+				"states": {
+					"stone_type": "granite_smooth"
+				}
+			},
+			{
+				"name": "minecraft:stone",
+				"states": {
+					"stone_type": "stone"
+				}
+			}
+		]
+	}
+}

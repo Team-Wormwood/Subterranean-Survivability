@@ -1,0 +1,29 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "minecraft:thermite_explosives_table"
+        },
+        "priority": 0,
+        "tags": [
+            "explosives_table"
+        ],
+        "ingredients": [
+            {
+                "item": "yana:aluminium_nugget",
+                "count": 4
+            },
+            {
+                "item": "minecraft:gunpowder",
+                "count": 4
+            },
+            {
+                "item": "minecraft:iron_ore"
+            }
+        ],
+        "result": {
+            "item": "yana:thermite",
+            "count": 3
+        }
+    }
+}

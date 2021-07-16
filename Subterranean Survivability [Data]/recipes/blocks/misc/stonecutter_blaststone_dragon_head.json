@@ -1,0 +1,20 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "minecraft:stonecutter_blaststone_dragon_head"
+		},
+		"tags": [
+			"stonecutter"
+		],
+		"priority": 0,
+		"ingredients": [
+			{
+				"item": "yana:blaststone_smooth"
+			}
+		],
+		"result": {
+			"item": "yana:dragon_head"
+		}
+	}
+}

@@ -1,0 +1,20 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.custom_player.rifle_hold": {
+			"override_previous_animation": true,
+			"loop": true,
+			"animation_length": 3.04,
+			"bones": {
+				"rightItem": {
+					"scale": 0.6,
+					"rotation": [
+						90,
+						0,
+						0
+					]
+				}
+			}
+		}
+	}
+}
