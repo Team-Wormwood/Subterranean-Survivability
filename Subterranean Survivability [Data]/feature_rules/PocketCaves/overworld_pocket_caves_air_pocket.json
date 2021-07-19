@@ -21,7 +21,7 @@
         },
         "distribution": {
             "iterations": 2,
-            "scatter_chance": "math.random(10, 75)",
+            "scatter_chance": "math.random(25, 75)",
             "coordinate_eval_order": "zyx",
             "x": {
                 "distribution": "uniform",
