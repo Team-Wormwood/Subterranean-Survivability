@@ -15,11 +15,10 @@
             "minecraft:icon": {
                 "texture": "dynamite"
             },
-            //Unfun
-            // "minecraft:cooldown": {
-            //     "category": "ender_pearl",
-            //     "duration": 1
-            // },
+            "minecraft:projectile": {
+                "projectile_entity": "yana:dynamite_entity",
+                "minimum_critical_power": 1
+            },
             "minecraft:on_use": {
                 "on_use": {
                     "event": "throw"

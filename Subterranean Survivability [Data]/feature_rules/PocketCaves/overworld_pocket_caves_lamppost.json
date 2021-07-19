@@ -1,0 +1,49 @@
+{
+    "format_version": "1.17.0",
+    "minecraft:feature_rules": {
+        "description": {
+            "identifier": "overworld_pocket_caves_lamppost",
+            "places_feature": "yana:cave_lamppost"
+        },
+        "conditions": {
+            "placement_pass": "surface_pass",
+            "minecraft:biome_filter": [
+                {
+                    "any_of": [
+                        {
+                            "test": "has_biome_tag",
+                            "operator": "==",
+                            "value": "plains"
+                        }
+                    ]
+                }
+            ]
+        },
+        "distribution": {
+            "iterations": 1,
+            "scatter_chance": "math.random(8, 16)",
+            "coordinate_eval_order": "zyx",
+            "x": {
+                "distribution": "uniform",
+                "extent": [
+                    0,
+                    16
+                ]
+            },
+            "y": {
+                "distribution": "uniform",
+                "extent": [
+                    21,
+                    23
+                ]
+            },
+            "z": {
+                "distribution": "uniform",
+                "extent": [
+                    0,
+                    16
+                ]
+            }
+        }
+    }
+}

@@ -60,7 +60,6 @@
                     "deals_damage": false
                 }
             },
-            
             "minecraft:despawn": {
                 "despawn_from_distance": {}
             },
