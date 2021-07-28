@@ -1,5 +1,5 @@
 {
-	"format_version": "1.16.100",
+	"format_version": "1.17.0",
 	"minecraft:block": {
 		"description": {
 			"identifier": "yana:dragon_head",

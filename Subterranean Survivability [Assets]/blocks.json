@@ -8,6 +8,10 @@
         "sound": "stone",
         "textures": "aluminium_ore"
     },
+    "yana:aluminium_block": {
+        "sound": "metal",
+        "textures": "aluminium_block"
+    },
     "yana:ash_block": {
         "sound": "sand",
         "textures": "ash_block"
