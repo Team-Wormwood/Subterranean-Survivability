@@ -3,7 +3,7 @@
 	"minecraft:feature_rules": {
 		"description": {
 			"identifier": "overworld_blaststone_caves_obsidian_patch",
-			"places_feature": "yana:underground_obsidian_patch"
+			"places_feature": "yanasakana:underground_obsidian_patch"
 		},
 		"conditions": {
 			"placement_pass": "after_underground_pass",

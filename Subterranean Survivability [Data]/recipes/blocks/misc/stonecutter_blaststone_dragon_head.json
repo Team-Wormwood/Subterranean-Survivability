@@ -10,11 +10,11 @@
 		"priority": 0,
 		"ingredients": [
 			{
-				"item": "yana:blaststone_smooth"
+				"item": "yanasakana:blaststone_smooth"
 			}
 		],
 		"result": {
-			"item": "yana:dragon_head"
+			"item": "yanasakana:dragon_head"
 		}
 	}
 }

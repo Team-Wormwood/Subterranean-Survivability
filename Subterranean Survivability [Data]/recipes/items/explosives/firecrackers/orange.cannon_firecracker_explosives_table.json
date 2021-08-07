@@ -11,14 +11,14 @@
         ],
         "ingredients": [
             {
-                "item": "yana:firecracker_orange"
+                "item": "yanasakana:firecracker_orange"
             },
             {
-                "item": "yana:cannon_empty"
+                "item": "yanasakana:cannon_empty"
             }
         ],
         "result": {
-            "item": "yana:cannon"
+            "item": "yanasakana:cannon"
         }
     }
 }

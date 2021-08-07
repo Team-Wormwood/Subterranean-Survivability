@@ -3,7 +3,7 @@
 	"minecraft:feature_rules": {
 		"description": {
 			"identifier": "overworld_blaststone_caves_oil_ore_feature",
-			"places_feature": "yana:oil_ore_feature"
+			"places_feature": "yanasakana:oil_ore_feature"
 		},
 		"conditions": {
 			"placement_pass": "after_underground_pass",

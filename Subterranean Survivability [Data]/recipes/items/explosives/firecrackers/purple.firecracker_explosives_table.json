@@ -10,14 +10,14 @@
         ],
         "ingredients": [
             {
-                "item": "yana:firecracker"
+                "item": "yanasakana:firecracker"
             },
             {
                 "item": "minecraft:purple_dye"
             }
         ],
         "result": {
-            "item": "yana:firecracker"
+            "item": "yanasakana:firecracker"
         }
     }
 }

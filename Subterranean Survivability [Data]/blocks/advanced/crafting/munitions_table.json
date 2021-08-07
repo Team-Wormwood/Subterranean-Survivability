@@ -2,7 +2,7 @@
     "format_version": "1.16.100",
     "minecraft:block": {
         "description": {
-            "identifier": "yana:munitions_table"
+            "identifier": "yanasakana:munitions_table"
         },
         "components": {
             "minecraft:geometry": "geometry.munitions_table",

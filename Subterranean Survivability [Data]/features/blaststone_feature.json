@@ -2,12 +2,12 @@
 	"format_version": "1.13.0",
 	"minecraft:ore_feature": {
 		"description": {
-			"identifier": "yana:blaststone_feature"
+			"identifier": "yanasakana:blaststone_feature"
 		},
 		"count": 35,
 		"replace_rules": [
 			{
-				"places_block": "yana:blaststone",
+				"places_block": "yanasakana:blaststone",
 				"may_replace": [
 					{
 						"name": "minecraft:gravel"

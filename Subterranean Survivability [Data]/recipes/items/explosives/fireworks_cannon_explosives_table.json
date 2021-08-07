@@ -17,11 +17,11 @@
                 "count": 2
             },
             {
-                "item": "yana:dragon_head"
+                "item": "yanasakana:dragon_head"
             }
         ],
         "result": {
-            "item": "yana:cannon_empty"
+            "item": "yanasakana:cannon_empty"
         }
     }
 }

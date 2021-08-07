@@ -2,9 +2,9 @@
 	"format_version": "1.16.100",
 	"minecraft:block": {
 		"description": {
-			"identifier": "yana:blast_vent",
+			"identifier": "yanasakana:blast_vent",
 			"properties": {
-				"yana:rotation": [
+				"yanasakana:rotation": [
 					1,
 					2,
 					3,
@@ -48,7 +48,7 @@
 		},
 		"permutations": [
 			{
-				"condition": "q.block_property('yana:rotation') == 1 ",
+				"condition": "q.block_property('yanasakana:rotation') == 1 ",
 				"components": {
 					"minecraft:rotation": [
 						0,
@@ -58,7 +58,7 @@
 				}
 			},
 			{
-				"condition": "q.block_property('yana:rotation') == 2 ",
+				"condition": "q.block_property('yanasakana:rotation') == 2 ",
 				"components": {
 					"minecraft:rotation": [
 						0,
@@ -68,7 +68,7 @@
 				}
 			},
 			{
-				"condition": "q.block_property('yana:rotation') == 3 ",
+				"condition": "q.block_property('yanasakana:rotation') == 3 ",
 				"components": {
 					"minecraft:rotation": [
 						0,
@@ -78,7 +78,7 @@
 				}
 			},
 			{
-				"condition": "q.block_property('yana:rotation') == 34 ",
+				"condition": "q.block_property('yanasakana:rotation') == 34 ",
 				"components": {
 					"minecraft:rotation": [
 						0,
@@ -94,25 +94,25 @@
 					{
 						"weight": 1,
 						"set_block_property": {
-							"yana:rotation": 1
+							"yanasakana:rotation": 1
 						}
 					},
 					{
 						"weight": 1,
 						"set_block_property": {
-							"yana:rotation": 2
+							"yanasakana:rotation": 2
 						}
 					},
 					{
 						"weight": 1,
 						"set_block_property": {
-							"yana:rotation": 3
+							"yanasakana:rotation": 3
 						}
 					},
 					{
 						"weight": 1,
 						"set_block_property": {
-							"yana:rotation": 4
+							"yanasakana:rotation": 4
 						}
 					}
 				]
@@ -134,7 +134,7 @@
 				"run_command": {
 					"command": [
 						"function blastventEvent",
-						"summon yana:blast_vent_explosion ~ ~1 ~"
+						"summon yanasakana:blast_vent_explosion ~ ~1 ~"
 					]
 				}
 			}

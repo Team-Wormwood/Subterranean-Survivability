@@ -2,7 +2,7 @@
 	"format_version": "1.16.100",
 	"minecraft:block": {
 		"description": {
-			"identifier": "yana:thermite_dust"
+			"identifier": "yanasakana:thermite_dust"
 		},
 		"components": {
 			"minecraft:destroy_time": 0,
@@ -45,13 +45,13 @@
 						"condition": "q.get_equipped_item_name(0) == 'flint_and_steel'",
 						"run_command": {
 							"command": [
-								"summon yana:thermite_entity ~ ~-2 ~",
-								"summon yana:thermite_entity ~ ~-1 ~",
-								"summon yana:thermite_entity ~ ~-4 ~",
+								"summon yanasakana:thermite_entity ~ ~-2 ~",
+								"summon yanasakana:thermite_entity ~ ~-1 ~",
+								"summon yanasakana:thermite_entity ~ ~-4 ~",
 								"playsound fire.ignite @a[r=10] ~ ~ ~ 10 0.9 1",
 								"playsound random.fuse @a[r=10] ~ ~ ~ 10 0.6 1",
 								"playsound random.fuse @a[r=10] ~ ~ ~ 10 2 1",
-								"particle yana:thermite_fuse ~ ~ ~",
+								"particle yanasakana:thermite_fuse ~ ~ ~",
 								"particle minecraft:campfire_smoke_particle ~ ~ ~",
 								"setblock ~ ~ ~ air"
 							]
@@ -66,12 +66,12 @@
 						"condition": "q.get_equipped_item_name(0) == 'match' || q.get_equipped_item_name(0) == 'fire_charge'",
 						"run_command": {
 							"command": [
-								"summon yana:thermite_entity ~ ~-3 ~",
-								"summon yana:thermite_entity ~ ~-1 ~",
+								"summon yanasakana:thermite_entity ~ ~-3 ~",
+								"summon yanasakana:thermite_entity ~ ~-1 ~",
 								"playsound fire.ignite @a[r=10] ~ ~ ~ 10 0.9 1",
 								"playsound random.fuse @a[r=10] ~ ~ ~ 10 0.6 1",
 								"playsound random.fuse @a[r=10] ~ ~ ~ 10 2 1",
-								"particle yana:thermite_fuse ~ ~ ~",
+								"particle yanasakana:thermite_fuse ~ ~ ~",
 								"particle minecraft:campfire_smoke_particle ~ ~ ~",
 								"setblock ~ ~ ~ air"
 							]

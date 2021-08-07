@@ -14,11 +14,11 @@
         ],
         "key": {
             "#": {
-                "item": "yana:sulfur"
+                "item": "yanasakana:sulfur"
             }
         },
         "result": {
-            "item": "yana:sulfur_block"
+            "item": "yanasakana:sulfur_block"
         }
     }
 }

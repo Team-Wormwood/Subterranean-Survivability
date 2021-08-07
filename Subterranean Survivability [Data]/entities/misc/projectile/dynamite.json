@@ -2,7 +2,7 @@
     "format_version": "1.16.0",
     "minecraft:entity": {
         "description": {
-            "identifier": "yana:dynamite_entity",
+            "identifier": "yanasakana:dynamite_entity",
             "is_spawnable": false,
             "is_summonable": true,
             "is_experimental": false,
@@ -20,7 +20,7 @@
                         "min_wait_time": 0,
                         "num_to_spawn": 1,
                         "spawn_event": "minecraft:entity_spawned",
-                        "spawn_entity": "yana:knockback_effect"
+                        "spawn_entity": "yanasakana:knockback_effect"
                     }
                 }
             },
@@ -111,16 +111,16 @@
             "fuseParticle": {
                 "run_command": {
                     "command": [
-                        "particle yana:dynamite_fuse_smoke ~ ~ ~",
-                        "particle yana:dynamite_fuse_flame ~ ~ ~"
+                        "particle yanasakana:dynamite_fuse_smoke ~ ~ ~",
+                        "particle yanasakana:dynamite_fuse_flame ~ ~ ~"
                     ]
                 }
             },
             "fuseParticle2": {
                 "run_command": {
                     "command": [
-                        "particle yana:dynamite_fuse_smoke ~ ~ ~",
-                        "particle yana:dynamite_fuse_flame ~ ~ ~"
+                        "particle yanasakana:dynamite_fuse_smoke ~ ~ ~",
+                        "particle yanasakana:dynamite_fuse_flame ~ ~ ~"
                     ]
                 }
             },

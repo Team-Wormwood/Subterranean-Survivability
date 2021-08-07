@@ -2,15 +2,74 @@
     "format_version": "1.16.0",
     "minecraft:entity": {
         "description": {
-            "identifier": "yana:blast_miner",
+            "identifier": "yanasakana:blast_miner",
             "is_spawnable": true,
             "is_summonable": true,
             "is_experimental": false
         },
-        "components": {
-            "minecraft:nameable": {
-                "always_show": true
+        "component_groups": {
+            "yanasakana:blast_miner_meleeInitialise": {
+                "minecraft:attack": {
+                    "damage": 5
+                },
+                "minecraft:behavior.melee_attack": {
+                    "track_target": true,
+                    "priority": 1,
+                    "reach_multiplier": 2
+                },
+                "minecraft:movement": {
+                    "value": 0.23
+                },
+                "minecraft:equipment": {
+                    "table": "loot_tables/entity/equipment/miner_equipment.json"
+                }
             },
+            "yanasakana:blast_miner_rangedInitialise": {
+                "minecraft:on_target_acquired": {
+                    "event": "rangedEntry"
+                }
+            },
+            "yanasakana:blast_miner_rangedEntry": {
+                "minecraft:timer": {
+                    "looping": false,
+                    "time": 1.5,
+                    "time_down_event": {
+                        "event": "throw_dynamite"
+                    }
+                },
+                "minecraft:movement": {
+                    "value": 0.2
+                },
+                "minecraft:mark_variant": {
+                    "value": 1
+                }
+            },
+            "yanasakana:blast_miner_rangedExit": {
+                "minecraft:spawn_entity": {
+                    "entities": {
+                        "spawn_entity": "yanasakana:dynamite_entity",
+                        "spawn_event": "minecraft:entity_spawned",
+                        "max_wait_time": 0,
+                        "min_wait_time": 0,
+                        "num_to_spawn": 1,
+                        "single_use": true
+                    }
+                },
+                "minecraft:timer": {
+                    "time": 1,
+                    "looping": false,
+                    "time_down_event": {
+                        "event": "rangedFinal"
+                    }
+                },
+                "minecraft:mark_variant": {
+                    "value": 2
+                }
+            }
+        },
+        "components": {
+            "minecraft:conditional_bandwidth_optimization": {},
+            "minecraft:can_climb": {},
             "minecraft:physics": {},
             "minecraft:pushable": {},
             "minecraft:balloonable": {},
@@ -20,6 +79,9 @@
                 "can_pass_doors": true,
                 "can_walk": true,
                 "can_break_doors": true
+            },
+            "minecraft:nameable": {
+                "always_show": true
             },
             "minecraft:jump.static": {},
             "minecraft:behavior.mount_pathing": {
@@ -45,8 +107,6 @@
                     "lock_rider_rotation": 0
                 }
             },
-            "minecraft:can_climb": {},
-            "minecraft:conditional_bandwidth_optimization": {},
             "minecraft:health": {
                 "value": 20,
                 "max": 20
@@ -195,66 +255,6 @@
                 ]
             }
         },
-        "component_groups": {
-            "meleeInitialise": {
-                "minecraft:attack": {
-                    "damage": 5
-                },
-                "minecraft:behavior.melee_attack": {
-                    "track_target": true,
-                    "priority": 1,
-                    "reach_multiplier": 2
-                },
-                "minecraft:movement": {
-                    "value": 0.23
-                },
-                "minecraft:equipment": {
-                    "table": "loot_tables/entity/equipment/miner_equipment.json"
-                }
-            },
-            "rangedInitialise": {
-                "minecraft:on_target_acquired": {
-                    "event": "rangedEntry"
-                }
-            },
-            "rangedEntry": {
-                "minecraft:timer": {
-                    "looping": false,
-                    "time": 1.5,
-                    "time_down_event": {
-                        "event": "throw_dynamite"
-                    }
-                },
-                "minecraft:movement": {
-                    "value": 0.2
-                },
-                "minecraft:mark_variant": {
-                    "value": 1
-                }
-            },
-            "rangedExit": {
-                "minecraft:spawn_entity": {
-                    "entities": {
-                        "spawn_entity": "yana:dynamite_entity",
-                        "spawn_event": "minecraft:entity_spawned",
-                        "max_wait_time": 0,
-                        "min_wait_time": 0,
-                        "num_to_spawn": 1,
-                        "single_use": true
-                    }
-                },
-                "minecraft:timer": {
-                    "time": 1,
-                    "looping": false,
-                    "time_down_event": {
-                        "event": "rangedFinal"
-                    }
-                },
-                "minecraft:mark_variant": {
-                    "value": 2
-                }
-            }
-        },
         "events": {
             "minecraft:entity_spawned": {
                 "randomize": [
@@ -262,7 +262,7 @@
                         "weight": 5,
                         "add": {
                             "component_groups": [
-                                "rangedInitialise"
+                                "yanasakana:blast_miner_rangedInitialise"
                             ]
                         }
                     },
@@ -270,7 +270,7 @@
                         "weight": 5,
                         "add": {
                             "component_groups": [
-                                "meleeInitialise"
+                                "yanasakana:blast_miner_meleeInitialise"
                             ]
                         }
                     }
@@ -279,36 +279,36 @@
             "rangedEntry": {
                 "add": {
                     "component_groups": [
-                        "rangedEntry"
+                        "yanasakana:blast_miner_rangedEntry"
                     ]
                 },
                 "remove": {
                     "component_groups": [
-                        "rangedInitialise"
+                        "yanasakana:blast_miner_rangedInitialise"
                     ]
                 }
             },
             "throw_dynamite": {
                 "add": {
                     "component_groups": [
-                        "rangedExit"
+                        "yanasakana:blast_miner_rangedExit"
                     ]
                 },
                 "remove": {
                     "component_groups": [
-                        "rangedEntry"
+                        "yanasakana:blast_miner_rangedEntry"
                     ]
                 }
             },
             "rangedFinal": {
                 "add": {
                     "component_groups": [
-                        "meleeInitialise"
+                        "yanasakana:blast_miner_meleeInitialise"
                     ]
                 },
                 "remove": {
                     "component_groups": [
-                        "rangedExit"
+                        "yanasakana:blast_miner_rangedExit"
                     ]
                 }
             }

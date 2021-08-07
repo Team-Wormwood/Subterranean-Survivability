@@ -2,7 +2,7 @@
     "format_version": "1.16.0",
     "minecraft:entity": {
         "description": {
-            "identifier": "yana:firecracker_effect_white",
+            "identifier": "yanasakana:firecracker_effect_white",
             "is_spawnable": false,
             "is_summonable": true,
             "is_experimental": false
@@ -45,11 +45,11 @@
                     {
                         "run_command": {
                             "command": [
-                                "particle yana:firecracker_explode ~ ~1 ~",
-                                "particle yana:firecracker_explode ~ ~ ~",
-                                "particle yana:blast_vent_fire_particle ~ ~1 ~",
-                                "particle yana:firecracker_white ~ ~0.5 ~",
-                                "particle yana:firecracker_white ~ ~1 ~",
+                                "particle yanasakana:firecracker_explode ~ ~1 ~",
+                                "particle yanasakana:firecracker_explode ~ ~ ~",
+                                "particle yanasakana:blast_vent_fire_particle ~ ~1 ~",
+                                "particle yanasakana:firecracker_white ~ ~0.5 ~",
+                                "particle yanasakana:firecracker_white ~ ~1 ~",
                                 "particle minecraft:explode ~ ~ ~"
                             ]
                         }

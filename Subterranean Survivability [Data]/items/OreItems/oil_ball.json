@@ -2,7 +2,7 @@
    "format_version": "1.16.100",
    "minecraft:item": {
       "description": {
-         "identifier": "yana:oil_ball",
+         "identifier": "yanasakana:oil_ball",
          "category": "items"
       },
       "components": {

@@ -3,7 +3,7 @@
 	"minecraft:feature_rules": {
 		"description": {
 			"identifier": "overworld_underground_lead_ore_feature",
-			"places_feature": "yana:lead_ore_feature"
+			"places_feature": "yanasakana:lead_ore_feature"
 		},
 		"conditions": {
 			"placement_pass": "underground_pass",

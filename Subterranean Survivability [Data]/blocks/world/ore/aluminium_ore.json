@@ -2,7 +2,7 @@
 	"format_version": "1.16.100",
 	"minecraft:block": {
 		"description": {
-			"identifier": "yana:aluminium_ore"
+			"identifier": "yanasakana:aluminium_ore"
 		},
 		"components": {
 			"tag:stone": {},

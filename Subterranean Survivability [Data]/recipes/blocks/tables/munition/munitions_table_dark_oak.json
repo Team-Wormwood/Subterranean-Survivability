@@ -18,11 +18,11 @@
                 "data": 5
             },
             "S": {
-                "item": "yana:aluminium_ingot"
+                "item": "yanasakana:aluminium_ingot"
             }
         },
         "result": {
-            "item": "yana:munitions_table"
+            "item": "yanasakana:munitions_table"
         }
     }
 }

@@ -2,7 +2,7 @@
 	"format_version": "1.17.0",
 	"minecraft:structure_template_feature": {
 		"description": {
-			"identifier": "yana:cave_lamppost"
+			"identifier": "yanasakana:cave_lamppost"
 		},
 		"structure_name": "mystructure:lost_lamppost",
 		"constraints": {}

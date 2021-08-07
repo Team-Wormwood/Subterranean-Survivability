@@ -2,7 +2,7 @@
 	"format_version": "1.17.0",
 	"minecraft:structure_template_feature": {
 		"description": {
-			"identifier": "yana:cave_tunnel"
+			"identifier": "yanasakana:cave_tunnel"
 		},
 		"structure_name": "mystructure:very_small_air_pocket",
 		"constraints": {}

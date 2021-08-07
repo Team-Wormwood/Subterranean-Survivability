@@ -3,7 +3,7 @@
     "minecraft:feature_rules": {
         "description": {
             "identifier": "overworld_pocket_caves_air_pocket",
-            "places_feature": "yana:pocket_caves_air_pocket"
+            "places_feature": "yanasakana:pocket_caves_air_pocket"
         },
         "conditions": {
             "placement_pass": "before_underground_pass",

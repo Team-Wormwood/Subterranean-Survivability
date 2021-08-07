@@ -2,9 +2,9 @@
 	"format_version": "1.13.0",
 	"minecraft:single_block_feature": {
 		"description": {
-			"identifier": "yana:niter_ore_feature"
+			"identifier": "yanasakana:niter_ore_feature"
 		},
-		"places_block": "yana:niter_ore",
+		"places_block": "yanasakana:niter_ore",
 		"enforce_placement_rules": true,
 		"enforce_survivability_rules": true
 	}

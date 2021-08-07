@@ -10,17 +10,17 @@
         ],
         "ingredients": [
             {
-                "item": "yana:niter"
+                "item": "yanasakana:niter"
             },
             {
                 "item": "minecraft:charcoal"
             },
             {
-                "item": "yana:sulfur"
+                "item": "yanasakana:sulfur"
             }
         ],
         "result": {
-            "item": "yana:blackpowder",
+            "item": "yanasakana:blackpowder",
             "count": 8
         }
     }

@@ -3,7 +3,7 @@
 	"minecraft:feature_rules": {
 		"description": {
 			"identifier": "minecraft:overworld_blaststone_caves_extra_rocky_dirt",
-			"places_feature": "yana:underground_rocky_dirt_patch_large"
+			"places_feature": "yanasakana:underground_rocky_dirt_patch_large"
 		},
 		"conditions": {
 			"placement_pass": "underground_pass",

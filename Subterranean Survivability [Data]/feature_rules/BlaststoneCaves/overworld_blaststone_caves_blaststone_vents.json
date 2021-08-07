@@ -3,7 +3,7 @@
 	"minecraft:feature_rules": {
 		"description": {
 			"identifier": "minecraft:overworld_blaststone_caves_blaststone_vents",
-			"places_feature": "yana:blaststone_vents_feature"
+			"places_feature": "yanasakana:blaststone_vents_feature"
 		},
 		"conditions": {
 			"placement_pass": "underground_pass",

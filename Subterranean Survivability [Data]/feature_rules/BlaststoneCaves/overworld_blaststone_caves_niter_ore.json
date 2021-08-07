@@ -3,7 +3,7 @@
 	"minecraft:feature_rules": {
 		"description": {
 			"identifier": "minecraft:overworld_blaststone_caves_niter_ore",
-			"places_feature": "yana:niter_ore_feature"
+			"places_feature": "yanasakana:niter_ore_feature"
 		},
 		"conditions": {
 			"placement_pass": "underground_pass",

@@ -2,7 +2,7 @@
 	"format_version": "1.8.0",
 	"minecraft:spawn_rules": {
 		"description": {
-			"identifier": "yana:blast_miner",
+			"identifier": "yanasakana:blast_miner",
 			"population_control": "monster"
 		},
 		"conditions": [
@@ -11,7 +11,7 @@
 				"minecraft:spawns_on_block_filter": [
 					"minecraft:stone",
 					"minecraft:dirt",
-					"yana:blaststone"
+					"yanasakana:blaststone"
 				],
 				"minecraft:brightness_filter": {
 					"min": 0,
@@ -33,7 +33,7 @@
 			},
 			{
 				"minecraft:spawns_on_surface": {},
-				"minecraft:spawns_on_block_filter": "yana:ash",
+				"minecraft:spawns_on_block_filter": "yanasakana:ash",
 				"minecraft:brightness_filter": {
 					"min": 0,
 					"max": 15,

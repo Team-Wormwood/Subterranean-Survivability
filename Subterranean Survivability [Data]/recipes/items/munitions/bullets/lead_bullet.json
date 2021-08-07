@@ -14,12 +14,12 @@
                 "count": 1
             },
             {
-                "item": "yana:lead_nugget",
+                "item": "yanasakana:lead_nugget",
                 "count": 3
             }
         ],
         "result": {
-            "item": "yana:lead_bullet",
+            "item": "yanasakana:lead_bullet",
             "count": 8
         }
     }

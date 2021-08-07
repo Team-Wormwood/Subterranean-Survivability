@@ -2,7 +2,7 @@
     "format_version": "1.16.0",
     "minecraft:entity": {
         "description": {
-            "identifier": "yana:copper_bullet_entity",
+            "identifier": "yanasakana:copper_bullet_entity",
             "is_spawnable": false,
             "is_summonable": true,
             "is_experimental": false,
@@ -78,16 +78,16 @@
             "fuseParticle": {
                 "run_command": {
                     "command": [
-                        "particle yana:dynamite_fuse_smoke ~ ~ ~",
-                        "particle yana:dynamite_fuse_flame ~ ~ ~"
+                        "particle yanasakana:dynamite_fuse_smoke ~ ~ ~",
+                        "particle yanasakana:dynamite_fuse_flame ~ ~ ~"
                     ]
                 }
             },
             "fuseParticle2": {
                 "run_command": {
                     "command": [
-                        "particle yana:dynamite_fuse_smoke ~ ~ ~",
-                        "particle yana:dynamite_fuse_flame ~ ~ ~"
+                        "particle yanasakana:dynamite_fuse_smoke ~ ~ ~",
+                        "particle yanasakana:dynamite_fuse_flame ~ ~ ~"
                     ]
                 }
             }

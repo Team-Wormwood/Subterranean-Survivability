@@ -10,7 +10,7 @@
         ],
         "ingredients": [
             {
-                "item": "yana:blackpowder"
+                "item": "yanasakana:blackpowder"
             },
             {
                 "item": "minecraft:paper",
@@ -18,7 +18,7 @@
             }
         ],
         "result": {
-            "item": "yana:dynamite",
+            "item": "yanasakana:dynamite",
             "count": 4
         }
     }

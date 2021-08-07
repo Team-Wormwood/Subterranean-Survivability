@@ -18,7 +18,7 @@
 							}
 						}
 					],
-					"name": "yana:blaststone_cobbled"
+					"name": "yanasakana:blaststone_cobbled"
 				},
 				{
 					"type": "item",
@@ -39,7 +39,7 @@
 						// 	}
 						// }
 					],
-					"name": "yana:blaststone_vent"
+					"name": "yanasakana:blaststone_vent"
 				}
 			]
 		}

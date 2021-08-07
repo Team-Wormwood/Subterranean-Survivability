@@ -3,7 +3,7 @@
     "format_version": "1.16.100",
     "minecraft:item": {
         "description": {
-            "identifier": "yana:lead_bullet",
+            "identifier": "yanasakana:lead_bullet",
             "category": "Equipment"
         },
         "components": {

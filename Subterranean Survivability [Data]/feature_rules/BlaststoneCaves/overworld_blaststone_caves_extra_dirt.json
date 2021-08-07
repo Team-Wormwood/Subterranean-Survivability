@@ -3,7 +3,7 @@
 	"minecraft:feature_rules": {
 		"description": {
 			"identifier": "minecraft:overworld_blaststone_caves_extra_dirt",
-			"places_feature": "yana:underground_dirt_patch"
+			"places_feature": "yanasakana:underground_dirt_patch"
 		},
 		"conditions": {
 			"placement_pass": "underground_pass",

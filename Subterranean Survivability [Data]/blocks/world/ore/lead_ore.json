@@ -2,7 +2,7 @@
 	"format_version": "1.16.100",
 	"minecraft:block": {
 		"description": {
-			"identifier": "yana:lead_ore"
+			"identifier": "yanasakana:lead_ore"
 		},
 		"components": {
 			"tag:stone": {},

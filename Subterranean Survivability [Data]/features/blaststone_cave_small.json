@@ -2,7 +2,7 @@
 	"format_version": "1.13.0",
 	"minecraft:structure_template_feature": {
 		"description": {
-			"identifier": "yana:blaststone_cave_small"
+			"identifier": "yanasakana:blaststone_cave_small"
 		},
 		"structure_name": "mystructure:blaststone_cave_small",
 		"adjustment_radius": 10,

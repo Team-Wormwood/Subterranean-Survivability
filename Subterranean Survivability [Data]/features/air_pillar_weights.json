@@ -2,15 +2,15 @@
     "format_version": "1.17.0",
     "minecraft:weighted_random_feature": {
         "description": {
-            "identifier": "yana:air_pillar_weights"
+            "identifier": "yanasakana:air_pillar_weights"
         },
         "features": [
             [
-                "yana:pocket_caves_pillar_0",
+                "yanasakana:pocket_caves_pillar_0",
                 1
             ],
             [
-                "yana:pocket_caves_pillar_1",
+                "yanasakana:pocket_caves_pillar_1",
                 1
             ]
         ]

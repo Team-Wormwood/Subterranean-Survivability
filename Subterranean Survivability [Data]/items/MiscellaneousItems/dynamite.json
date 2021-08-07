@@ -3,7 +3,7 @@
     "format_version": "1.16.100",
     "minecraft:item": {
         "description": {
-            "identifier": "yana:dynamite",
+            "identifier": "yanasakana:dynamite",
             "category": "equipment"
         },
         "components": {
@@ -16,7 +16,7 @@
                 "texture": "dynamite"
             },
             "minecraft:projectile": {
-                "projectile_entity": "yana:dynamite_entity",
+                "projectile_entity": "yanasakana:dynamite_entity",
                 "minimum_critical_power": 1
             },
             "minecraft:on_use": {
@@ -28,7 +28,7 @@
         "events": {
             "throw": {
                 "shoot": {
-                    "projectile": "yana:dynamite_entity",
+                    "projectile": "yanasakana:dynamite_entity",
                     "launch_power": 2,
                     "angle_offset": 1
                 },

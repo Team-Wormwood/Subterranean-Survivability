@@ -2,7 +2,7 @@
 	"format_version": "1.16.100",
 	"minecraft:block": {
 		"description": {
-			"identifier": "yana:ash_block"
+			"identifier": "yanasakana:ash_block"
 		},
 		"components": {
 			"tag:dirt": {},

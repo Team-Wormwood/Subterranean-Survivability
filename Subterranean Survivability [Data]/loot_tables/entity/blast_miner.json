@@ -5,7 +5,7 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "yana:dynamite",
+                    "name": "yanasakana:dynamite",
                     "weight": 7,
                     "functions": [
                         {
@@ -19,7 +19,7 @@
                 },
                 {
                     "type": "item",
-                    "name": "yana:dynamite",
+                    "name": "yanasakana:dynamite",
                     "weight": 2,
                     "functions": [
                         {

@@ -2,7 +2,7 @@
 	"format_version": "1.16.100",
 	"minecraft:block": {
 		"description": {
-			"identifier": "yana:gunpowder_block"
+			"identifier": "yanasakana:gunpowder_block"
 		},
 		"components": {
 			"tag:dirt": {},

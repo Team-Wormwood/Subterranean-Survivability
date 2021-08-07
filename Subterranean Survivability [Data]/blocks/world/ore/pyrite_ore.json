@@ -2,7 +2,7 @@
 	"format_version": "1.16.100",
 	"minecraft:block": {
 		"description": {
-			"identifier": "yana:pyrite_ore"
+			"identifier": "yanasakana:pyrite_ore"
 		},
 		"components": {
 			"tag:dirt": {},

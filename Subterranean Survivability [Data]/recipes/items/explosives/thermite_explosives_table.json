@@ -10,7 +10,7 @@
         ],
         "ingredients": [
             {
-                "item": "yana:aluminium_nugget",
+                "item": "yanasakana:aluminium_nugget",
                 "count": 4
             },
             {
@@ -22,7 +22,7 @@
             }
         ],
         "result": {
-            "item": "yana:thermite",
+            "item": "yanasakana:thermite",
             "count": 3
         }
     }

@@ -2,7 +2,7 @@
 	"format_version": "1.16.100",
 	"minecraft:entity": {
 		"description": {
-			"identifier": "yana:blast_vent_flames",
+			"identifier": "yanasakana:blast_vent_flames",
 			"is_spawnable": false,
 			"is_summonable": true,
 			"is_experimental": false

@@ -3,7 +3,7 @@
   "minecraft:feature_rules": {
     "description": {
       "identifier": "overworld_underground_pyrite_ore_feature",
-      "places_feature": "yana:pyrite_ore_feature"
+      "places_feature": "yanasakana:pyrite_ore_feature"
     },
     "conditions": {
       "placement_pass": "underground_pass",

@@ -3,7 +3,7 @@
 	"minecraft:feature_rules": {
 		"description": {
 			"identifier": "overworld_blaststone_caves_pocket_small",
-			"places_feature": "yana:blaststone_cave_small"
+			"places_feature": "yanasakana:blaststone_cave_small"
 		},
 		"conditions": {
 			"placement_pass": "before_underground_pass",

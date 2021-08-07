@@ -3,7 +3,7 @@
     "format_version": "1.16.100",
     "minecraft:item": {
         "description": {
-            "identifier": "yana:miner_rifle",
+            "identifier": "yanasakana:miner_rifle",
             "category": "Equipment"
         },
         "components": {
@@ -60,7 +60,7 @@
                     {
                         "condition": "q.get_equipped_item_name(1) == 'copper_bullet'",
                         "shoot": {
-                            "projectile": "yana:copper_bullet_entity",
+                            "projectile": "yanasakana:copper_bullet_entity",
                             "launch_power": 3
                         },
                         "trigger": {
@@ -70,7 +70,7 @@
                             "command": [
                                 "playsound fire.hunting_rifle @a[r=50] ~ ~ ~ 15 1 1",
                                 "playsound fire.hunting_rifle @a[r=50] ~ ~ ~ 15 0.89 1",
-                                "clear @s yana:copper_bullet 0 1",
+                                "clear @s yanasakana:copper_bullet 0 1",
                                 "playanimation @s animation.custom_player.rifle_shot"
                             ]
                         }
@@ -78,7 +78,7 @@
                     {
                         "condition": "q.get_equipped_item_name(1) == 'lead_bullet'",
                         "shoot": {
-                            "projectile": "yana:lead_bullet_entity",
+                            "projectile": "yanasakana:lead_bullet_entity",
                             "launch_power": 3
                         },
                         "trigger": {
@@ -88,7 +88,7 @@
                             "command": [
                                 "playsound fire.hunting_rifle @a[r=50] ~ ~ ~ 15 1 1",
                                 "playsound fire.hunting_rifle @a[r=50] ~ ~ ~ 15 0.85 1",
-                                "clear @s yana:lead_bullet 0 1",
+                                "clear @s yanasakana:lead_bullet 0 1",
                                 "playanimation @s animation.custom_player.rifle_shot"
                             ]
                         }

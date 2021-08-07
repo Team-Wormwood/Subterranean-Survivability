@@ -10,14 +10,14 @@
         ],
         "ingredients": [
             {
-                "item": "yana:niter"
+                "item": "yanasakana:niter"
             },
             {
-                "item": "yana:hyphae_branch"
+                "item": "yanasakana:hyphae_branch"
             }
         ],
         "result": {
-            "item": "yana:match",
+            "item": "yanasakana:match",
             "count": 2
         }
     }

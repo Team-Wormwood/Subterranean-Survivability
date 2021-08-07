@@ -2,7 +2,7 @@
    "format_version": "1.16.100",
    "minecraft:item": {
       "description": {
-         "identifier": "yana:aluminium",
+         "identifier": "yanasakana:aluminium",
          "category": "items"
       },
       "components": {

@@ -12,11 +12,11 @@
         ],
         "key": {
             "#": {
-                "item": "yana:aluminium_block"
+                "item": "yanasakana:aluminium_block"
             }
         },
         "result": {
-            "item": "yana:aluminium_ingot",
+            "item": "yanasakana:aluminium_ingot",
             "count": 9
         }
     }

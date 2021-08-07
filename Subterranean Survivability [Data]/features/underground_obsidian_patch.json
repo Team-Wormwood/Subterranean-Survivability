@@ -2,7 +2,7 @@
 	"format_version": "1.13.0",
 	"minecraft:ore_feature": {
 		"description": {
-			"identifier": "yana:underground_obsidian_patch"
+			"identifier": "yanasakana:underground_obsidian_patch"
 		},
 		"count": 15,
 		"replace_rules": [
@@ -52,7 +52,7 @@
 						}
 					},
 					{
-						"name": "yana:blaststone"
+						"name": "yanasakana:blaststone"
 					}
 				]
 			}

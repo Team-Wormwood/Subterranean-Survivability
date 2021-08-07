@@ -2,7 +2,7 @@
 	"format_version": "1.16.100",
 	"minecraft:block": {
 		"description": {
-			"identifier": "yana:oil_ore"
+			"identifier": "yanasakana:oil_ore"
 		},
 		"components": {
 			"tag:dirt": {},

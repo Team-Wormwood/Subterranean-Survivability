@@ -3,7 +3,7 @@
 	"minecraft:feature_rules": {
 		"description": {
 			"identifier": "overworld_underground_aluminium_ore_feature",
-			"places_feature": "yana:aluminium_ore_feature"
+			"places_feature": "yanasakana:aluminium_ore_feature"
 		},
 		"conditions": {
 			"placement_pass": "underground_pass",

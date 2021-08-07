@@ -14,11 +14,11 @@
         ],
         "key": {
             "#": {
-                "item": "yana:aluminium_nugget"
+                "item": "yanasakana:aluminium_nugget"
             }
         },
         "result": {
-            "item": "yana:aluminium_ingot"
+            "item": "yanasakana:aluminium_ingot"
         }
     }
 }

@@ -10,20 +10,20 @@
         ],
         "ingredients": [
             {
-                "item": "yana:stock"
+                "item": "yanasakana:stock"
             },
             {
-                "item": "yana:copper_barrel"
+                "item": "yanasakana:copper_barrel"
             },
             {
-                "item": "yana:iron_gear"
+                "item": "yanasakana:iron_gear"
             },
             {
                 "item": "minecraft:spyglass"
             }
         ],
         "result": {
-            "item": "yana:miner_rifle"
+            "item": "yanasakana:miner_rifle"
         }
     }
 }

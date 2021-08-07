@@ -3,7 +3,7 @@
     "format_version": "1.16.100",
     "minecraft:item": {
         "description": {
-            "identifier": "yana:cannon",
+            "identifier": "yanasakana:cannon",
             "category": "equipment"
         },
         "components": {
@@ -504,7 +504,7 @@
             },
             "shootFinal": {
                 "shoot": {
-                    "projectile": "yana:dynamite_entity",
+                    "projectile": "yanasakana:dynamite_entity",
                     "launch_power": 2,
                     "angle_offset": 1
                 },
@@ -512,7 +512,7 @@
                     "command": [
                         "playsound fire.ignite",
                         "playanimation @s animation.custom_player.cannon_shot",
-                        "replaceitem entity @s slot.weapon.mainhand 0 yana:cannon_empty",
+                        "replaceitem entity @s slot.weapon.mainhand 0 yanasakana:cannon_empty",
                         "playsound random.explode @a ~ ~ ~ 10 0.7 10",
                         "playsound firework.launch @a ~ ~ ~ 10 1.1 10",
                         "playsound mob.witch.throw @a ~ ~ ~ 10 0.6 10"
@@ -521,7 +521,7 @@
             },
             "shootFinalCreative": {
                 "shoot": {
-                    "projectile": "yana:dynamite_entity",
+                    "projectile": "yanasakana:dynamite_entity",
                     "launch_power": 2,
                     "angle_offset": 1
                 },
@@ -537,7 +537,7 @@
             },
             "fireRed": {
                 "shoot": {
-                    "projectile": "yana:firecracker_entity_red",
+                    "projectile": "yanasakana:firecracker_entity_red",
                     "launch_power": 2,
                     "angle_offset": 1
                 },
@@ -552,7 +552,7 @@
             },
             "fireOrange": {
                 "shoot": {
-                    "projectile": "yana:firecracker_entity_orange",
+                    "projectile": "yanasakana:firecracker_entity_orange",
                     "launch_power": 2,
                     "angle_offset": 1
                 },
@@ -567,7 +567,7 @@
             },
             "fireYellow": {
                 "shoot": {
-                    "projectile": "yana:firecracker_entity_yellow",
+                    "projectile": "yanasakana:firecracker_entity_yellow",
                     "launch_power": 2,
                     "angle_offset": 1
                 },
@@ -582,7 +582,7 @@
             },
             "fireLime": {
                 "shoot": {
-                    "projectile": "yana:firecracker_entity_lime",
+                    "projectile": "yanasakana:firecracker_entity_lime",
                     "launch_power": 2,
                     "angle_offset": 1
                 },
@@ -597,7 +597,7 @@
             },
             "fireGreen": {
                 "shoot": {
-                    "projectile": "yana:firecracker_entity_green",
+                    "projectile": "yanasakana:firecracker_entity_green",
                     "launch_power": 2,
                     "angle_offset": 1
                 },
@@ -612,7 +612,7 @@
             },
             "fireCyan": {
                 "shoot": {
-                    "projectile": "yana:firecracker_entity_cyan",
+                    "projectile": "yanasakana:firecracker_entity_cyan",
                     "launch_power": 2,
                     "angle_offset": 1
                 },
@@ -627,7 +627,7 @@
             },
             "fireLightBlue": {
                 "shoot": {
-                    "projectile": "yana:firecracker_entity_light_blue",
+                    "projectile": "yanasakana:firecracker_entity_light_blue",
                     "launch_power": 2,
                     "angle_offset": 1
                 },
@@ -642,7 +642,7 @@
             },
             "fireBlue": {
                 "shoot": {
-                    "projectile": "yana:firecracker_entity_blue",
+                    "projectile": "yanasakana:firecracker_entity_blue",
                     "launch_power": 2,
                     "angle_offset": 1
                 },
@@ -657,7 +657,7 @@
             },
             "firePurple": {
                 "shoot": {
-                    "projectile": "yana:firecracker_entity_purple",
+                    "projectile": "yanasakana:firecracker_entity_purple",
                     "launch_power": 2,
                     "angle_offset": 1
                 },
@@ -672,7 +672,7 @@
             },
             "fireMagenta": {
                 "shoot": {
-                    "projectile": "yana:firecracker_entity_magenta",
+                    "projectile": "yanasakana:firecracker_entity_magenta",
                     "launch_power": 2,
                     "angle_offset": 1
                 },
@@ -687,7 +687,7 @@
             },
             "firePink": {
                 "shoot": {
-                    "projectile": "yana:firecracker_entity_pink",
+                    "projectile": "yanasakana:firecracker_entity_pink",
                     "launch_power": 2,
                     "angle_offset": 1
                 },
@@ -702,7 +702,7 @@
             },
             "fireBrown": {
                 "shoot": {
-                    "projectile": "yana:firecracker_entity_brown",
+                    "projectile": "yanasakana:firecracker_entity_brown",
                     "launch_power": 2,
                     "angle_offset": 1
                 },
@@ -717,7 +717,7 @@
             },
             "fireLightGrey": {
                 "shoot": {
-                    "projectile": "yana:firecracker_entity_light_grey",
+                    "projectile": "yanasakana:firecracker_entity_light_grey",
                     "launch_power": 2,
                     "angle_offset": 1
                 },
@@ -732,7 +732,7 @@
             },
             "fireGrey": {
                 "shoot": {
-                    "projectile": "yana:firecracker_entity_grey",
+                    "projectile": "yanasakana:firecracker_entity_grey",
                     "launch_power": 2,
                     "angle_offset": 1
                 },
@@ -747,7 +747,7 @@
             },
             "fireBlack": {
                 "shoot": {
-                    "projectile": "yana:firecracker_entity_black",
+                    "projectile": "yanasakana:firecracker_entity_black",
                     "launch_power": 2,
                     "angle_offset": 1
                 },
@@ -762,7 +762,7 @@
             },
             "fireWhite": {
                 "shoot": {
-                    "projectile": "yana:firecracker_entity_white",
+                    "projectile": "yanasakana:firecracker_entity_white",
                     "launch_power": 2,
                     "angle_offset": 1
                 },
@@ -777,7 +777,7 @@
             },
             "fireRed2": {
                 "shoot": {
-                    "projectile": "yana:firecracker_entity_red",
+                    "projectile": "yanasakana:firecracker_entity_red",
                     "launch_power": 2,
                     "angle_offset": 1
                 },
@@ -792,7 +792,7 @@
             },
             "fireOrange2": {
                 "shoot": {
-                    "projectile": "yana:firecracker_entity_orange",
+                    "projectile": "yanasakana:firecracker_entity_orange",
                     "launch_power": 2,
                     "angle_offset": 1
                 },
@@ -807,7 +807,7 @@
             },
             "fireYellow2": {
                 "shoot": {
-                    "projectile": "yana:firecracker_entity_yellow",
+                    "projectile": "yanasakana:firecracker_entity_yellow",
                     "launch_power": 2,
                     "angle_offset": 1
                 },
@@ -822,7 +822,7 @@
             },
             "fireLime2": {
                 "shoot": {
-                    "projectile": "yana:firecracker_entity_lime",
+                    "projectile": "yanasakana:firecracker_entity_lime",
                     "launch_power": 2,
                     "angle_offset": 1
                 },
@@ -837,7 +837,7 @@
             },
             "fireGreen2": {
                 "shoot": {
-                    "projectile": "yana:firecracker_entity_green",
+                    "projectile": "yanasakana:firecracker_entity_green",
                     "launch_power": 2,
                     "angle_offset": 1
                 },
@@ -852,7 +852,7 @@
             },
             "fireCyan2": {
                 "shoot": {
-                    "projectile": "yana:firecracker_entity_cyan",
+                    "projectile": "yanasakana:firecracker_entity_cyan",
                     "launch_power": 2,
                     "angle_offset": 1
                 },
@@ -867,7 +867,7 @@
             },
             "fireLightBlue2": {
                 "shoot": {
-                    "projectile": "yana:firecracker_entity_light_blue",
+                    "projectile": "yanasakana:firecracker_entity_light_blue",
                     "launch_power": 2,
                     "angle_offset": 1
                 },
@@ -882,7 +882,7 @@
             },
             "fireBlue2": {
                 "shoot": {
-                    "projectile": "yana:firecracker_entity_blue",
+                    "projectile": "yanasakana:firecracker_entity_blue",
                     "launch_power": 2,
                     "angle_offset": 1
                 },
@@ -897,7 +897,7 @@
             },
             "firePurple2": {
                 "shoot": {
-                    "projectile": "yana:firecracker_entity_purple",
+                    "projectile": "yanasakana:firecracker_entity_purple",
                     "launch_power": 2,
                     "angle_offset": 1
                 },
@@ -912,7 +912,7 @@
             },
             "fireMagenta2": {
                 "shoot": {
-                    "projectile": "yana:firecracker_entity_magenta",
+                    "projectile": "yanasakana:firecracker_entity_magenta",
                     "launch_power": 2,
                     "angle_offset": 1
                 },
@@ -927,7 +927,7 @@
             },
             "firePink2": {
                 "shoot": {
-                    "projectile": "yana:firecracker_entity_pink",
+                    "projectile": "yanasakana:firecracker_entity_pink",
                     "launch_power": 2,
                     "angle_offset": 1
                 },
@@ -942,7 +942,7 @@
             },
             "fireBrown2": {
                 "shoot": {
-                    "projectile": "yana:firecracker_entity_brown",
+                    "projectile": "yanasakana:firecracker_entity_brown",
                     "launch_power": 2,
                     "angle_offset": 1
                 },
@@ -957,7 +957,7 @@
             },
             "fireLightGrey2": {
                 "shoot": {
-                    "projectile": "yana:firecracker_entity_light_grey",
+                    "projectile": "yanasakana:firecracker_entity_light_grey",
                     "launch_power": 2,
                     "angle_offset": 1
                 },
@@ -972,7 +972,7 @@
             },
             "fireGrey2": {
                 "shoot": {
-                    "projectile": "yana:firecracker_entity_grey",
+                    "projectile": "yanasakana:firecracker_entity_grey",
                     "launch_power": 2,
                     "angle_offset": 1
                 },
@@ -987,7 +987,7 @@
             },
             "fireBlack2": {
                 "shoot": {
-                    "projectile": "yana:firecracker_entity_black",
+                    "projectile": "yanasakana:firecracker_entity_black",
                     "launch_power": 2,
                     "angle_offset": 1
                 },
@@ -1002,7 +1002,7 @@
             },
             "fireWhite2": {
                 "shoot": {
-                    "projectile": "yana:firecracker_entity_white",
+                    "projectile": "yanasakana:firecracker_entity_white",
                     "launch_power": 2,
                     "angle_offset": 1
                 },
@@ -1017,7 +1017,7 @@
             },
             "fireRed3": {
                 "shoot": {
-                    "projectile": "yana:firecracker_entity_red",
+                    "projectile": "yanasakana:firecracker_entity_red",
                     "launch_power": 2,
                     "angle_offset": 1
                 },
@@ -1032,7 +1032,7 @@
             },
             "fireOrange3": {
                 "shoot": {
-                    "projectile": "yana:firecracker_entity_orange",
+                    "projectile": "yanasakana:firecracker_entity_orange",
                     "launch_power": 2,
                     "angle_offset": 1
                 },
@@ -1047,7 +1047,7 @@
             },
             "fireYellow3": {
                 "shoot": {
-                    "projectile": "yana:firecracker_entity_yellow",
+                    "projectile": "yanasakana:firecracker_entity_yellow",
                     "launch_power": 2,
                     "angle_offset": 1
                 },
@@ -1062,7 +1062,7 @@
             },
             "fireLime3": {
                 "shoot": {
-                    "projectile": "yana:firecracker_entity_lime",
+                    "projectile": "yanasakana:firecracker_entity_lime",
                     "launch_power": 2,
                     "angle_offset": 1
                 },
@@ -1077,7 +1077,7 @@
             },
             "fireGreen3": {
                 "shoot": {
-                    "projectile": "yana:firecracker_entity_green",
+                    "projectile": "yanasakana:firecracker_entity_green",
                     "launch_power": 2,
                     "angle_offset": 1
                 },
@@ -1092,7 +1092,7 @@
             },
             "fireCyan3": {
                 "shoot": {
-                    "projectile": "yana:firecracker_entity_cyan",
+                    "projectile": "yanasakana:firecracker_entity_cyan",
                     "launch_power": 2,
                     "angle_offset": 1
                 },
@@ -1107,7 +1107,7 @@
             },
             "fireLightBlue3": {
                 "shoot": {
-                    "projectile": "yana:firecracker_entity_light_blue",
+                    "projectile": "yanasakana:firecracker_entity_light_blue",
                     "launch_power": 2,
                     "angle_offset": 1
                 },
@@ -1122,7 +1122,7 @@
             },
             "fireBlue3": {
                 "shoot": {
-                    "projectile": "yana:firecracker_entity_blue",
+                    "projectile": "yanasakana:firecracker_entity_blue",
                     "launch_power": 2,
                     "angle_offset": 1
                 },
@@ -1137,7 +1137,7 @@
             },
             "firePurple3": {
                 "shoot": {
-                    "projectile": "yana:firecracker_entity_purple",
+                    "projectile": "yanasakana:firecracker_entity_purple",
                     "launch_power": 2,
                     "angle_offset": 1
                 },
@@ -1152,7 +1152,7 @@
             },
             "fireMagenta3": {
                 "shoot": {
-                    "projectile": "yana:firecracker_entity_magenta",
+                    "projectile": "yanasakana:firecracker_entity_magenta",
                     "launch_power": 2,
                     "angle_offset": 1
                 },
@@ -1167,7 +1167,7 @@
             },
             "firePink3": {
                 "shoot": {
-                    "projectile": "yana:firecracker_entity_pink",
+                    "projectile": "yanasakana:firecracker_entity_pink",
                     "launch_power": 2,
                     "angle_offset": 1
                 },
@@ -1182,7 +1182,7 @@
             },
             "fireBrown3": {
                 "shoot": {
-                    "projectile": "yana:firecracker_entity_brown",
+                    "projectile": "yanasakana:firecracker_entity_brown",
                     "launch_power": 2,
                     "angle_offset": 1
                 },
@@ -1197,7 +1197,7 @@
             },
             "fireLightGrey3": {
                 "shoot": {
-                    "projectile": "yana:firecracker_entity_light_grey",
+                    "projectile": "yanasakana:firecracker_entity_light_grey",
                     "launch_power": 2,
                     "angle_offset": 1
                 },
@@ -1212,7 +1212,7 @@
             },
             "fireGrey3": {
                 "shoot": {
-                    "projectile": "yana:firecracker_entity_grey",
+                    "projectile": "yanasakana:firecracker_entity_grey",
                     "launch_power": 2,
                     "angle_offset": 1
                 },
@@ -1227,7 +1227,7 @@
             },
             "fireBlack3": {
                 "shoot": {
-                    "projectile": "yana:firecracker_entity_black",
+                    "projectile": "yanasakana:firecracker_entity_black",
                     "launch_power": 2,
                     "angle_offset": 1
                 },
@@ -1242,7 +1242,7 @@
             },
             "fireWhite3": {
                 "shoot": {
-                    "projectile": "yana:firecracker_entity_white",
+                    "projectile": "yanasakana:firecracker_entity_white",
                     "launch_power": 2,
                     "angle_offset": 1
                 },
@@ -1257,7 +1257,7 @@
             },
             "fireRed4": {
                 "shoot": {
-                    "projectile": "yana:firecracker_entity_red",
+                    "projectile": "yanasakana:firecracker_entity_red",
                     "launch_power": 2,
                     "angle_offset": 1
                 },
@@ -1272,7 +1272,7 @@
             },
             "fireOrange4": {
                 "shoot": {
-                    "projectile": "yana:firecracker_entity_orange",
+                    "projectile": "yanasakana:firecracker_entity_orange",
                     "launch_power": 2,
                     "angle_offset": 1
                 },
@@ -1287,7 +1287,7 @@
             },
             "fireYellow4": {
                 "shoot": {
-                    "projectile": "yana:firecracker_entity_yellow",
+                    "projectile": "yanasakana:firecracker_entity_yellow",
                     "launch_power": 2,
                     "angle_offset": 1
                 },
@@ -1302,7 +1302,7 @@
             },
             "fireLime4": {
                 "shoot": {
-                    "projectile": "yana:firecracker_entity_lime",
+                    "projectile": "yanasakana:firecracker_entity_lime",
                     "launch_power": 2,
                     "angle_offset": 1
                 },
@@ -1317,7 +1317,7 @@
             },
             "fireGreen4": {
                 "shoot": {
-                    "projectile": "yana:firecracker_entity_green",
+                    "projectile": "yanasakana:firecracker_entity_green",
                     "launch_power": 2,
                     "angle_offset": 1
                 },
@@ -1332,7 +1332,7 @@
             },
             "fireCyan4": {
                 "shoot": {
-                    "projectile": "yana:firecracker_entity_cyan",
+                    "projectile": "yanasakana:firecracker_entity_cyan",
                     "launch_power": 2,
                     "angle_offset": 1
                 },
@@ -1347,7 +1347,7 @@
             },
             "fireLightBlue4": {
                 "shoot": {
-                    "projectile": "yana:firecracker_entity_light_blue",
+                    "projectile": "yanasakana:firecracker_entity_light_blue",
                     "launch_power": 2,
                     "angle_offset": 1
                 },
@@ -1362,7 +1362,7 @@
             },
             "fireBlue4": {
                 "shoot": {
-                    "projectile": "yana:firecracker_entity_blue",
+                    "projectile": "yanasakana:firecracker_entity_blue",
                     "launch_power": 2,
                     "angle_offset": 1
                 },
@@ -1377,7 +1377,7 @@
             },
             "firePurple4": {
                 "shoot": {
-                    "projectile": "yana:firecracker_entity_purple",
+                    "projectile": "yanasakana:firecracker_entity_purple",
                     "launch_power": 2,
                     "angle_offset": 1
                 },
@@ -1392,7 +1392,7 @@
             },
             "fireMagenta4": {
                 "shoot": {
-                    "projectile": "yana:firecracker_entity_magenta",
+                    "projectile": "yanasakana:firecracker_entity_magenta",
                     "launch_power": 2,
                     "angle_offset": 1
                 },
@@ -1407,7 +1407,7 @@
             },
             "firePink4": {
                 "shoot": {
-                    "projectile": "yana:firecracker_entity_pink",
+                    "projectile": "yanasakana:firecracker_entity_pink",
                     "launch_power": 2,
                     "angle_offset": 1
                 },
@@ -1422,7 +1422,7 @@
             },
             "fireBrown4": {
                 "shoot": {
-                    "projectile": "yana:firecracker_entity_brown",
+                    "projectile": "yanasakana:firecracker_entity_brown",
                     "launch_power": 2,
                     "angle_offset": 1
                 },
@@ -1437,7 +1437,7 @@
             },
             "fireLightGrey4": {
                 "shoot": {
-                    "projectile": "yana:firecracker_entity_light_grey",
+                    "projectile": "yanasakana:firecracker_entity_light_grey",
                     "launch_power": 2,
                     "angle_offset": 1
                 },
@@ -1452,7 +1452,7 @@
             },
             "fireGrey4": {
                 "shoot": {
-                    "projectile": "yana:firecracker_entity_grey",
+                    "projectile": "yanasakana:firecracker_entity_grey",
                     "launch_power": 2,
                     "angle_offset": 1
                 },
@@ -1467,7 +1467,7 @@
             },
             "fireBlack4": {
                 "shoot": {
-                    "projectile": "yana:firecracker_entity_black",
+                    "projectile": "yanasakana:firecracker_entity_black",
                     "launch_power": 2,
                     "angle_offset": 1
                 },
@@ -1482,7 +1482,7 @@
             },
             "fireWhite4": {
                 "shoot": {
-                    "projectile": "yana:firecracker_entity_white",
+                    "projectile": "yanasakana:firecracker_entity_white",
                     "launch_power": 2,
                     "angle_offset": 1
                 },

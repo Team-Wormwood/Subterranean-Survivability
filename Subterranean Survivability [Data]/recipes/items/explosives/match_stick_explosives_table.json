@@ -10,14 +10,14 @@
         ],
         "ingredients": [
             {
-                "item": "yana:niter"
+                "item": "yanasakana:niter"
             },
             {
                 "item": "minecraft:stick"
             }
         ],
         "result": {
-            "item": "yana:match",
+            "item": "yanasakana:match",
             "count": 6
         }
     }

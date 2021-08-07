@@ -3,7 +3,7 @@
 	"minecraft:feature_rules": {
 		"description": {
 			"identifier": "minecraft:overworld_pocket_caves_dirt",
-			"places_feature": "yana:dirt_feature"
+			"places_feature": "yanasakana:dirt_feature"
 		},
 		"conditions": {
 			"placement_pass": "underground_pass",

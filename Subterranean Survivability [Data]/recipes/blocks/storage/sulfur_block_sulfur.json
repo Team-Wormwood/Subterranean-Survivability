@@ -12,11 +12,11 @@
         ],
         "key": {
             "#": {
-                "item": "yana:sulfur_block"
+                "item": "yanasakana:sulfur_block"
             }
         },
         "result": {
-            "item": "yana:sulfur",
+            "item": "yanasakana:sulfur",
             "count": 9
         }
     }

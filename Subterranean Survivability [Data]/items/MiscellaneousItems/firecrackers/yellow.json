@@ -3,7 +3,7 @@
     "format_version": "1.16.100",
     "minecraft:item": {
         "description": {
-            "identifier": "yana:firecracker_yellow",
+            "identifier": "yanasakana:firecracker_yellow",
             "category": "items"
         },
         "components": {
@@ -17,7 +17,7 @@
                 "frame": 3
             },
             "minecraft:projectile": {
-                "projectile_entity": "yana:firecracker_entity_yellow"
+                "projectile_entity": "yanasakana:firecracker_entity_yellow"
             },
             "minecraft:on_use": {
                 "on_use": {
@@ -28,7 +28,7 @@
         "events": {
             "throw": {
                 "shoot": {
-                    "projectile": "yana:firecracker_entity_yellow",
+                    "projectile": "yanasakana:firecracker_entity_yellow",
                     "launch_power": 2,
                     "angle_offset": 1
                 },

@@ -10,11 +10,11 @@
     "priority": 3,
     "ingredients": [
       {
-        "item": "yana:blaststone"
+        "item": "yanasakana:blaststone"
       }
     ],
     "result": {
-      "item": "yana:blaststone_smooth",
+      "item": "yanasakana:blaststone_smooth",
       "count": 1
     }
   }

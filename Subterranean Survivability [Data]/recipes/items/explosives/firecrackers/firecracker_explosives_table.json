@@ -10,7 +10,7 @@
         ],
         "ingredients": [
             {
-                "item": "yana:blackpowder"
+                "item": "yanasakana:blackpowder"
             },
             {
                 "item": "minecraft:string"
@@ -21,7 +21,7 @@
             }
         ],
         "result": {
-            "item": "yana:firecracker",
+            "item": "yanasakana:firecracker",
             "count": 8
         }
     }

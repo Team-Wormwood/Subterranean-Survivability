@@ -2,9 +2,9 @@
 	"format_version": "1.17.0",
 	"minecraft:block": {
 		"description": {
-			"identifier": "yana:dragon_head",
+			"identifier": "yanasakana:dragon_head",
 			"properties": {
-				"yana:rotation": [
+				"yanasakana:rotation": [
 					0,
 					1,
 					2,
@@ -73,7 +73,7 @@
 		},
 		"permutations": [
 			{
-				"condition": "q.block_property('yana:rotation') == 0",
+				"condition": "q.block_property('yanasakana:rotation') == 0",
 				"components": {
 					"minecraft:rotation": [
 						0,
@@ -83,7 +83,7 @@
 				}
 			},
 			{
-				"condition": "q.block_property('yana:rotation') == 1",
+				"condition": "q.block_property('yanasakana:rotation') == 1",
 				"components": {
 					"minecraft:rotation": [
 						0,
@@ -93,7 +93,7 @@
 				}
 			},
 			{
-				"condition": "q.block_property('yana:rotation') == 2",
+				"condition": "q.block_property('yanasakana:rotation') == 2",
 				"components": {
 					"minecraft:rotation": [
 						0,
@@ -103,7 +103,7 @@
 				}
 			},
 			{
-				"condition": "q.block_property('yana:rotation') == 3",
+				"condition": "q.block_property('yanasakana:rotation') == 3",
 				"components": {
 					"minecraft:rotation": [
 						0,
@@ -117,12 +117,12 @@
 			"rotationUpdate": {
 				"swing": {},
 				"set_block_property": {
-					"yana:rotation": "q.cardinal_facing_2d - 2.0"
+					"yanasakana:rotation": "q.cardinal_facing_2d - 2.0"
 				}
 			},
 			"rotateSet": {
 				"set_block_property": {
-					"yana:rotation": "q.cardinal_facing_2d - 2.0"
+					"yanasakana:rotation": "q.cardinal_facing_2d - 2.0"
 				}
 			}
 		}

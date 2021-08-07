@@ -2,7 +2,7 @@
 	"format_version": "1.16.100",
 	"minecraft:entity": {
 		"description": {
-			"identifier": "yana:thermite_entity",
+			"identifier": "yanasakana:thermite_entity",
 			"is_spawnable": false,
 			"is_summonable": true,
 			"is_experimental": false

@@ -2,7 +2,7 @@
 	"format_version": "1.16.100",
 	"minecraft:block": {
 		"description": {
-			"identifier": "yana:blaststone_smooth"
+			"identifier": "yanasakana:blaststone_smooth"
 		},
 		"components": {
 			"tag:stone": {},
@@ -10,6 +10,7 @@
 			"minecraft:loot": "loot_tables/empty.json",
 			"minecraft:destroy_time": 1.2,
 			"minecraft:map_color": "#d43200",
+			"minecraft:explosion_resistance": 5.0,
 			"minecraft:on_player_destroyed": {
 				"event": "destroyed",
 				"condition": "q.equipped_item_any_tag('slot.weapon.mainhand','minecraft:wooden_tier','minecraft:stone_tier','minecraft:iron_tier','minecraft:golden_tier','minecraft:diamond_tier','minecraft:netherite_tier')"

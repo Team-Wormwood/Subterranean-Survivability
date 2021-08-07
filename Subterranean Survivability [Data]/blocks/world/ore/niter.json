@@ -2,7 +2,7 @@
     "format_version": "1.16.100",
     "minecraft:block": {
         "description": {
-            "identifier": "yana:niter_ore"
+            "identifier": "yanasakana:niter_ore"
         },
         "components": {
             "minecraft:map_color": "#dfdfbc",
@@ -23,9 +23,9 @@
                         ],
                         "block_filter": [
                             "minecraft:dirt",
-                            "yana:rocky_dirt",
+                            "yanasakana:rocky_dirt",
                             "minecraft:stone",
-                            "yana:blaststone"
+                            "yanasakana:blaststone"
                         ]
                     }
                 ]

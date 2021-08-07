@@ -2,14 +2,14 @@
     "format_version": "1.13.0",
     "minecraft:aggregate_feature": {
         "description": {
-            "identifier": "yana:blaststone_cave_basalt_root"
+            "identifier": "yanasakana:blaststone_cave_basalt_root"
         },
         "features": [
-            "yana:blaststone_cave_basalt_dep_a",
-            "yana:blaststone_cave_basalt_dep_b",
-            "yana:blaststone_cave_basalt_dep_c",
-            "yana:blaststone_cave_basalt_dep_d",
-            "yana:blaststone_cave_basalt_dep_e"
+            "yanasakana:blaststone_cave_basalt_dep_a",
+            "yanasakana:blaststone_cave_basalt_dep_b",
+            "yanasakana:blaststone_cave_basalt_dep_c",
+            "yanasakana:blaststone_cave_basalt_dep_d",
+            "yanasakana:blaststone_cave_basalt_dep_e"
         ]
     }
 }

@@ -14,14 +14,14 @@
 		],
 		"key": {
 			"#": {
-				"item": "yana:pyrite"
+				"item": "yanasakana:pyrite"
 			},
 			"S": {
 				"item": "minecraft:stick"
 			}
 		},
 		"result": {
-			"item": "yana:pyrite_axe"
+			"item": "yanasakana:pyrite_axe"
 		}
 	}
 }

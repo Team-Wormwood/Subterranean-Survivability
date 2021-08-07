@@ -2,7 +2,7 @@
     "format_version": "1.16.100",
     "minecraft:item": {
         "description": {
-            "identifier": "yana:iron_gear",
+            "identifier": "yanasakana:iron_gear",
             "category": "items"
         },
         "components": {

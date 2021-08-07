@@ -3,7 +3,7 @@
     "minecraft:feature_rules": {
         "description": {
             "identifier": "overworld_pocket_caves_tunnel",
-            "places_feature": "yana:cave_tunnel"
+            "places_feature": "yanasakana:cave_tunnel"
         },
         "conditions": {
             "placement_pass": "surface_pass",

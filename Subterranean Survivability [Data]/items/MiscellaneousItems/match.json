@@ -3,7 +3,7 @@
     "format_version": "1.16.100",
     "minecraft:item": {
         "description": {
-            "identifier": "yana:match",
+            "identifier": "yanasakana:match",
             "category": "equipment"
         },
         "components": {
@@ -28,7 +28,7 @@
         "events": {
             "throw": {
                 "shoot": {
-                    "projectile": "yana:match_entity",
+                    "projectile": "yanasakana:match_entity",
                     "launch_power": 3,
                     "angle_offset": 1
                 },

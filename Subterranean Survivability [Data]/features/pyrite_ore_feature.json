@@ -2,12 +2,12 @@
     "format_version": "1.13.0",
     "minecraft:ore_feature": {
         "description": {
-            "identifier": "yana:pyrite_ore_feature"
+            "identifier": "yanasakana:pyrite_ore_feature"
         },
         "count": 15,
         "replace_rules": [
             {
-                "places_block": "yana:pyrite_ore",
+                "places_block": "yanasakana:pyrite_ore",
                 "may_replace": [
                     {
                         "name": "minecraft:stone",
@@ -25,7 +25,7 @@
                         "name": "minecraft:dirt"
                     },
                     {
-                        "name": "yana:rocky_dirt"
+                        "name": "yanasakana:rocky_dirt"
                     },
                     {
                         "name": "minecraft:stone",

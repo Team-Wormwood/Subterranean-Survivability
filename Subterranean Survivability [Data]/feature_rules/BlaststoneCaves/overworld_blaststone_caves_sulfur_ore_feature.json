@@ -3,7 +3,7 @@
 	"minecraft:feature_rules": {
 		"description": {
 			"identifier": "overworld_blaststone_caves_sulfur_ore_feature",
-			"places_feature": "yana:sulfur_ore_feature"
+			"places_feature": "yanasakana:sulfur_ore_feature"
 		},
 		"conditions": {
 			"placement_pass": "after_underground_pass",

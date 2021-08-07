@@ -14,12 +14,12 @@
                 "count": 1
             },
             {
-                "item": "yana:copper_flake",
+                "item": "yanasakana:copper_flake",
                 "count": 3
             }
         ],
         "result": {
-            "item": "yana:copper_bullet",
+            "item": "yanasakana:copper_bullet",
             "count": 8
         }
     }

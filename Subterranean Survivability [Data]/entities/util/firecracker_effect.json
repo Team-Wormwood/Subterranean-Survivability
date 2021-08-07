@@ -2,7 +2,7 @@
     "format_version": "1.16.0",
     "minecraft:entity": {
         "description": {
-            "identifier": "yana:firecracker_effect",
+            "identifier": "yanasakana:firecracker_effect",
             "is_spawnable": false,
             "is_summonable": true,
             "is_experimental": false
@@ -45,10 +45,10 @@
                     {
                         "run_command": {
                             "command": [
-                                "particle yana:firecracker_explode ~ ~1 ~",
-                                "particle yana:firecracker_explode ~ ~ ~",
-                                "particle yana:blast_vent_fire_particle ~ ~1 ~",
-                                "particle yana:firecracker_explode ~ ~0.5 ~",
+                                "particle yanasakana:firecracker_explode ~ ~1 ~",
+                                "particle yanasakana:firecracker_explode ~ ~ ~",
+                                "particle yanasakana:blast_vent_fire_particle ~ ~1 ~",
+                                "particle yanasakana:firecracker_explode ~ ~0.5 ~",
                                 "particle minecraft:explode ~ ~ ~"
                             ]
                         }

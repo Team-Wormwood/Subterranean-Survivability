@@ -1,8 +1,8 @@
 {
     "format_version": 2,
     "header": {
-        "name": "Subterranean Survivability 2「地中生き残り！」",
-        "description": "A new and improved, survivable underground. Endless underground expanses. @yanagisenpaidev",
+        "name": "pack.name",
+        "description": "pack.description",
         "uuid": "67d5c79a-796a-4312-9f09-6f7cfaae4f77",
         "version": [
             1,

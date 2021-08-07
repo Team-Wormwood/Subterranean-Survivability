@@ -2,12 +2,12 @@
 	"format_version": "1.13.0",
 	"minecraft:ore_feature": {
 		"description": {
-			"identifier": "yana:underground_rocky_dirt_patch_large"
+			"identifier": "yanasakana:underground_rocky_dirt_patch_large"
 		},
 		"count": 15,
 		"replace_rules": [
 			{
-				"places_block": "yana:rocky_dirt",
+				"places_block": "yanasakana:rocky_dirt",
 				"may_replace": [
 					{
 						"name": "minecraft:gravel"

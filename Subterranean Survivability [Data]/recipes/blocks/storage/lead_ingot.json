@@ -14,11 +14,11 @@
         ],
         "key": {
             "#": {
-                "item": "yana:lead_nugget"
+                "item": "yanasakana:lead_nugget"
             }
         },
         "result": {
-            "item": "yana:lead_ingot"
+            "item": "yanasakana:lead_ingot"
         }
     }
 }

@@ -3,7 +3,7 @@
     "format_version": "1.16.100",
     "minecraft:item": {
         "description": {
-            "identifier": "yana:cannon_empty",
+            "identifier": "yanasakana:cannon_empty",
             "category": "equipment"
         },
         "components": {
