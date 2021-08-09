@@ -13,7 +13,6 @@
 			}
 		},
 		"components": {
-			"minecraft:display_name": "Blast Vent",
 			"minecraft:block_light_emission": 0.47,
 			"minecraft:block_light_absorption": 0,
 			"minecraft:geometry": "geometry.blast_vent",
