@@ -1,53 +1,7 @@
 {
-	"block_sounds": {
-		"metal": {
-			"events": {
-				"break": {
-					"pitch": [
-						1.10,
-						1.20
-					],
-					"sound": "dig.metal",
-					"volume": 1.0
-				},
-				"default": "",
-				"hit": {
-					"pitch": 0.750,
-					"sound": "hit.metal",
-					"volume": 0.30
-				},
-				"item.use.on": {
-					"pitch": 1.1,
-					"sound": "use.anvil"
-				},
-				"place": {
-					"pitch": [
-						1.20,
-						1.250
-					],
-					"sound": "dig.metal",
-					"volume": 1.0
-				},
-				"step": {
-					"sound": "step.metal",
-					"volume": 0.30
-				},
-				"power.off": {
-					"pitch": 0.50,
-					"sound": "random.click"
-				},
-				"power.on": {
-					"pitch": 0.60,
-					"sound": "random.click"
-				}
-			},
-			"pitch": 1.50,
-			"volume": 1.0
-		}
-	},
 	"entity_sounds": {
 		"entities": {
-			"yana:blast_miner": {
+			"yanasakana:blast_miner": {
 				"events": {
 					"ambient": {
 						"sound": "mob.zombie.say",
@@ -77,7 +31,7 @@
 				},
 				"volume": 1.0
 			},
-			"yana:rat": {
+			"yanasakana:rat": {
 				"events": {
 					"ambient": {
 						"pitch": [
@@ -95,7 +49,7 @@
 				],
 				"volume": 0.80
 			},
-			"yana:blaststone_vent_flames": {
+			"yanasakana:blaststone_vent_flames": {
 				"events": {
 					"ambient": "mob.none",
 					"death": "random.fizz",

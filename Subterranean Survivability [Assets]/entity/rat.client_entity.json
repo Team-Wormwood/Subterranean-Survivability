@@ -1,0 +1,42 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "yanasakana:rat",
+            "enable_attachables": true,
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/entity/rat/rat_grey"
+            },
+            "geometry": {
+                "default": "geometry.rat"
+            },
+            "render_controllers": [
+                "controller.render.rat"
+            ],
+            "scripts": {
+                "animate": [
+                    {
+                        "move": "query.modified_move_speed"
+                    },
+                    "look_at_target",
+                    {
+                        "baby_transform": "query.is_baby"
+                    }
+                ]
+            },
+            "animations": {
+                //"general": "controller.animation.rat.general",
+                "move": "animation.rat.move",
+                "look_at_target": "animation.common.look_at_target",
+                "baby_transform": "animation.rat.baby_transform"
+            },
+            "spawn_egg": {
+                "texture": "misc.spawn_eggs",
+                "texture_index": 1
+            }
+        }
+    }
+}

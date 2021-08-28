@@ -20,7 +20,7 @@
                 }
             },
             "minecraft:durability": {
-                "max_durability": 355,
+                "max_durability": 512,
                 "damage_chance": {
                     "max": 100,
                     "min": 76
@@ -28,7 +28,7 @@
             },
             "minecraft:cooldown": {
                 "category": "minerRifle",
-                "duration": 2
+                "duration": 1.35
             },
             "minecraft:icon": {
                 "texture": "miner_rifle"

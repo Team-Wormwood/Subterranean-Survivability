@@ -7,148 +7,131 @@ pack.description=A new and improved, survivable underground. Endless underground
 pack.name=§gSubterranean Survivability 2
 
 ##Blocks
-##tile.yana:XXX.name=
-tile.yana:ash_block.name=Ash Block
-tile.yana:blaststone_cobbled.name=Cobbled Blaststone
-tile.yana:blaststone.name=Blaststone
-tile.yana:limestone.name=Limestone
-tile.yana:blaststone_smooth.name=Smooth Blaststone
-tile.yana:blaststone_stairs_smooth.name=Smooth Blaststone Stairs
-tile.yana:blaststone_slab_smooth.name=Smooth Blaststone Slab
-tile.yana:blaststone_slab.name=Blaststone Slab
-tile.yana:blaststone_stairs.name=Blaststone Stairs
-tile.yana:blaststone_bricks.name=Blaststone Bricks
-tile.yana:sulfur_ore.name=Sulfur Ore
-tile.yana:oil_ore.name=Oil Ore
-tile.yana:niter_ore.name=Niter Ore
-tile.yana:rocky_dirt.name=Rocky Dirt
-tile.yana:blast_vent.name=Blast Vents
-tile.yana:explosives_table.name=§6Explosives Table
-tile.yana:munitions_table.name=§6Munitions Table
-tile.yana:mechanical_crafting_table.name=§6Mechanical Crafting Table
-tile.yana:dragon_head.name=§6Dragon Head Statue
-tile.yana:gunpowder_block.name=Block of Gunpowder
-tile.yana:sulfur_block.name=Block of Sulfur
-tile.yana:pyrite_ore.name=Pyrite Ore
-tile.yana:aluminium_ore.name=Aluminium Ore
-tile.yana:aluminium_block.name=Aluminium Block
-tile.yana:lead_ore.name=Lead Ore
-tile.yana:lead_block.name=Lead Block
-tile.yana:copper_stone.name=Copper Stone
+##tile.yanasakana:XXX.name=
+tile.yanasakana:ash_block.name=Ash Block
+tile.yanasakana:blaststone_cobbled.name=Cobbled Blaststone
+tile.yanasakana:blaststone.name=Blaststone
+tile.yanasakana:limestone.name=Limestone
+tile.yanasakana:blaststone_smooth.name=Smooth Blaststone
+tile.yanasakana:blaststone_stairs_smooth.name=Smooth Blaststone Stairs
+tile.yanasakana:blaststone_slab_smooth.name=Smooth Blaststone Slab
+tile.yanasakana:blaststone_slab.name=Blaststone Slab
+tile.yanasakana:blaststone_stairs.name=Blaststone Stairs
+tile.yanasakana:blaststone_bricks.name=Blaststone Bricks
+tile.yanasakana:sulfur_ore.name=Sulfur Ore
+tile.yanasakana:oil_ore.name=Oil Ore
+tile.yanasakana:niter_ore.name=Niter Ore
+tile.yanasakana:rocky_dirt.name=Rocky Dirt
+tile.yanasakana:blast_vent.name=Blast Vents
+tile.yanasakana:explosives_table.name=§6Explosives Table
+tile.yanasakana:munitions_table.name=§6Munitions Table
+tile.yanasakana:mechanical_crafting_table.name=§6Mechanical Crafting Table
+tile.yanasakana:dragon_head.name=§6Dragon Head Statue
+tile.yanasakana:gunpowder_block.name=Block of Gunpowder
+tile.yanasakana:sulfur_block.name=Block of Sulfur
+tile.yanasakana:pyrite_ore.name=Pyrite Ore
+tile.yanasakana:aluminium_ore.name=Aluminium Ore
+tile.yanasakana:aluminium_block.name=Aluminium Block
+tile.yanasakana:lead_ore.name=Lead Ore
+tile.yanasakana:lead_block.name=Lead Block
+tile.yanasakana:copper_stone.name=Copper Stone
+
 
 
 ##Pickaxe Items
-##item.yana:XXX=
-item.yana:pyrite_pickaxe=Pyrite Pickaxe
-item.yana:bismuth_pickaxe=Bismuth Pickaxe
-item.yana:chromium_pickaxe=Chromium Pickaxe
-item.yana:palladium_pickaxe=Palladium Pickaxe
-item.yana:titanium_pickaxe=Titanium Pickaxe
+##item.yanasakana:XXX=
+item.yanasakana:pyrite_pickaxe=Pyrite Pickaxe
 
 ##Sword Items
-##item.yana:XXX=
-item.yana:pyrite_sword=Pyrite Sword
-item.yana:bismuth_sword=Bismuth Sword
-item.yana:chromium_sword=Chromium Sword
-item.yana:palladium_sword=Palladium Sword
-item.yana:titanium_sword=Titanium Sword
+##item.yanasakana:XXX=
+item.yanasakana:pyrite_sword=Pyrite Sword
 
 ##Axe Items
-##item.yana:XXX=
-item.yana:pyrite_axe=Pyrite Axe
-item.yana:bismuth_axe=Bismuth Axe
-item.yana:chromium_axe=Chromium Axe
-item.yana:palladium_axe=Palladium Axe
-item.yana:titanium_axe=Titanium Axe
+##item.yanasakana:XXX=
+item.yanasakana:pyrite_axe=Pyrite Axe
 
 ##Shovel Items
-##item.yana:XXX=
-item.yana:pyrite_shovel=Pyrite Shovel
-item.yana:bismuth_shovel=Bismuth Shovel
-item.yana:chromium_shovel=Chromium Shovel
-item.yana:palladium_shovel=Palladium Shovel
-item.yana:titanium_shovel=Titanium Shovel
+##item.yanasakana:XXX=
+item.yanasakana:pyrite_shovel=Pyrite Shovel
 
 ##Hoe Items
-##item.yana:XXX=
-item.yana:pyrite_hoe=Pyrite Hoe
-item.yana:bismuth_hoe=Bismuth Hoe
-item.yana:chromium_hoe=Chromium Hoe
-item.yana:palladium_hoe=Palladium Hoe
-item.yana:titanium_hoe=Titanium Hoe
+##item.yanasakana:XXX=
+item.yanasakana:pyrite_hoe=Pyrite Hoe
+
 
 
 ##Ore Items
-##item.yana:XXX=
-item.yana:ash=Ash Dust
-item.yana:sulfur=Sulfur Dust
-item.yana:oil_ball=Ball of Oil
-item.yana:niter=Niter Dust
-item.yana:blackpowder=Blackpowder
-item.yana:hyphae_branch=Hyphae Branch
-item.yana:pyrite=Pyrite
-item.yana:aluminium_ingot=Aluminum Ingot
-item.yana:aluminium_nugget=Aluminum Nugget
-item.yana:aluminium=Raw Aluminium
-item.yana:lead_nugget=Lead Nugget
-item.yana:lead_ingot=Lead Ingot
-item.yana:copper_flake=Copper Flake
-
-
-##Block Items
-##item.yana:XXX=
-
+##item.yanasakana:XXX=
+item.yanasakana:ash=Ash Dust
+item.yanasakana:sulfur=Sulfur Dust
+item.yanasakana:oil_ball=Ball of Oil
+item.yanasakana:niter=Niter Dust
+item.yanasakana:blackpowder=Blackpowder
+item.yanasakana:hyphae_branch=Hyphae Branch
+item.yanasakana:pyrite=Pyrite
+item.yanasakana:aluminium_ingot=Aluminum Ingot
+item.yanasakana:aluminium_nugget=Aluminum Nugget
+item.yanasakana:aluminium=Raw Aluminium
+item.yanasakana:lead_nugget=Lead Nugget
+item.yanasakana:lead_ingot=Lead Ingot
+item.yanasakana:copper_flake=Copper Flake
 
 
 
 ##Crafting Items
-##item.yana:XXX=
-item.yana:copper_barrel=Copper Barrel
-item.yana:stock=Wooden Gun Stock
-item.yana:iron_gear=Iron Mechanical Piece
+##item.yanasakana:XXX=
+item.yanasakana:copper_barrel=Copper Barrel
+item.yanasakana:stock=Wooden Gun Stock
+item.yanasakana:iron_gear=Iron Mechanical Piece
+
 
 
 ##Miscellaneous Items
-##item.yana:XXX=
-item.yana:dynamite=Stick of Dynamite
-item.yana:match=Match
-item.yana:thermite=Thermite Powder
-item.yana:cannon=Fireworks Cannon (1/1)
-item.yana:cannon_empty=Fireworks Cannon (0/1)
-item.yana:hunting_rifle=Hunting Rifle
-item.yana:miner_rifle=§dMiner's Rifle 
-item.yana:revolver=Revolver
-item.yana:firecracker=Firecracker
-item.yana:firecracker_red=Firecracker (Red)
-item.yana:firecracker_orange=Firecracker (Orange)
-item.yana:firecracker_yellow=Firecracker (Yellow)
-item.yana:firecracker_lime=Firecracker (Lime)
-item.yana:firecracker_green=Firecracker (Green)
-item.yana:firecracker_cyan=Firecracker (Cyan)
-item.yana:firecracker_light_blue=Firecracker (Light Blue)
-item.yana:firecracker_blue=Firecracker (Blue)
-item.yana:firecracker_purple=Firecracker (Purple)
-item.yana:firecracker_magenta=Firecracker (Magenta)
-item.yana:firecracker_pink=Firecracker (Pink)
-item.yana:firecracker_brown=Firecracker (Brown)
-item.yana:firecracker_light_grey=Firecracker (Light Grey)
-item.yana:firecracker_grey=Firecracker (Grey)
-item.yana:firecracker_black=Firecracker (Black)
-item.yana:firecracker_white=Firecracker (White)
-item.yana:copper_bullet=Copper Bullet
-item.yana:lead_bullet=Lead Bullet
+##item.yanasakana:XXX=
+item.yanasakana:dynamite=Stick of Dynamite
+item.yanasakana:match=Match
+item.yanasakana:thermite=Thermite Powder
+item.yanasakana:cannon=Fireworks Cannon (1/1)
+item.yanasakana:cannon_empty=Fireworks Cannon (0/1)
+item.yanasakana:hunting_rifle=Hunting Rifle
+item.yanasakana:miner_rifle=§dMiner's Rifle 
+item.yanasakana:revolver=Revolver
+item.yanasakana:firecracker=Firecracker
+item.yanasakana:firecracker_red=Firecracker (Red)
+item.yanasakana:firecracker_orange=Firecracker (Orange)
+item.yanasakana:firecracker_yellow=Firecracker (Yellow)
+item.yanasakana:firecracker_lime=Firecracker (Lime)
+item.yanasakana:firecracker_green=Firecracker (Green)
+item.yanasakana:firecracker_cyan=Firecracker (Cyan)
+item.yanasakana:firecracker_light_blue=Firecracker (Light Blue)
+item.yanasakana:firecracker_blue=Firecracker (Blue)
+item.yanasakana:firecracker_purple=Firecracker (Purple)
+item.yanasakana:firecracker_magenta=Firecracker (Magenta)
+item.yanasakana:firecracker_pink=Firecracker (Pink)
+item.yanasakana:firecracker_brown=Firecracker (Brown)
+item.yanasakana:firecracker_light_grey=Firecracker (Light Grey)
+item.yanasakana:firecracker_grey=Firecracker (Grey)
+item.yanasakana:firecracker_black=Firecracker (Black)
+item.yanasakana:firecracker_white=Firecracker (White)
+item.yanasakana:copper_bullet=Copper Bullet
+item.yanasakana:lead_bullet=Lead Bullet
+
 
 
 ##Entities
-##entity.yana:XXX.name=
+##entity.yanasakana:XXX.name=
 ##Do not do firecrackers
-entity.yana:blast_miner.name=Blast Miner
-entity.yana:thermite_entity.name=A Thermite Blast
-item.spawn_egg.entity.yana:blast_miner.name=Spawn Blast Miner
-entity.yana:dynamite_entity.name=Dynamite
-entity.yana:firecracker_entity.name=Firecracker
+entity.yanasakana:blast_miner.name=Blast Miner
+item.spawn_egg.entity.yanasakana:blast_miner.name=Spawn Blast Miner
+entity.yanasakana:rat.name=Rat
+item.spawn_egg.entity.yanasakana:rat.name=Spawn Rat
+entity.yanasakana:dynamite_entity.name=Dynamite
+entity.yanasakana:firecracker_entity.name=Firecracker
+entity.yanasakana:thermite_entity.name=A Thermite Blast
+
+
 
 ##Miscellaneous 
 
 ##Dev
-item.yana:unending=ゆ
+item.yanasakana:unending=ゆ

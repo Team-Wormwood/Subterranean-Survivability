@@ -7,6 +7,7 @@
 		"components": {
 			"tag:stone": {},
 			"tag:stone_pick_diggable": {},
+			"tag:blaststone": {},
 			"minecraft:loot": "loot_tables/empty.json",
 			"minecraft:destroy_time": 1.0,
 			"minecraft:map_color": "#d43200",

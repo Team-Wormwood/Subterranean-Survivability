@@ -1,0 +1,70 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.rat.baby_transform": {
+			"loop": true,
+			"bones": {
+				"head": {
+					"scale": 2.0
+				}
+			}
+		},
+		"animation.rat.move": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": [
+						0,
+						"Math.cos((query.anim_time + 0.0) * 2.00 * 90) * 2",
+						"Math.cos((query.anim_time + 0.0) * 2.00 * 90) * 4"
+					],
+					"position": [
+						0,
+						"-Math.cos((query.anim_time + 0.0) * 2.00 * 200) / 8",
+						0
+					]
+				},
+				"tail": {
+					"rotation": [
+						0,
+						"-Math.cos((query.anim_time + 0.0) * 2.00 * 100) * 5",
+						0
+					]
+				},
+				"tail2": {
+					"rotation": [
+						"Math.cos((query.anim_time + 0.0) * 2.00 * 200) * 5",
+						"Math.cos((query.anim_time + 0.0) * 2.00 * 200) * -5",
+						0
+					]
+				},
+				"head": {
+					"rotation": [
+						"Math.cos((query.anim_time + 0.0) * 2.00 * 100) * 5",
+						"Math.cos((query.anim_time + 0.0) * 2.00 * 90) * 2",
+						0
+					],
+					"position": [
+						0,
+						"Math.cos((query.anim_time + 0.0) * 2.00 * 200) / 8",
+						0
+					]
+				},
+				"backLegs": {
+					"rotation": [
+						0,
+						"-Math.cos((query.anim_time + 0.0) * 2.00 * 100) * -14",
+						0
+					]
+				},
+				"frontLegs": {
+					"rotation": [
+						0,
+						"Math.cos((query.anim_time + 0.0) * 2.00 * 100) * -18",
+						0
+					]
+				}
+			}
+		}
+	}
+}

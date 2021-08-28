@@ -2,7 +2,7 @@
 	"format_version": "1.8.0",
 	"minecraft:client_entity": {
 		"description": {
-			"identifier": "yana:firecracker_entity_light_grey",
+			"identifier": "yanasakana:firecracker_entity_light_grey",
 			"min_engine_version": "1.8.0",
 			"materials": {
 				"default": "salmon"

@@ -53,7 +53,8 @@
         },
         "misc.spawn_eggs": {
             "textures": [
-                "textures/items/eggs/egg_blast_miner"
+                "textures/items/eggs/egg_blast_miner",
+                "textures/items/eggs/egg_rat"
             ]
         },
         "niter": {

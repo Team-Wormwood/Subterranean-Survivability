@@ -263,12 +263,12 @@
                 "sounds/mob/villager/yes3"
             ]
         },
-        "mob.yana:flames.die": {
+        "mob.yanasakana:flames.die": {
             "sounds": [
                 "sounds/random/fizz"
             ]
         },
-        "mob.yana:flames.hurt": {
+        "mob.yanasakana:flames.hurt": {
             "sounds": [
                 "sounds/random/fizz"
             ]

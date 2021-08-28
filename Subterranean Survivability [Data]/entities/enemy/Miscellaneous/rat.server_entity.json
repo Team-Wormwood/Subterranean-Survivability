@@ -2,7 +2,336 @@
     "format_version": "1.16.0",
     "minecraft:entity": {
         "description": {
-            "identifier": "yanasakana:entity_name"
+            "identifier": "yanasakana:rat",
+            "is_experimental": false,
+            "is_spawnable": true,
+            "is_summonable": true,
+            "animations": {},
+            "scripts": {
+                "animate": []
+            }
+        },
+        "component_groups": {
+            // Age Groups
+            "yanasakana:rat_baby": {
+                "minecraft:is_baby": {},
+                "minecraft:scale": {
+                    "value": 0.5
+                },
+                "minecraft:experience_reward": {
+                    "on_death": "query.last_hit_by_player ? 1 + (query.equipment_count * Math.Random(1,2)) : 0"
+                },
+                "minecraft:behavior.panic": {
+                    "priority": 1,
+                    "speed_multiplier": 1.1
+                }
+            },
+            "yanasakana:rat_adult": {
+                "minecraft:group_size": {
+                    "radius": 64,
+                    "filters": {
+                        "all_of": [
+                            {
+                                "test": "is_family",
+                                "value": "rat"
+                            }
+                        ]
+                    }
+                },
+                "minecraft:experience_reward": {
+                    "on_death": "query.last_hit_by_player ? 5 + (query.equipment_count * Math.Random(1,3)) : 0"
+                }
+            },
+            // Attack Groups
+            "yanasakana:rat_angry": {
+                "minecraft:angry": {
+                    "duration": 60,
+                    "broadcast_anger": true,
+                    "broadcast_anger_on_attack": true,
+                    "broadcast_anger_on_being_attacked": true,
+                    "broadcast_range": 16,
+                    "broadcast_targets": [
+                        "rat"
+                    ],
+                    "calm_event": {
+                        "event": "rat:become_calm",
+                        "target": "self"
+                    },
+                    "filters": {
+                        "all_of": [
+                            {
+                                "test": "is_family",
+                                "subject": "other",
+                                "operator": "!=",
+                                "value": "rat"
+                            }
+                        ]
+                    }
+                }
+            },
+            "yanasakana:rat_melee": {
+                "minecraft:behavior.leap_at_target": {
+                    "priority": 1,
+                    "yd": 0.4,
+                    "must_be_on_ground": false
+                },
+                "minecraft:behavior.melee_attack": {
+                    "priority": 1,
+                    "speed_multiplier": 1.0,
+                    "track_target": true
+                },
+                "minecraft:attack": {
+                    "damage": 4
+                }
+            },
+            "yanasakana:rat_weaponised": {
+                "minecraft:behavior.melee_attack": {
+                    "priority": 1,
+                    "speed_multiplier": 1.0,
+                    "track_target": true
+                },
+                "minecraft:attack": {
+                    "damage": 6
+                },
+                "minecraft:equipment": {
+                    "table": "loot_tables/entities/rat_equipment.loot_table.json"
+                }
+            }
+        },
+        "components": {
+            // General Components
+            "minecraft:is_hidden_when_invisible": {},
+            "minecraft:equip_item": {},
+            "minecraft:nameable": {},
+            "minecraft:physics": {},
+            "minecraft:type_family": {
+                "family": [
+                    "animal",
+                    "mob",
+                    "monster"
+                ]
+            },
+            "minecraft:pushable": {
+                "is_pushable": true,
+                "is_pushable_by_piston": true
+            },
+            "minecraft:follow_range": {
+                "value": 64
+            },
+            "minecraft:breathable": {
+                "total_supply": 15,
+                "suffocate_time": 0
+            },
+            "minecraft:inventory": {
+                "inventory_size": 8
+            },
+            "minecraft:hurt_on_condition": {
+                "damage_conditions": [
+                    {
+                        "filters": {
+                            "test": "in_lava",
+                            "subject": "self",
+                            "operator": "==",
+                            "value": true
+                        },
+                        "cause": "lava",
+                        "damage_per_tick": 4
+                    }
+                ]
+            },
+            "minecraft:health": {
+                "value": 10,
+                "max": 10
+            },
+            "minecraft:collision_box": {
+                "width": 0.5,
+                "height": 0.3
+            },
+            "minecraft:on_target_acquired": {
+                "event": "rat:become_angry",
+                "target": "self"
+            },
+            "minecraft:despawn": {
+                "despawn_from_distance": {}
+            },
+            "minecraft:loot": {
+                "table": "loot_tables/entities/rat.loot_table.json"
+            },
+            "minecraft:conditional_bandwidth_optimization": {},
+            // Navigation Components
+            "minecraft:movement.basic": {},
+            "minecraft:jump.static": {},
+            "minecraft:navigation.walk": {
+                "can_path_over_water": true,
+                "can_open_doors": true
+            },
+            "minecraft:movement": {
+                "value": 0.32
+            },
+            // AI Components
+            "minecraft:behavior.nearest_attackable_target": {
+                "priority": 1,
+                "must_see": false,
+                "attack_interval": 1,
+                "entity_types": [
+                    {
+                        "filters": {
+                            "any_of": [
+                                {
+                                    "test": "is_family",
+                                    "subject": "other",
+                                    "value": "player"
+                                },
+                                {
+                                    "test": "is_family",
+                                    "subject": "other",
+                                    "value": "snowgolem"
+                                },
+                                {
+                                    "test": "is_family",
+                                    "subject": "other",
+                                    "value": "irongolem"
+                                }
+                            ]
+                        },
+                        "max_dist": 16
+                    }
+                ]
+            },
+            "minecraft:behavior.hurt_by_target": {
+                "priority": 1
+            },
+            "minecraft:behavior.avoid_mob_type": {
+                "priority": 3,
+                "remove_target": true,
+                "entity_types": [
+                    {
+                        "filters": {
+                            "any_of": [
+                                {
+                                    "test": "is_family",
+                                    "subject": "other",
+                                    "value": "creeper"
+                                },
+                                {
+                                    "test": "is_family",
+                                    "subject": "other",
+                                    "value": "cat"
+                                }
+                            ]
+                        },
+                        "sprint_speed_multiplier": 1.2,
+                        "check_if_outnumbered": true,
+                        "max_dist": 6
+                    }
+                ],
+                "on_escape_event": {
+                    "event": "rat:become_calm_event",
+                    "target": "self"
+                }
+            },
+            "minecraft:behavior.equip_item": {
+                "priority": 5
+            },
+            "minecraft:behavior.pickup_items": {
+                "priority": 6,
+                "max_dist": 10,
+                "goal_radius": 2,
+                "speed_multiplier": 0.8,
+                "pickup_based_on_chance": false,
+                "can_pickup_any_item": true,
+                "cooldown_after_being_attacked": 0.0
+            },
+            "minecraft:behavior.random_stroll": {
+                "priority": 10,
+                "speed_multiplier": 0.6
+            },
+            "minecraft:behavior.look_at_player": {
+                "priority": 11,
+                "look_distance": 8
+            },
+            "minecraft:behavior.random_look_around": {
+                "priority": 12
+            }
+        },
+        "events": {
+            // Default Events
+            "minecraft:entity_spawned": {
+                "randomize": [
+                    {
+                        "weight": 75,
+                        "trigger": "minecraft:spawn_adult"
+                    },
+                    {
+                        "weight": 25,
+                        "add": {
+                            "component_groups": [
+                                "yanasakana:rat_baby"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "minecraft:entity_born": {
+                "add": {
+                    "component_groups": [
+                        "yanasakana:rat_baby"
+                    ]
+                }
+            },
+            "minecraft:ageable_grow_up": {
+                "remove": {
+                    "component_groups": [
+                        "yanasakana:rat_baby"
+                    ]
+                },
+                "add": {
+                    "component_groups": [
+                        "yanasakana:rat_adult",
+                        "yanasakana:rat_melee"
+                    ]
+                }
+            },
+            "minecraft:spawn_adult": {
+                "add": {
+                    "component_groups": [
+                        "yanasakana:rat_adult"
+                    ]
+                },
+                "randomize": [
+                    {
+                        "weight": 50,
+                        "add": {
+                            "component_groups": [
+                                "yanasakana:rat_weaponised"
+                            ]
+                        }
+                    },
+                    {
+                        "weight": 50,
+                        "add": {
+                            "component_groups": [
+                                "yanasakana:rat_melee"
+                            ]
+                        }
+                    }
+                ]
+            },
+            // Attacking Events
+            "rat:become_angry": {
+                "add": {
+                    "component_groups": [
+                        "yanasakana:rat_angry"
+                    ]
+                }
+            },
+            "rat:become_calm": {
+                "remove": {
+                    "component_groups": [
+                        "yanasakana:rat_angry"
+                    ]
+                }
+            }
         }
     }
 }

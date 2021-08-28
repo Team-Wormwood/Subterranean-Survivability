@@ -17,6 +17,7 @@
 			"minecraft:block_light_absorption": 0,
 			"tag:stone": {},
 			"tag:stone_pick_diggable": {},
+			"tag:blaststone": {},
 			"minecraft:loot": "loot_tables/empty.json",
 			"minecraft:destroy_time": 1.2,
 			"minecraft:map_color": "#d43200",

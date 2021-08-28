@@ -4,19 +4,19 @@
         1,
         0
     ],
-    "yana:aluminium_ore": {
+    "yanasakana:aluminium_ore": {
         "sound": "stone",
         "textures": "aluminium_ore"
     },
-    "yana:aluminium_block": {
+    "yanasakana:aluminium_block": {
         "sound": "metal",
         "textures": "aluminium_block"
     },
-    "yana:ash_block": {
+    "yanasakana:ash_block": {
         "sound": "sand",
         "textures": "ash_block"
     },
-    "yana:blaststone": {
+    "yanasakana:blaststone": {
         "sound": "stone",
         "textures": {
             "down": "blaststone_cobbled",
@@ -24,39 +24,39 @@
             "up": "blaststone_top"
         }
     },
-    "yana:blaststone_bricks": {
+    "yanasakana:blaststone_bricks": {
         "sound": "stone",
         "textures": "blaststone_bricks"
     },
-    "yana:blaststone_cobbled": {
+    "yanasakana:blaststone_cobbled": {
         "sound": "stone",
         "textures": "blaststone_cobbled"
     },
-    "yana:blaststone_slab": {
+    "yanasakana:blaststone_slab": {
         "sound": "stone",
         "textures": "blaststone_cobbled"
     },
-    "yana:blaststone_slab_smooth": {
+    "yanasakana:blaststone_slab_smooth": {
         "sound": "stone",
         "textures": "blaststone_smooth"
     },
-    "yana:blaststone_smooth": {
+    "yanasakana:blaststone_smooth": {
         "sound": "stone",
         "textures": "blaststone_smooth"
     },
-    "yana:blaststone_stairs": {
+    "yanasakana:blaststone_stairs": {
         "sound": "stone",
         "textures": "blaststone_cobbled"
     },
-    "yana:blaststone_stairs_smooth": {
+    "yanasakana:blaststone_stairs_smooth": {
         "sound": "stone",
         "textures": "blaststone_smooth"
     },
-    "yana:copper_stone": {
+    "yanasakana:copper_stone": {
         "sound": "nether_gold",
         "textures": "copper_stone"
     },
-    "yana:dragon_head": {
+    "yanasakana:dragon_head": {
         "sound": "wood",
         "textures": "dragon_head"
     },
@@ -65,7 +65,7 @@
         "sound": "gravel",
         "textures": "dirt"
     },
-    "yana:explosives_table": {
+    "yanasakana:explosives_table": {
         "sound": "wood",
         "textures": {
             "down": "explosives_table_bottom",
@@ -73,46 +73,46 @@
             "up": "explosives_table_top"
         }
     },
-    "yana:gunpowder_block": {
+    "yanasakana:gunpowder_block": {
         "sound": "soul_soil",
         "textures": "gunpowder_block"
     },
-    "yana:lead_ore": {
+    "yanasakana:lead_ore": {
         "sound": "stone",
         "textures": "lead_ore"
     },
-    "yana:limestone": {
+    "yanasakana:limestone": {
         "sound": "stone",
         "textures": "limestone"
     },
-    "yana:mechanical_crafting_table": {
+    "yanasakana:mechanical_crafting_table": {
         "sound": "wood"
     },
-    "yana:munitions_table": {
+    "yanasakana:munitions_table": {
         "sound": "wood",
         "textures": "munitions_table"
     },
-    "yana:niter_ore": {
+    "yanasakana:niter_ore": {
         "sound": "stone",
         "textures": "niter_ore"
     },
-    "yana:oil_ore": {
+    "yanasakana:oil_ore": {
         "sound": "gravel",
         "textures": "oil_ore"
     },
-    "yana:pyrite_ore": {
+    "yanasakana:pyrite_ore": {
         "sound": "gravel",
         "textures": "pyrite_ore"
     },
-    "yana:rocky_dirt": {
+    "yanasakana:rocky_dirt": {
         "sound": "gravel",
         "textures": "rocky_dirt"
     },
-    "yana:sulfur_block": {
+    "yanasakana:sulfur_block": {
         "sound": "soul_soil",
         "textures": "sulfur_block"
     },
-    "yana:sulfur_ore": {
+    "yanasakana:sulfur_ore": {
         "sound": "stone",
         "textures": {
             "down": "sulfur_ore_top",
@@ -120,7 +120,7 @@
             "up": "sulfur_ore_top"
         }
     },
-    "yana:thermite_dust": {
+    "yanasakana:thermite_dust": {
         "sound": "sand",
         "textures": "thermite_dust"
     }

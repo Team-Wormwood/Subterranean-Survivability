@@ -2,7 +2,7 @@
 	"format_version": "1.16.0",
 	"minecraft:attachable": {
 		"description": {
-			"identifier": "yana:cannon",
+			"identifier": "yanasakana:cannon",
 			"materials": {
 				"default": "armor",
 				"enchanted": "armor_enchanted"

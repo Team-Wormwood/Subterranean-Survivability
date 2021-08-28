@@ -2,7 +2,7 @@
 	"format_version": "1.8.0",
 	"minecraft:client_entity": {
 		"description": {
-			"identifier": "yana:match_entity",
+			"identifier": "yanasakana:match_entity",
 			"min_engine_version": "1.8.0",
 			"materials": {
 				"default": "salmon"
@@ -14,8 +14,8 @@
 				"default": "geometry.match"
 			},
 			"particle_effects": {
-				"smoke_particle": "yana:dynamite_fuse_smoke",
-				"flame_particle": "yana:dynamite_fuse_flame"
+				"smoke_particle": "yanasakana:dynamite_fuse_smoke",
+				"flame_particle": "yanasakana:dynamite_fuse_flame"
 			},
 			"scripts": {},
 			"animations": {
