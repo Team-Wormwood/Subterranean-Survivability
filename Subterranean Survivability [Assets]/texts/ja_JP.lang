@@ -34,12 +34,15 @@ tile.yanasakana:aluminium_ore.name=アルミの鉱石
 tile.yanasakana:aluminium_block.name=アルミブロック
 tile.yanasakana:lead_ore.name=鉛鉱石
 tile.yanasakana:lead_block.name=鉛ブロック
+tile.yanasakana:kyanite_ore.name=藍晶石
+tile.yanasakana:kyanite_block.name=藍晶石ブロック
 
 
 
 ##Pickaxe Items
 ##item.yanasakana:XXX=
 item.yanasakana:pyrite_pickaxe=黄鉄のツルハシ
+item.yanasakana:kyanite_pickaxe=藍晶石のツルハシ
 
 ##Sword Items
 ##item.yanasakana:XXX=
@@ -67,6 +70,7 @@ item.yanasakana:oil_ball=オイルーボール
 item.yanasakana:niter=硝塵
 item.yanasakana:blackpowder=黒色火薬
 item.yanasakana:hyphae_branch=菌糸の棒
+item.yanasakana:kyanite=藍晶石
 item.yanasakana:pyrite=黄鉄
 item.yanasakana:aluminium_ingot=アルミの延べ棒
 item.yanasakana:aluminium_nugget=アルミ塊
