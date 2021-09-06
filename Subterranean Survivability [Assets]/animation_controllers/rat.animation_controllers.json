@@ -1,0 +1,27 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.rat.walk": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "walking": "query.modified_move_speed"
+                        }
+                    ]
+                },
+                "walking": {
+                    "animations": [
+                        "walk"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!query.modified_move_speed"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

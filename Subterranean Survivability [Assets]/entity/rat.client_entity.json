@@ -18,9 +18,7 @@
             ],
             "scripts": {
                 "animate": [
-                    {
-                        "move": "query.modified_move_speed"
-                    },
+                    "movement",
                     "look_at_target",
                     {
                         "baby_transform": "query.is_baby"
@@ -28,8 +26,8 @@
                 ]
             },
             "animations": {
-                //"general": "controller.animation.rat.general",
-                "move": "animation.rat.move",
+                "movement": "controller.animation.rat.movement",
+                "walk": "animation.rat.walk",
                 "look_at_target": "animation.common.look_at_target",
                 "baby_transform": "animation.rat.baby_transform"
             },
