@@ -4,13 +4,18 @@
         1,
         0
     ],
-    "yanasakana:aluminium_ore": {
-        "sound": "stone",
-        "textures": "aluminium_ore"
+    "dirt": {
+        "isotropic": false,
+        "sound": "gravel",
+        "textures": "dirt"
     },
     "yanasakana:aluminium_block": {
         "sound": "metal",
         "textures": "aluminium_block"
+    },
+    "yanasakana:aluminium_ore": {
+        "sound": "stone",
+        "textures": "aluminium_ore"
     },
     "yanasakana:ash_block": {
         "sound": "sand",
@@ -52,18 +57,9 @@
         "sound": "stone",
         "textures": "blaststone_smooth"
     },
-    "yanasakana:copper_stone": {
-        "sound": "nether_gold",
-        "textures": "copper_stone"
-    },
     "yanasakana:dragon_head": {
         "sound": "wood",
         "textures": "dragon_head"
-    },
-    "dirt": {
-        "isotropic": false,
-        "sound": "gravel",
-        "textures": "dirt"
     },
     "yanasakana:explosives_table": {
         "sound": "wood",
@@ -76,6 +72,14 @@
     "yanasakana:gunpowder_block": {
         "sound": "soul_soil",
         "textures": "gunpowder_block"
+    },
+    "yanasakana:kyanite_block": {
+        "sound": "metal",
+        "textures": "kyanite_block"
+    },
+    "yanasakana:kyanite_ore": {
+        "sound": "stone",
+        "textures": "kyanite_ore"
     },
     "yanasakana:lead_ore": {
         "sound": "stone",

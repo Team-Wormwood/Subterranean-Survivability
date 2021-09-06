@@ -34,7 +34,6 @@ tile.yanasakana:aluminium_ore.name=アルミの鉱石
 tile.yanasakana:aluminium_block.name=アルミブロック
 tile.yanasakana:lead_ore.name=鉛鉱石
 tile.yanasakana:lead_block.name=鉛ブロック
-tile.yanasakana:copper_stone.name=銅石
 
 
 
@@ -74,7 +73,6 @@ item.yanasakana:aluminium_nugget=アルミ塊
 item.yanasakana:aluminium=アルミの原石
 item.yanasakana:lead_nugget=鉛塊
 item.yanasakana:lead_ingot=鉛の延べ棒
-item.yanasakana:copper_flake=銅のフレーク
 
 
 

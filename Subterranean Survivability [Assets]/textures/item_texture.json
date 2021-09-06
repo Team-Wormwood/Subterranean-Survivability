@@ -22,9 +22,6 @@
         "copper_barrel": {
             "textures": "textures/items/crafting/copper_barrel"
         },
-        "copper_flake": {
-            "textures": "textures/items/ores/copper_flake"
-        },
         "dynamite": {
             "textures": "textures/items/tools/miscellaneous/dynamite"
         },
@@ -123,6 +120,15 @@
                 "textures/items/tools/miscellaneous/firecrackers/black_firecracker",
                 //17
                 "textures/items/tools/miscellaneous/firecrackers/white_firecracker"
+            ]
+        },
+        "tools.kyanite": {
+            "textures": [
+                "textures/items/tools/biome/kyanite_sword",
+                "textures/items/tools/biome/kyanite_pickaxe",
+                "textures/items/tools/biome/kyanite_axe",
+                "textures/items/tools/biome/kyanite_shovel",
+                "textures/items/tools/biome/kyanite_hoe"
             ]
         },
         "tools.pyrite": {

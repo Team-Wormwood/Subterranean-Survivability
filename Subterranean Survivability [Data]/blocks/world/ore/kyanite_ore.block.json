@@ -2,24 +2,24 @@
 	"format_version": "1.16.100",
 	"minecraft:block": {
 		"description": {
-			"identifier": "yanasakana:aluminium_block"
+			"identifier": "yanasakana:kyanite_ore"
 		},
 		"components": {
 			"tag:stone": {},
 			"tag:stone_pick_diggable": {},
 			"minecraft:destroy_time": 1,
-			"minecraft:map_color": "#547ac8",
+			"minecraft:map_color": "#51b4bc",
 			"minecraft:loot": "loot_tables/empty.json",
 			"minecraft:on_player_destroyed": {
 				"event": "destroyed",
 				"target": "self",
-				"condition": "q.equipped_item_any_tag('slot.weapon.mainhand','minecraft:wooden_tier','minecraft:stone_tier','minecraft:iron_tier','minecraft:golden_tier','minecraft:diamond_tier','minecraft:netherite_tier')"
+				"condition": "q.equipped_item_any_tag('slot.weapon.mainhand','minecraft:iron_tier','minecraft:diamond_tier','minecraft:netherite_tier')"
 			}
 		},
 		"events": {
 			"destroyed": {
 				"spawn_loot": {
-					"table": "loot_tables/blocks/storage/aluminium_block.json"
+					"table": "loot_tables/blocks/ores/kyanite.json"
 				}
 			}
 		}

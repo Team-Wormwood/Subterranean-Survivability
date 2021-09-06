@@ -34,13 +34,15 @@ tile.yanasakana:aluminium_ore.name=Aluminium Ore
 tile.yanasakana:aluminium_block.name=Aluminium Block
 tile.yanasakana:lead_ore.name=Lead Ore
 tile.yanasakana:lead_block.name=Lead Block
-tile.yanasakana:copper_stone.name=Copper Stone
+tile.yanasakana:kyanite_ore.name=Kyanite Ore
+tile.yanasakana:kyanite_block.name=Kyanite Block
 
 
 
 ##Pickaxe Items
 ##item.yanasakana:XXX=
 item.yanasakana:pyrite_pickaxe=Pyrite Pickaxe
+item.yanasakana:kyanite_pickaxe=Kyanite Pickaxe
 
 ##Sword Items
 ##item.yanasakana:XXX=
@@ -74,7 +76,6 @@ item.yanasakana:aluminium_nugget=Aluminum Nugget
 item.yanasakana:aluminium=Raw Aluminium
 item.yanasakana:lead_nugget=Lead Nugget
 item.yanasakana:lead_ingot=Lead Ingot
-item.yanasakana:copper_flake=Copper Flake
 
 
 

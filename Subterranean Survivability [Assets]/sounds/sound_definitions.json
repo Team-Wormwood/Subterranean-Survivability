@@ -33,29 +33,6 @@
                 "sounds/ambient/cavechimes"
             ]
         },
-        "dig.stone": {
-            "__use_legacy_max_distance": "true",
-            "category": "block",
-            "sounds": [
-                {
-                    "load_on_low_memory": true,
-                    "name": "sounds/dig/stone1",
-                    "pitch": 0.79
-                },
-                {
-                    "name": "sounds/dig/stone2",
-                    "pitch": 0.79
-                },
-                {
-                    "name": "sounds/dig/stone3",
-                    "pitch": 0.79
-                },
-                {
-                    "name": "sounds/dig/stone4",
-                    "pitch": 0.79
-                }
-            ]
-        },
         "dig.metal": {
             "__use_legacy_max_distance": "true",
             "category": "block",

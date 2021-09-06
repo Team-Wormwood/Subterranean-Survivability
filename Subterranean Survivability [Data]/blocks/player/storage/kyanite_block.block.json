@@ -2,13 +2,13 @@
 	"format_version": "1.16.100",
 	"minecraft:block": {
 		"description": {
-			"identifier": "yanasakana:aluminium_block"
+			"identifier": "yanasakana:kyanite_block"
 		},
 		"components": {
 			"tag:stone": {},
 			"tag:stone_pick_diggable": {},
 			"minecraft:destroy_time": 1,
-			"minecraft:map_color": "#547ac8",
+			"minecraft:map_color": "#76e6ef",
 			"minecraft:loot": "loot_tables/empty.json",
 			"minecraft:on_player_destroyed": {
 				"event": "destroyed",
@@ -19,7 +19,7 @@
 		"events": {
 			"destroyed": {
 				"spawn_loot": {
-					"table": "loot_tables/blocks/storage/aluminium_block.json"
+					"table": "loot_tables/blocks/storage/kyanite_block.json"
 				}
 			}
 		}

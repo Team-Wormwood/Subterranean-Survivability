@@ -4,7 +4,7 @@
     "resource_pack_name": "vanilla",
     "texture_data": {
         "aluminium_block": {
-            "textures": "textures/blocks/storage/aluminium_block"
+            "textures": "textures/blocks/ore/storage/aluminium_block"
         },
         "aluminium_ore": {
             "textures": "textures/blocks/ore/aluminium_ore"
@@ -30,9 +30,6 @@
         "blaststone_top": {
             "textures": "textures/blocks/stone/blaststone_top"
         },
-        "copper_stone": {
-            "textures": "textures/blocks/ore/copper_stone"
-        },
         "dragon_head": {
             "textures": "textures/models/blocks/dragon_head"
         },
@@ -46,10 +43,16 @@
             "textures": "textures/blocks/crafting/explosives_table_top"
         },
         "gunpowder_block": {
-            "textures": "textures/blocks/storage/gunpowder_block"
+            "textures": "textures/blocks/ore/storage/gunpowder_block"
+        },
+        "kyanite_block": {
+            "textures": "textures/blocks/ore/storage/kyanite_block"
+        },
+        "kyanite_ore": {
+            "textures": "textures/blocks/ore/kyanite_ore"
         },
         "lead_block": {
-            "textures": "textures/blocks/storage/lead_block"
+            "textures": "textures/blocks/ore/storage/lead_block"
         },
         "lead_ore": {
             "textures": "textures/blocks/ore/lead_ore"
@@ -76,7 +79,7 @@
             "textures": "textures/blocks/rocky_dirt"
         },
         "sulfur_block": {
-            "textures": "textures/blocks/storage/sulfur_block"
+            "textures": "textures/blocks/ore/storage/sulfur_block"
         },
         "sulfur_ore_side": {
             "textures": "textures/blocks/ore/sulfur_ore_side"
