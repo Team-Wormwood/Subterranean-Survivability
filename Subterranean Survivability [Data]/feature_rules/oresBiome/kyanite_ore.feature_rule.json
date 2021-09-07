@@ -2,7 +2,7 @@
     "format_version": "1.13.0",
     "minecraft:feature_rules": {
         "description": {
-            "identifier": "yanasakana:overworld_underground_kyanite_ore_feature",
+            "identifier": "yanasakana:kyanite_ore.feature_rule",
             "places_feature": "yanasakana:kyanite_ore_feature"
         },
         "conditions": {
@@ -20,7 +20,7 @@
             ]
         },
         "distribution": {
-            "iterations": 20,
+            "iterations": 12,
             "coordinate_eval_order": "zyx",
             "x": {
                 "distribution": "uniform",
@@ -33,7 +33,7 @@
                 "distribution": "uniform",
                 "extent": [
                     0,
-                    64
+                    32
                 ]
             },
             "z": {

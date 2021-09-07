@@ -2,8 +2,8 @@
 	"format_version": "1.13.0",
 	"minecraft:feature_rules": {
 		"description": {
-			"identifier": "minecraft:overworld_blaststone_caves_ash",
-			"places_feature": "yanasakana:underground_ash_patch"
+			"identifier": "minecraft:overworld_blaststone_caves_basalt_decoration",
+			"places_feature": "yanasakana:blaststone_basalt_decoration"
 		},
 		"conditions": {
 			"placement_pass": "underground_pass",
@@ -30,7 +30,7 @@
 			]
 		},
 		"distribution": {
-			"iterations": 12,
+			"iterations": 25,
 			"coordinate_eval_order": "zyx",
 			"x": {
 				"distribution": "uniform",

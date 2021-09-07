@@ -21,12 +21,23 @@
         "sound": "sand",
         "textures": "ash_block"
     },
+    // "yanasakana:blaststone": {
+    //     "sound": "stone",
+    //     "textures": {
+    //         "down": "blaststone_cobbled",
+    //         "side": "blaststone",
+    //         "up": "blaststone_top"
+    //     }
+    // },
     "yanasakana:blaststone": {
         "sound": "stone",
         "textures": {
-            "down": "blaststone_cobbled",
-            "side": "blaststone",
-            "up": "blaststone_top"
+            "up": "vinni_blaststone_top",
+            "down": "vinni_blaststone_top",
+            "north": "vinni_blaststone_north",
+            "east": "vinni_blaststone_east",
+            "south": "vinni_blaststone_south",
+            "west": "vinni_blaststone_west"
         }
     },
     "yanasakana:blaststone_bricks": {
