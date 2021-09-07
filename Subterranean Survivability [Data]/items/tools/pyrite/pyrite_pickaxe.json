@@ -233,13 +233,13 @@
 							"event": "updateDurability"
 						}
 					},
-					{
-						"block": "minecraft:dripstone",
-						"speed": 2,
-						"on_dig": {
-							"event": "updateDurability"
-						}
-					},
+					// {
+					// 	"block": "minecraft:dripstone",
+					// 	"speed": 2,
+					// 	"on_dig": {
+					// 		"event": "updateDurability"
+					// 	}
+					// },
 					{
 						"block": "minecraft:calcite",
 						"speed": 2,

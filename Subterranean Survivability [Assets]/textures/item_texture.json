@@ -34,6 +34,9 @@
         "iron_gear": {
             "textures": "textures/items/crafting/iron_gear"
         },
+        "kyanite": {
+            "textures": "textures/items/ores/kyanite"
+        },
         "lead_ingot": {
             "textures": "textures/items/ores/lead_ingot"
         },
@@ -128,7 +131,8 @@
                 "textures/items/tools/biome/kyanite_pickaxe",
                 "textures/items/tools/biome/kyanite_axe",
                 "textures/items/tools/biome/kyanite_shovel",
-                "textures/items/tools/biome/kyanite_hoe"
+                "textures/items/tools/biome/kyanite_hoe",
+                "textures/items/tools/biome/kyanite_naginata"
             ]
         },
         "tools.pyrite": {
