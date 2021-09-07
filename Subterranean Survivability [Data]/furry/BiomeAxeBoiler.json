@@ -45,7 +45,7 @@
                 "destroy_speeds": [
                     {
                         "block": {
-                            "tags": "query.any_tag( 'wood', 'pumpkin', 'log', )"
+                            "tags": "query.any_tag( 'wood', 'pumpkin', 'log' )"
                         },
                         "speed": 7
                     },
