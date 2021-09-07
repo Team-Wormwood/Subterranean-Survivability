@@ -130,7 +130,11 @@
                         "speed": 7
                     },
                     {
-                        "block": "minecraft:banner",
+                        "block": "minecraft:standing_banner",
+                        "speed": 7
+                    },
+                    {
+                        "block": "minecraft:wall_banner",
                         "speed": 7
                     },
                     {
@@ -138,7 +142,7 @@
                         "speed": 7
                     },
                     {
-                        "block": "minecraft:melon",
+                        "block": "minecraft:melon_block",
                         "speed": 7
                     },
                     {
@@ -146,11 +150,7 @@
                         "speed": 7
                     },
                     {
-                        "block": "minecraft:sign",
-                        "speed": 7
-                    },
-                    {
-                        "block": "minecraft:note_block",
+                        "block": "minecraft:noteblock",
                         "speed": 7
                     },
                     {
@@ -198,7 +198,7 @@
                         "speed": 7
                     },
                     {
-                        "block": "minecraft:vines",
+                        "block": "minecraft:vine",
                         "speed": 7
                     }
                 ],
