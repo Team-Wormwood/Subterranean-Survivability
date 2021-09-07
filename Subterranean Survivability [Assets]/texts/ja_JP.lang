@@ -47,18 +47,25 @@ item.yanasakana:kyanite_pickaxe=藍晶石のツルハシ
 ##Sword Items
 ##item.yanasakana:XXX=
 item.yanasakana:pyrite_sword=黄鉄の検
+item.yanasakana:kyanite_sword=藍晶石の検
 
 ##Axe Items
 ##item.yanasakana:XXX=
 item.yanasakana:pyrite_axe=黄鉄の斧
+item.yanasakana:kyanite_axe=藍晶石の斧
 
 ##Shovel Items
 ##item.yanasakana:XXX=
 item.yanasakana:pyrite_shovel=黄鉄のシャベル
+item.yanasakana:kyanite_shovel=藍晶石のシャベル
 
 ##Hoe Items
 ##item.yanasakana:XXX=
 item.yanasakana:pyrite_hoe=黄鉄のクワ
+item.yanasakana:kyanite_hoe=藍晶石のクワ
+
+##Biome Unique Items
+item.yanasakana:kyanite_naginata.name=§6藍晶石の薙刀
 
 
 

@@ -45,7 +45,7 @@
                 "destroy_speeds": [
                     {
                         "block": {
-                            "tags": "query.any_tag('snow', 'grass', 'dirt', 'sand', 'gravel')"
+                            "tags": "query.any_tag( 'snow', 'grass', 'dirt', 'sand', 'gravel' )"
                         },
                         "speed": 7
                     },

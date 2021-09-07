@@ -47,18 +47,25 @@ item.yanasakana:kyanite_pickaxe=Kyanite Pickaxe
 ##Sword Items
 ##item.yanasakana:XXX=
 item.yanasakana:pyrite_sword=Pyrite Sword
+item.yanasakana:kyanite_sword=Kyanite Sword
 
 ##Axe Items
 ##item.yanasakana:XXX=
 item.yanasakana:pyrite_axe=Pyrite Axe
+item.yanasakana:kyanite_axe=Kyanite Axe
 
 ##Shovel Items
 ##item.yanasakana:XXX=
 item.yanasakana:pyrite_shovel=Pyrite Shovel
+item.yanasakana:kyanite_shovel=Kyanite Shovel
 
 ##Hoe Items
 ##item.yanasakana:XXX=
 item.yanasakana:pyrite_hoe=Pyrite Hoe
+item.yanasakana:kyanite_hoe=Kyanite Hoe
+
+##Biome Unique Item
+item.yanasakana:kyanite_naginata.name=§6Kyanite Naginata 
 
 
 
