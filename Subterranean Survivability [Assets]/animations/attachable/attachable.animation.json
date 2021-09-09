@@ -17,6 +17,19 @@
 					}
 				}
 			}
+		},
+		"animation.attachable.kabuto.offset": {
+			"loop": true,
+			"bones": {
+				"hat": {
+					"position": [
+						0,
+						-20,
+						-1
+					],
+					"scale": 1.15
+				}
+			}
 		}
 	}
 }

@@ -135,6 +135,14 @@
                 "textures/items/tools/biome/kyanite_naginata"
             ]
         },
+        "armour.kyanite": {
+            "textures": [
+                "textures/items/tools/biome/kyanite_kabuto",
+                "textures/items/tools/biome/kyanite_breastplate",
+                "textures/items/tools/biome/kyanite_leggings",
+                "textures/items/tools/biome/kyanite_boots"
+            ]
+        },
         "tools.pyrite": {
             "textures": [
                 "textures/items/tools/pyrite/pyrite_sword",

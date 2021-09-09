@@ -2,11 +2,11 @@
 ##2021/5/20
 ##やなぎ#2957
 
-##Packs
+## Packs
 pack.description=A new and improved, survivable underground. Endless underground expanses. §d@yanasakanadev
 pack.name=§gSubterranean Survivability 2
 
-##Blocks
+## Blocks
 ##tile.yanasakana:XXX.name=
 tile.yanasakana:ash_block.name=Ash Block
 tile.yanasakana:blaststone_cobbled.name=Cobbled Blaststone
@@ -39,37 +39,38 @@ tile.yanasakana:kyanite_block.name=Kyanite Block
 
 
 
-##Pickaxe Items
+## Pickaxe Items
 ##item.yanasakana:XXX=
 item.yanasakana:pyrite_pickaxe=Pyrite Pickaxe
 item.yanasakana:kyanite_pickaxe=Kyanite Pickaxe
 
-##Sword Items
+## Sword Items
 ##item.yanasakana:XXX=
 item.yanasakana:pyrite_sword=Pyrite Sword
 item.yanasakana:kyanite_sword=Kyanite Sword
 
-##Axe Items
+## Axe Items
 ##item.yanasakana:XXX=
 item.yanasakana:pyrite_axe=Pyrite Axe
 item.yanasakana:kyanite_axe=Kyanite Axe
 
-##Shovel Items
+## Shovel Items
 ##item.yanasakana:XXX=
 item.yanasakana:pyrite_shovel=Pyrite Shovel
 item.yanasakana:kyanite_shovel=Kyanite Shovel
 
-##Hoe Items
+## Hoe Items
 ##item.yanasakana:XXX=
 item.yanasakana:pyrite_hoe=Pyrite Hoe
 item.yanasakana:kyanite_hoe=Kyanite Hoe
 
-##Biome Unique Item
+## Biome Unique Item
 item.yanasakana:kyanite_naginata=§6Kyanite Naginata 
 
+## Armour Items
+item.yanasakana:kyanite_kabuto=§6Kyanite Kabuto
 
-
-##Ore Items
+## Ore Items
 ##item.yanasakana:XXX=
 item.yanasakana:ash=Ash Dust
 item.yanasakana:sulfur=Sulfur Dust
@@ -87,7 +88,7 @@ item.yanasakana:lead_ingot=Lead Ingot
 
 
 
-##Crafting Items
+## Crafting Items
 ##item.yanasakana:XXX=
 item.yanasakana:copper_barrel=Copper Barrel
 item.yanasakana:stock=Wooden Gun Stock
@@ -95,7 +96,7 @@ item.yanasakana:iron_gear=Iron Mechanical Piece
 
 
 
-##Miscellaneous Items
+## Miscellaneous Items
 ##item.yanasakana:XXX=
 item.yanasakana:dynamite=Stick of Dynamite
 item.yanasakana:match=Match
@@ -127,7 +128,7 @@ item.yanasakana:lead_bullet=Lead Bullet
 
 
 
-##Entities
+## Entities
 ##entity.yanasakana:XXX.name=
 ##Do not do firecrackers
 entity.yanasakana:blast_miner.name=Blast Miner
@@ -140,7 +141,7 @@ entity.yanasakana:thermite_entity.name=A Thermite Blast
 
 
 
-##Miscellaneous 
+## Miscellaneous 
 
-##Dev
+## Dev
 item.yanasakana:unending=ゆ

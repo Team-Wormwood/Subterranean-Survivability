@@ -2,11 +2,11 @@
 ##2021/5/20
 ##やなぎ#2957
 
-##Packs
+## Packs
 pack.description=新しくて改良地下ですよ. §d@yanasakanadev
 pack.name=§g地中生存
 
-##Blocks
+## Blocks
 ##tile.yanasakana:XXX.name=
 tile.yanasakana:ash_block.name=灰ブロック
 tile.yanasakana:blaststone_cobbled.name=ブラストストンの丸石
@@ -39,37 +39,38 @@ tile.yanasakana:kyanite_block.name=藍晶石ブロック
 
 
 
-##Pickaxe Items
+## Pickaxe Items
 ##item.yanasakana:XXX=
 item.yanasakana:pyrite_pickaxe=黄鉄のツルハシ
 item.yanasakana:kyanite_pickaxe=藍晶石のツルハシ
 
-##Sword Items
+## Sword Items
 ##item.yanasakana:XXX=
 item.yanasakana:pyrite_sword=黄鉄の検
 item.yanasakana:kyanite_sword=藍晶石の検
 
-##Axe Items
+## Axe Items
 ##item.yanasakana:XXX=
 item.yanasakana:pyrite_axe=黄鉄の斧
 item.yanasakana:kyanite_axe=藍晶石の斧
 
-##Shovel Items
+## Shovel Items
 ##item.yanasakana:XXX=
 item.yanasakana:pyrite_shovel=黄鉄のシャベル
 item.yanasakana:kyanite_shovel=藍晶石のシャベル
 
-##Hoe Items
+## Hoe Items
 ##item.yanasakana:XXX=
 item.yanasakana:pyrite_hoe=黄鉄のクワ
 item.yanasakana:kyanite_hoe=藍晶石のクワ
 
-##Biome Unique Items
+## Biome Unique Items
 item.yanasakana:kyanite_naginata.name=§6藍晶石の薙刀
 
+## Armour Items
+item.yanasakana:kyanite_kabuto=§6藍晶石の兜
 
-
-##Ore Items
+## Ore Items
 ##item.yanasakana:XXX=
 item.yanasakana:ash=灰塵
 item.yanasakana:sulfur=硫黄塵
@@ -87,7 +88,7 @@ item.yanasakana:lead_ingot=鉛の延べ棒
 
 
 
-##Crafting Items
+## Crafting Items
 ##item.yanasakana:XXX=
 item.yanasakana:copper_barrel=Copper Barrel
 item.yanasakana:stock=Wooden Gun Stock
@@ -95,7 +96,7 @@ item.yanasakana:iron_gear=Iron Mechanical Piece
 
 
 
-##Miscellaneous Items
+## Miscellaneous Items
 ##item.yanasakana:XXX=
 item.yanasakana:dynamite=ダイナマイト
 item.yanasakana:match=燐寸
@@ -127,7 +128,7 @@ item.yanasakana:lead_bullet=鉛銃弾
 
 
 
-##Entities
+## Entities
 ##entity.yanasakana:XXX.name=
 ##Do not do firecrackers
 entity.yanasakana:blast_miner.name=ブラスト マイナー
@@ -139,7 +140,7 @@ entity.yanasakana:thermite_entity.name=テルミット反応
 
 
 
-##Miscellaneous 
+## Miscellaneous 
 
-##Dev
+## Dev
 item.yanasakana:unending=inf
