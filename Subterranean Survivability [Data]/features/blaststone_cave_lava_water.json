@@ -1,0 +1,17 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:single_block_feature": {
+        "description": {
+            "identifier": "yanasakana:blaststone_cave_lava_water"
+        },
+        "places_block": {
+            "name": "minecraft:flowing_lava"
+        },
+        "may_replace": [
+            "minecraft:water",
+            "minecraft:flowing_water"
+        ],
+        "enforce_placement_rules": false,
+        "enforce_survivability_rules": false
+    }
+}

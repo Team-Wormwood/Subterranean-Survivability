@@ -2,11 +2,11 @@
 	"format_version": "1.13.0",
 	"minecraft:feature_rules": {
 		"description": {
-			"identifier": "overworld_blaststone_caves_pocket_large",
-			"places_feature": "yanasakana:blaststone_cave"
+			"identifier": "minecraft:overworld_blaststone_caves_water_lava",
+			"places_feature": "yanasakana:blaststone_cave_lava_water"
 		},
 		"conditions": {
-			"placement_pass": "before_underground_pass",
+			"placement_pass": "final_pass",
 			"minecraft:biome_filter": [
 				{
 					"any_of": [
@@ -30,27 +30,27 @@
 			]
 		},
 		"distribution": {
-			"iterations": 4,
+			"iterations": 32768,
 			"coordinate_eval_order": "zyx",
 			"x": {
-				"distribution": "uniform",
+				"distribution": "fixed_grid",
 				"extent": [
-					4,
-					16
+					0,
+					15
 				]
 			},
 			"y": {
 				"distribution": "uniform",
 				"extent": [
-					18,
-					20
+					-32,
+					32
 				]
 			},
 			"z": {
-				"distribution": "uniform",
+				"distribution": "fixed_grid",
 				"extent": [
-					4,
-					16
+					0,
+					15
 				]
 			}
 		}
