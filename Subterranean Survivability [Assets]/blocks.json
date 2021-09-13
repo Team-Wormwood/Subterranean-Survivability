@@ -109,7 +109,8 @@
     },
     "yanasakana:niter_ore": {
         "sound": "stone",
-        "textures": "niter_ore"
+        "textures": "niter_ore",
+        "carried_textures": "niter_ore"
     },
     "yanasakana:oil_ore": {
         "sound": "gravel",

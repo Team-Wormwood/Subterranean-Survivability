@@ -1,0 +1,13 @@
+{
+    "minecraft:digger": {
+        "use_efficiency": true,
+        "destroy_speeds": [
+            {
+                "block": {
+                    "tags": "!query.any_tag( 'air' )"
+                },
+                "speed": 7
+            }
+        ]
+    }
+}

@@ -68,7 +68,10 @@ item.yanasakana:kyanite_hoe=藍晶石のクワ
 item.yanasakana:kyanite_naginata.name=§6藍晶石の薙刀
 
 ## Armour Items
-item.yanasakana:kyanite_kabuto=§6藍晶石の兜
+item.yanasakana:kyanite_kabuto=§6藍晶石のヘルメット
+item.yanasakana:kyanite_breastplate=§6藍晶石のチェストプレート
+item.yanasakana:kyanite_leggings=§6藍晶石のレギンス
+item.yanasakana:kyanite_boots=§6藍晶石のブーツ
 
 ## Ore Items
 ##item.yanasakana:XXX=

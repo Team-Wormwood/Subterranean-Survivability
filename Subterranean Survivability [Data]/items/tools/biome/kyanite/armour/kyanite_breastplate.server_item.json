@@ -2,27 +2,27 @@
     "format_version": "1.16.100",
     "minecraft:item": {
         "description": {
-            "identifier": "yanasakana:kyanite_kabuto",
+            "identifier": "yanasakana:kyanite_breastplate",
             "category": "Equipment"
         },
         "components": {
-            "tag:minecraft:is_helmet": {},
+            "tag:minecraft:is_chestplate": {},
             "minecraft:max_stack_size": 1,
             "minecraft:creative_category": {
-                "parent": "itemGroup.name.helmet"
+                "parent": "itemGroup.name.chestplate"
             },
             "minecraft:icon": {
-                "frame": 0,
+                "frame": 1,
                 "texture": "armour.kyanite"
             },
             "minecraft:armor": {
-                "protection": 3
+                "protection": 7
             },
             "minecraft:wearable": {
-				"slot": "slot.armor.head"
+				"slot": "slot.armor.chest"
 			},
             "minecraft:durability": {
-                "max_durability": 1542
+                "max_durability": 2056
             },
             "minecraft:enchantable": {
                 "value": 16,
@@ -34,7 +34,7 @@
                         "items": [
                             "yanasakana:kyanite"
                         ],
-                        "repair_amount": 514
+                        "repair_amount": 256
                     }
                 ]
             }
