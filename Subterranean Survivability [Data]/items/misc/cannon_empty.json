@@ -3,18 +3,18 @@
     "format_version": "1.16.100",
     "minecraft:item": {
         "description": {
-            "identifier": "yanasakana:cannon_empty",
+            "identifier": "yanasakana:dragon_cannon_empty",
             "category": "equipment"
         },
         "components": {
-            "tag:cannon": {},
+            "tag:dragon_cannon": {},
             "minecraft:creative_category": {
                 "parent": "itemGroup.equipment.name"
             },
             "minecraft:max_stack_size": 1,
             "minecraft:use_duration": 10,
             "minecraft:icon": {
-                "texture": "cannon"
+                "texture": "dragon_cannon"
             }
         },
         "events": {}

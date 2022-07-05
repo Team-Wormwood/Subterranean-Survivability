@@ -20,7 +20,7 @@
                 "parent": "itemGroup.name.pickaxe"
             },
             "minecraft:icon": {
-                "frame": 1,
+                "frame": "1",
                 "texture": "tools.kyanite"
             },
             "minecraft:durability": {

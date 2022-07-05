@@ -3,18 +3,18 @@
     "format_version": "1.16.100",
     "minecraft:item": {
         "description": {
-            "identifier": "yanasakana:cannon",
+            "identifier": "yanasakana:dragon_cannon",
             "category": "equipment"
         },
         "components": {
-            "tag:cannon": {},
+            "tag:dragon_cannon": {},
             "minecraft:max_stack_size": 1,
             "minecraft:use_duration": 10,
             "minecraft:creative_category": {
                 "parent": "itemGroup.equipment.name"
             },
             "minecraft:icon": {
-                "texture": "cannon"
+                "texture": "dragon_cannon"
             },
             //Redundant
             // "minecraft:cooldown": {
@@ -511,8 +511,8 @@
                 "run_command": {
                     "command": [
                         "playsound fire.ignite",
-                        "playanimation @s animation.custom_player.cannon_shot",
-                        "replaceitem entity @s slot.weapon.mainhand 0 yanasakana:cannon_empty",
+                        "playanimation @s animation.custom_player.dragon_cannon_shot",
+                        "replaceitem entity @s slot.weapon.mainhand 0 yanasakana:dragon_cannon_empty",
                         "playsound random.explode @a ~ ~ ~ 10 0.7 10",
                         "playsound firework.launch @a ~ ~ ~ 10 1.1 10",
                         "playsound mob.witch.throw @a ~ ~ ~ 10 0.6 10"
@@ -528,7 +528,7 @@
                 "run_command": {
                     "command": [
                         "playsound fire.ignite",
-                        "playanimation @s animation.custom_player.cannon_shot",
+                        "playanimation @s animation.custom_player.dragon_cannon_shot",
                         "playsound random.explode @a ~ ~ ~ 10 0.7 10",
                         "playsound firework.launch @a ~ ~ ~ 10 1.1 10",
                         "playsound mob.witch.throw @a ~ ~ ~ 10 0.6 10"
